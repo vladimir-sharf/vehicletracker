@@ -1,0 +1,69 @@
+version: '3'
+
+services:
+  vehicletracker.connector:
+    image: vehicletracker.connector
+    build:
+      context: .
+      dockerfile: ./VehicleTracker.Connector/Dockerfile
+    environment:
+      "RabbitMq:HostName": "rabbit"
+      "RabbitMq:UserName": "rabbitmq"
+      "RabbitMq:Password": "rabbitmq"
+      "RabbitMq:Port": "5672"
+    ports:
+     - "8088:80"
+    depends_on:
+     - "rabbit"
+  vehicletracker.trackerservice:
+    image: vehicletracker.trackerservice
+    build:
+      context: .
+      dockerfile: ./VehicleTracker.TrackerService/Dockerfile
+    ports:
+     - "8089:80"
+    depends_on:
+     - "rabbit"
+  vehicletracker.api:
+    image: vehicletracker.api
+    build:
+      context: .
+      dockerfile: ./VehicleTracker.Api/Dockerfile
+    environment:
+      "RabbitMq:HostName": "rabbit"
+      "RabbitMq:UserName": "rabbitmq"
+      "RabbitMq:Password": "rabbitmq"
+      "RabbitMq:Port": "5672"
+    ports:
+     - "8090:80"
+    depends_on:
+     - "rabbit"
+  vehicletracker.vehicleservice:
+    image: vehicletracker.vehicleservice
+    build:
+      context: .
+      dockerfile: ./VehicleTracker.VehicleService/Dockerfile
+    ports:
+     - "8091:80"
+    depends_on:
+     - "mssql"
+  rabbit:
+    image: "rabbitmq:3-management"
+    hostname: "rabbit"
+    environment:
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    labels:
+      NAME: "rabbitmq"
+  mssql:
+    image: microsoft/mssql-server-linux:latest
+    environment:
+      MSSQL_PID: "Express"
+      SA_PASSWORD: "Mssqlpassword1"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1434:1433"

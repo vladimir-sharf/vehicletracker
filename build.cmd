@@ -1,0 +1,5 @@
+start cmd.exe /c "dotnet run -p ./VehicleTracker.Connector/VehicleTracker.Connector.csproj"
+start cmd.exe /c "dotnet run -p ./VehicleTracker.TrackerService/VehicleTracker.TrackerService.csproj"
+start cmd.exe /c "dotnet run -p ./VehicleTracker.VehicleService/VehicleTracker.VehicleService.csproj"
+start cmd.exe /c "dotnet run -p ./VehicleTracker.AuthService/VehicleTracker.AuthService.csproj"
+start cmd.exe /c "dotnet run -p ./VehicleTracker.Api/VehicleTracker.Api.csproj"

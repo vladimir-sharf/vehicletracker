@@ -1,0 +1,83 @@
+﻿.root {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.root > div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+}
+
+.odd {
+    background: #eef;
+}
+
+.root > div > div {
+    padding: 5px 15px;
+    line-height: 40px;
+    margin-left: 1px;
+}
+
+.root > div > div:first-child {
+    flex-basis: 30%;
+    border-radius: 5px 0 0 5px;
+}
+
+.root > div > div:nth-child(2) {
+    flex-basis: 25%;
+}
+
+.root > div > div:nth-child(3) {
+    flex-basis: 10%;
+}
+
+.root > div > div:nth-child(4) {
+    flex-basis: 13%;
+    min-width: 120px;
+}
+
+.root > div > div:nth-child(5) {
+    flex-basis: 10%;
+}
+
+.root > div > div:nth-child(6) {
+    flex-basis: 12%;
+    border-radius: 0 5px 5px 0;
+}
+
+.root > .header > div {
+    line-height: 25px;
+    font-weight: bold;
+    background: #b0aa90;
+    color:white;
+}
+
+.vehicleStatus {
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    margin: auto 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: gray;
+}
+
+.connected {
+    background: #0f4;
+}
+
+.disconnected {
+    background: #f04;
+}
+
+.dot + div {
+    display: inline-block;
+    margin: auto 0 auto 10px;
+}

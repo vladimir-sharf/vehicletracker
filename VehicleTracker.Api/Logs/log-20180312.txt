@@ -1,0 +1,9 @@
+19:04:55.074 [INF] (VehicleTracker.Connector/VSHARF/9) RabbitMq message listener created
+19:04:55.221 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:04:55.237 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:09:30.205 [INF] (VehicleTracker.Connector/VSHARF/9) RabbitMq message listener created
+19:09:30.316 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:09:30.336 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:09:53.340 [INF] (VehicleTracker.Connector/VSHARF/8) RabbitMq message listener created
+19:09:53.431 [INF] (VehicleTracker.Connector/VSHARF/8) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:09:53.449 [INF] (VehicleTracker.Connector/VSHARF/8) Subscribed on message channel vehiclestatus, PublishSubscribe

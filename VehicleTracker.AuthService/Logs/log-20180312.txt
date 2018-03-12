@@ -1,0 +1,719 @@
+19:04:53.438 [INF] (VehicleTracker.Connector/VSHARF/1) You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+19:04:53.618 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for authentication
+19:04:53.937 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for sign-in
+19:04:54.386 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for sign-out
+19:04:54.415 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for challenge
+19:04:54.422 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for forbid
+19:06:33.074 [DBG] (VehicleTracker.Connector/VSHARF/8) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:33.200 [DBG] (VehicleTracker.Connector/VSHARF/8) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:33.201 [DBG] (VehicleTracker.Connector/VSHARF/8) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:33.212 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:33.212 [DBG] (VehicleTracker.Connector/VSHARF/8) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:33.243 [DBG] (VehicleTracker.Connector/VSHARF/8) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:33.244 [INF] (VehicleTracker.Connector/VSHARF/8) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:33.249 [DBG] (VehicleTracker.Connector/VSHARF/8) Start discovery request
+19:06:33.244 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:33.262 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:33.264 [DBG] (VehicleTracker.Connector/VSHARF/6) Start discovery request
+19:06:33.397 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/connect/checksession" matched to endpoint type "Checksession"
+19:06:33.402 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Checksession", successfully created handler: "IdentityServer4.Endpoints.CheckSessionEndpoint"
+19:06:33.403 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession"
+19:06:33.405 [DBG] (VehicleTracker.Connector/VSHARF/6) Rendering check session result
+19:06:33.591 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/.well-known/openid-configuration/jwks" matched to endpoint type "Discovery"
+19:06:33.593 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint"
+19:06:33.594 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint" for "/.well-known/openid-configuration/jwks"
+19:06:33.599 [DBG] (VehicleTracker.Connector/VSHARF/5) Start key discovery request
+19:06:33.766 [DBG] (VehicleTracker.Connector/VSHARF/7) Request path "/connect/authorize" matched to endpoint type "Authorize"
+19:06:33.773 [DBG] (VehicleTracker.Connector/VSHARF/7) Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeEndpoint"
+19:06:33.775 [INF] (VehicleTracker.Connector/VSHARF/7) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize"
+19:06:33.787 [DBG] (VehicleTracker.Connector/VSHARF/7) Start authorize request
+19:06:33.806 [DBG] (VehicleTracker.Connector/VSHARF/7) User in authorize request: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:33.815 [DBG] (VehicleTracker.Connector/VSHARF/7) Start authorize request protocol validation
+19:06:33.906 [DBG] (VehicleTracker.Connector/VSHARF/7) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:06:33.929 [INF] (VehicleTracker.Connector/VSHARF/7) ValidatedAuthorizeRequest
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"AllowedRedirectUris\": [
+    \"http://localhost:8090/callback\"
+  ],
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ResponseType\": \"id_token token\",
+  \"ResponseMode\": \"fragment\",
+  \"GrantType\": \"implicit\",
+  \"RequestedScopes\": \"openid profile VehicleTracker.Api\",
+  \"State\": \"8c6e9af8f89d4ed6935115f2c7f4956f\",
+  \"Nonce\": \"415afe2bc5ba4bdca50e64098d48117c\",
+  \"SessionId\": \"11c8c17d4e90bb6834b116fdb8ca2a08\",
+  \"Raw\": {
+    \"client_id\": \"js\",
+    \"redirect_uri\": \"http://localhost:8090/callback\",
+    \"response_type\": \"id_token token\",
+    \"scope\": \"openid profile VehicleTracker.Api\",
+    \"state\": \"8c6e9af8f89d4ed6935115f2c7f4956f\",
+    \"nonce\": \"415afe2bc5ba4bdca50e64098d48117c\"
+  }
+}"
+19:06:33.960 [DBG] (VehicleTracker.Connector/VSHARF/7) IsActive called from: "AuthorizeEndpoint"
+19:06:33.980 [DBG] (VehicleTracker.Connector/VSHARF/7) "user_consent" grant with value: "js|5BE86359-073C-434B-AD2D-A3932222DABE" not found in store.
+19:06:33.986 [DBG] (VehicleTracker.Connector/VSHARF/7) Found no prior consent from consent store, consent is required
+19:06:33.986 [INF] (VehicleTracker.Connector/VSHARF/7) Showing consent: User has not yet consented
+19:06:34.117 [DBG] (VehicleTracker.Connector/VSHARF/6) Start authorize request protocol validation
+19:06:34.118 [DBG] (VehicleTracker.Connector/VSHARF/6) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:06:38.511 [DBG] (VehicleTracker.Connector/VSHARF/8) CORS request made for path: "/consent" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+19:06:38.547 [DBG] (VehicleTracker.Connector/VSHARF/8) Start authorize request protocol validation
+19:06:38.548 [DBG] (VehicleTracker.Connector/VSHARF/8) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:06:38.573 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/connect/authorize/callback" matched to endpoint type "Authorize"
+19:06:38.575 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeCallbackEndpoint"
+19:06:38.576 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeCallbackEndpoint" for "/connect/authorize/callback"
+19:06:38.585 [DBG] (VehicleTracker.Connector/VSHARF/6) Start authorize callback request
+19:06:38.609 [DBG] (VehicleTracker.Connector/VSHARF/6) User in authorize request: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:38.610 [DBG] (VehicleTracker.Connector/VSHARF/6) Start authorize request protocol validation
+19:06:38.612 [DBG] (VehicleTracker.Connector/VSHARF/6) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:06:38.614 [INF] (VehicleTracker.Connector/VSHARF/6) ValidatedAuthorizeRequest
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"AllowedRedirectUris\": [
+    \"http://localhost:8090/callback\"
+  ],
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ResponseType\": \"id_token token\",
+  \"ResponseMode\": \"fragment\",
+  \"GrantType\": \"implicit\",
+  \"RequestedScopes\": \"openid profile VehicleTracker.Api\",
+  \"State\": \"8c6e9af8f89d4ed6935115f2c7f4956f\",
+  \"Nonce\": \"415afe2bc5ba4bdca50e64098d48117c\",
+  \"SessionId\": \"11c8c17d4e90bb6834b116fdb8ca2a08\",
+  \"Raw\": {
+    \"client_id\": \"js\",
+    \"redirect_uri\": \"http://localhost:8090/callback\",
+    \"response_type\": \"id_token token\",
+    \"scope\": \"openid profile VehicleTracker.Api\",
+    \"state\": \"8c6e9af8f89d4ed6935115f2c7f4956f\",
+    \"nonce\": \"415afe2bc5ba4bdca50e64098d48117c\"
+  }
+}"
+19:06:38.624 [DBG] (VehicleTracker.Connector/VSHARF/6) IsActive called from: "AuthorizeEndpoint"
+19:06:38.625 [DBG] (VehicleTracker.Connector/VSHARF/6) "user_consent" grant with value: "js|5BE86359-073C-434B-AD2D-A3932222DABE" not found in store.
+19:06:38.626 [DBG] (VehicleTracker.Connector/VSHARF/6) Found no prior consent from consent store, consent is required
+19:06:38.638 [INF] (VehicleTracker.Connector/VSHARF/6) User consented to scopes: ["openid", "profile", "VehicleTracker.Api"]
+19:06:38.642 [DBG] (VehicleTracker.Connector/VSHARF/6) User indicated to remember consent for scopes: ["openid", "profile", "VehicleTracker.Api"]
+19:06:38.652 [DBG] (VehicleTracker.Connector/VSHARF/6) Client allows remembering consent, and consent given. Updating consent store for subject: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:38.674 [DBG] (VehicleTracker.Connector/VSHARF/6) Creating Implicit Flow response.
+19:06:38.684 [DBG] (VehicleTracker.Connector/VSHARF/6) Getting claims for access token for client: "js"
+19:06:38.686 [DBG] (VehicleTracker.Connector/VSHARF/6) Getting claims for access token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:38.690 [DBG] (VehicleTracker.Connector/VSHARF/6) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types [] via "ClaimsProviderAccessToken"
+19:06:38.694 [DBG] (VehicleTracker.Connector/VSHARF/6) Issued claims: []
+19:06:38.752 [DBG] (VehicleTracker.Connector/VSHARF/6) Getting claims for identity token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE" and client: "js"
+19:06:38.753 [DBG] (VehicleTracker.Connector/VSHARF/6) In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+19:06:38.769 [INF] (VehicleTracker.Connector/VSHARF/6) Authorize endpoint response
+"{
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ClientId\": \"js\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"State\": \"8c6e9af8f89d4ed6935115f2c7f4956f\",
+  \"Scope\": \"openid profile VehicleTracker.Api\"
+}"
+19:06:39.063 [DBG] (VehicleTracker.Connector/VSHARF/14) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:39.068 [DBG] (VehicleTracker.Connector/VSHARF/14) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.075 [DBG] (VehicleTracker.Connector/VSHARF/14) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.076 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:39.080 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:39.084 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:39.087 [DBG] (VehicleTracker.Connector/VSHARF/14) Start discovery request
+19:06:39.119 [DBG] (VehicleTracker.Connector/VSHARF/14) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:39.151 [DBG] (VehicleTracker.Connector/VSHARF/5) CORS request made for path: "/.well-known/openid-configuration/jwks" from origin: "http://localhost:8090"
+19:06:39.229 [DBG] (VehicleTracker.Connector/VSHARF/5) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.231 [DBG] (VehicleTracker.Connector/VSHARF/5) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.226 [DBG] (VehicleTracker.Connector/VSHARF/14) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.238 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/.well-known/openid-configuration/jwks" matched to endpoint type "Discovery"
+19:06:39.251 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint"
+19:06:39.252 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint" for "/.well-known/openid-configuration/jwks"
+19:06:39.257 [DBG] (VehicleTracker.Connector/VSHARF/5) Start key discovery request
+19:06:39.250 [DBG] (VehicleTracker.Connector/VSHARF/14) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.263 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:39.264 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:39.267 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:39.270 [DBG] (VehicleTracker.Connector/VSHARF/14) Start discovery request
+19:06:39.275 [DBG] (VehicleTracker.Connector/VSHARF/14) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:39.296 [DBG] (VehicleTracker.Connector/VSHARF/8) CORS request made for path: "/connect/userinfo" from origin: "http://localhost:8090"
+19:06:39.304 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/connect/checksession" matched to endpoint type "Checksession"
+19:06:39.312 [DBG] (VehicleTracker.Connector/VSHARF/8) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.311 [DBG] (VehicleTracker.Connector/VSHARF/14) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.325 [DBG] (VehicleTracker.Connector/VSHARF/14) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.326 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:39.323 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Checksession", successfully created handler: "IdentityServer4.Endpoints.CheckSessionEndpoint"
+19:06:39.324 [DBG] (VehicleTracker.Connector/VSHARF/8) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.332 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:39.343 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:39.345 [DBG] (VehicleTracker.Connector/VSHARF/14) Start discovery request
+19:06:39.337 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession"
+19:06:39.345 [DBG] (VehicleTracker.Connector/VSHARF/8) CORS request made for path: "/connect/userinfo" from origin: "http://localhost:8090"
+19:06:39.353 [DBG] (VehicleTracker.Connector/VSHARF/6) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:39.352 [DBG] (VehicleTracker.Connector/VSHARF/5) Rendering check session result
+19:06:39.359 [DBG] (VehicleTracker.Connector/VSHARF/8) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.367 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/connect/authorize" matched to endpoint type "Authorize"
+19:06:39.379 [DBG] (VehicleTracker.Connector/VSHARF/6) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.396 [DBG] (VehicleTracker.Connector/VSHARF/6) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.397 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:39.398 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:39.400 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:39.404 [DBG] (VehicleTracker.Connector/VSHARF/6) Start discovery request
+19:06:39.415 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/connect/authorize" matched to endpoint type "Authorize"
+19:06:39.394 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeEndpoint"
+19:06:39.388 [DBG] (VehicleTracker.Connector/VSHARF/8) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.435 [DBG] (VehicleTracker.Connector/VSHARF/8) Request path "/connect/userinfo" matched to endpoint type "Userinfo"
+19:06:39.429 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeEndpoint"
+19:06:39.435 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize"
+19:06:39.450 [DBG] (VehicleTracker.Connector/VSHARF/14) Start authorize request
+19:06:39.439 [DBG] (VehicleTracker.Connector/VSHARF/8) Endpoint enabled: "Userinfo", successfully created handler: "IdentityServer4.Endpoints.UserInfoEndpoint"
+19:06:39.451 [DBG] (VehicleTracker.Connector/VSHARF/14) User in authorize request: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:39.456 [DBG] (VehicleTracker.Connector/VSHARF/14) Start authorize request protocol validation
+19:06:39.460 [DBG] (VehicleTracker.Connector/VSHARF/14) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:06:39.460 [INF] (VehicleTracker.Connector/VSHARF/14) ValidatedAuthorizeRequest
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"AllowedRedirectUris\": [
+    \"http://localhost:8090/callback\"
+  ],
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ResponseType\": \"id_token token\",
+  \"ResponseMode\": \"fragment\",
+  \"GrantType\": \"implicit\",
+  \"RequestedScopes\": \"openid profile VehicleTracker.Api\",
+  \"State\": \"30b84adb6adf45d7b92a08ace6895fba\",
+  \"Nonce\": \"2987367c2d5d4cc293b6d6853f248978\",
+  \"SessionId\": \"11c8c17d4e90bb6834b116fdb8ca2a08\",
+  \"Raw\": {
+    \"client_id\": \"js\",
+    \"redirect_uri\": \"http://localhost:8090/callback\",
+    \"response_type\": \"id_token token\",
+    \"scope\": \"openid profile VehicleTracker.Api\",
+    \"state\": \"30b84adb6adf45d7b92a08ace6895fba\",
+    \"nonce\": \"2987367c2d5d4cc293b6d6853f248978\"
+  }
+}"
+19:06:39.452 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize"
+19:06:39.453 [INF] (VehicleTracker.Connector/VSHARF/8) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.UserInfoEndpoint" for "/connect/userinfo"
+19:06:39.481 [DBG] (VehicleTracker.Connector/VSHARF/5) Start authorize request
+19:06:39.480 [DBG] (VehicleTracker.Connector/VSHARF/14) IsActive called from: "AuthorizeEndpoint"
+19:06:39.497 [DBG] (VehicleTracker.Connector/VSHARF/8) Start userinfo request
+19:06:39.512 [DBG] (VehicleTracker.Connector/VSHARF/8) Bearer token found in header
+19:06:39.517 [DBG] (VehicleTracker.Connector/VSHARF/14) Consent found in consent store is same as current request, consent is not required
+19:06:39.518 [DBG] (VehicleTracker.Connector/VSHARF/14) Creating Implicit Flow response.
+19:06:39.505 [DBG] (VehicleTracker.Connector/VSHARF/5) User in authorize request: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:39.529 [DBG] (VehicleTracker.Connector/VSHARF/14) Getting claims for access token for client: "js"
+19:06:39.533 [DBG] (VehicleTracker.Connector/VSHARF/14) Getting claims for access token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:39.535 [DBG] (VehicleTracker.Connector/VSHARF/14) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types [] via "ClaimsProviderAccessToken"
+19:06:39.541 [DBG] (VehicleTracker.Connector/VSHARF/14) Issued claims: []
+19:06:39.529 [DBG] (VehicleTracker.Connector/VSHARF/5) Start authorize request protocol validation
+19:06:39.547 [DBG] (VehicleTracker.Connector/VSHARF/14) Getting claims for identity token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE" and client: "js"
+19:06:39.565 [DBG] (VehicleTracker.Connector/VSHARF/14) In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+19:06:39.564 [DBG] (VehicleTracker.Connector/VSHARF/5) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:06:39.570 [INF] (VehicleTracker.Connector/VSHARF/14) Authorize endpoint response
+"{
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ClientId\": \"js\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"State\": \"30b84adb6adf45d7b92a08ace6895fba\",
+  \"Scope\": \"openid profile VehicleTracker.Api\"
+}"
+19:06:39.576 [INF] (VehicleTracker.Connector/VSHARF/5) ValidatedAuthorizeRequest
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"AllowedRedirectUris\": [
+    \"http://localhost:8090/callback\"
+  ],
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ResponseType\": \"id_token token\",
+  \"ResponseMode\": \"fragment\",
+  \"GrantType\": \"implicit\",
+  \"RequestedScopes\": \"openid profile VehicleTracker.Api\",
+  \"State\": \"9ee3e280f1a74445a345c85c424cf6d8\",
+  \"Nonce\": \"e126be4d2aa84203b25345c49002872b\",
+  \"SessionId\": \"11c8c17d4e90bb6834b116fdb8ca2a08\",
+  \"Raw\": {
+    \"client_id\": \"js\",
+    \"redirect_uri\": \"http://localhost:8090/callback\",
+    \"response_type\": \"id_token token\",
+    \"scope\": \"openid profile VehicleTracker.Api\",
+    \"state\": \"9ee3e280f1a74445a345c85c424cf6d8\",
+    \"nonce\": \"e126be4d2aa84203b25345c49002872b\"
+  }
+}"
+19:06:39.595 [DBG] (VehicleTracker.Connector/VSHARF/8) IsActive called from: "AccessTokenValidation"
+19:06:39.601 [DBG] (VehicleTracker.Connector/VSHARF/8) Calling into custom token validator: "IdentityServer4.Validation.DefaultCustomTokenValidator"
+19:06:39.599 [DBG] (VehicleTracker.Connector/VSHARF/5) IsActive called from: "AuthorizeEndpoint"
+19:06:39.609 [DBG] (VehicleTracker.Connector/VSHARF/8) Token validation success
+"{
+  \"ValidateLifetime\": true,
+  \"AccessTokenType\": \"Jwt\",
+  \"ExpectedScope\": \"openid\",
+  \"Claims\": {
+    \"nbf\": 1520863598,
+    \"exp\": 1520867198,
+    \"iss\": \"http://localhost:8092\",
+    \"aud\": [
+      \"http://localhost:8092/resources\",
+      \"VehicleTracker.Api\"
+    ],
+    \"client_id\": \"js\",
+    \"sub\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+    \"auth_time\": 1520856962,
+    \"idp\": \"local\",
+    \"scope\": [
+      \"openid\",
+      \"profile\",
+      \"VehicleTracker.Api\"
+    ],
+    \"amr\": \"pwd\"
+  }
+}"
+19:06:39.611 [DBG] (VehicleTracker.Connector/VSHARF/5) Consent found in consent store is same as current request, consent is not required
+19:06:39.621 [DBG] (VehicleTracker.Connector/VSHARF/5) Creating Implicit Flow response.
+19:06:39.621 [DBG] (VehicleTracker.Connector/VSHARF/8) IsActive called from: "UserInfoRequestValidation"
+19:06:39.624 [DBG] (VehicleTracker.Connector/VSHARF/5) Getting claims for access token for client: "js"
+19:06:39.628 [DBG] (VehicleTracker.Connector/VSHARF/5) Getting claims for access token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:39.629 [DBG] (VehicleTracker.Connector/VSHARF/8) Creating userinfo response
+19:06:39.630 [DBG] (VehicleTracker.Connector/VSHARF/5) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types [] via "ClaimsProviderAccessToken"
+19:06:39.636 [DBG] (VehicleTracker.Connector/VSHARF/5) Issued claims: []
+19:06:39.638 [DBG] (VehicleTracker.Connector/VSHARF/8) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:39.640 [DBG] (VehicleTracker.Connector/VSHARF/5) Getting claims for identity token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE" and client: "js"
+19:06:39.642 [DBG] (VehicleTracker.Connector/VSHARF/8) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:39.645 [DBG] (VehicleTracker.Connector/VSHARF/5) In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+19:06:39.649 [DBG] (VehicleTracker.Connector/VSHARF/8) Requested claim types: "sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at"
+19:06:39.653 [DBG] (VehicleTracker.Connector/VSHARF/8) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:39.652 [INF] (VehicleTracker.Connector/VSHARF/5) Authorize endpoint response
+"{
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ClientId\": \"js\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"State\": \"9ee3e280f1a74445a345c85c424cf6d8\",
+  \"Scope\": \"openid profile VehicleTracker.Api\"
+}"
+19:06:39.654 [DBG] (VehicleTracker.Connector/VSHARF/8) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types ["sub", "name", "family_name", "given_name", "middle_name", "nickname", "preferred_username", "profile", "picture", "website", "gender", "birthdate", "zoneinfo", "locale", "updated_at"] via "UserInfoEndpoint"
+19:06:39.674 [DBG] (VehicleTracker.Connector/VSHARF/8) Issued claims: []
+19:06:39.675 [INF] (VehicleTracker.Connector/VSHARF/8) Profile service returned to the following claim types: ""
+19:06:39.682 [DBG] (VehicleTracker.Connector/VSHARF/8) End userinfo request
+19:06:39.910 [DBG] (VehicleTracker.Connector/VSHARF/14) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:39.912 [DBG] (VehicleTracker.Connector/VSHARF/14) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.918 [DBG] (VehicleTracker.Connector/VSHARF/14) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.921 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:39.922 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:39.924 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:39.925 [DBG] (VehicleTracker.Connector/VSHARF/14) Start discovery request
+19:06:39.927 [DBG] (VehicleTracker.Connector/VSHARF/5) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:39.930 [DBG] (VehicleTracker.Connector/VSHARF/5) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:39.934 [DBG] (VehicleTracker.Connector/VSHARF/5) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:39.941 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:39.945 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:39.995 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:39.980 [DBG] (VehicleTracker.Connector/VSHARF/6) CORS request made for path: "/.well-known/openid-configuration/jwks" from origin: "http://localhost:8090"
+19:06:40.042 [DBG] (VehicleTracker.Connector/VSHARF/6) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:40.043 [DBG] (VehicleTracker.Connector/VSHARF/6) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:40.040 [DBG] (VehicleTracker.Connector/VSHARF/5) Start discovery request
+19:06:40.047 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/.well-known/openid-configuration/jwks" matched to endpoint type "Discovery"
+19:06:40.049 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint"
+19:06:40.053 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint" for "/.well-known/openid-configuration/jwks"
+19:06:40.056 [DBG] (VehicleTracker.Connector/VSHARF/6) Start key discovery request
+19:06:40.062 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/connect/authorize" matched to endpoint type "Authorize"
+19:06:40.071 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/connect/checksession" matched to endpoint type "Checksession"
+19:06:40.084 [DBG] (VehicleTracker.Connector/VSHARF/5) CORS request made for path: "/connect/userinfo" from origin: "http://localhost:8090"
+19:06:40.093 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeEndpoint"
+19:06:40.101 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize"
+19:06:40.102 [DBG] (VehicleTracker.Connector/VSHARF/6) Start authorize request
+19:06:40.103 [DBG] (VehicleTracker.Connector/VSHARF/6) User in authorize request: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:40.096 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Checksession", successfully created handler: "IdentityServer4.Endpoints.CheckSessionEndpoint"
+19:06:40.099 [DBG] (VehicleTracker.Connector/VSHARF/5) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:40.104 [DBG] (VehicleTracker.Connector/VSHARF/6) Start authorize request protocol validation
+19:06:40.110 [DBG] (VehicleTracker.Connector/VSHARF/6) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:06:40.108 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession"
+19:06:40.109 [DBG] (VehicleTracker.Connector/VSHARF/5) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:40.113 [INF] (VehicleTracker.Connector/VSHARF/6) ValidatedAuthorizeRequest
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"AllowedRedirectUris\": [
+    \"http://localhost:8090/callback\"
+  ],
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ResponseType\": \"id_token token\",
+  \"ResponseMode\": \"fragment\",
+  \"GrantType\": \"implicit\",
+  \"RequestedScopes\": \"openid profile VehicleTracker.Api\",
+  \"State\": \"0db6ae85834b42d79f87578b7056cc21\",
+  \"Nonce\": \"bf96424843404203889aab4166258def\",
+  \"SessionId\": \"11c8c17d4e90bb6834b116fdb8ca2a08\",
+  \"Raw\": {
+    \"client_id\": \"js\",
+    \"redirect_uri\": \"http://localhost:8090/callback\",
+    \"response_type\": \"id_token token\",
+    \"scope\": \"openid profile VehicleTracker.Api\",
+    \"state\": \"0db6ae85834b42d79f87578b7056cc21\",
+    \"nonce\": \"bf96424843404203889aab4166258def\"
+  }
+}"
+19:06:40.116 [DBG] (VehicleTracker.Connector/VSHARF/14) Rendering check session result
+19:06:40.119 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/connect/userinfo" matched to endpoint type "Userinfo"
+19:06:40.134 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Userinfo", successfully created handler: "IdentityServer4.Endpoints.UserInfoEndpoint"
+19:06:40.139 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.UserInfoEndpoint" for "/connect/userinfo"
+19:06:40.141 [DBG] (VehicleTracker.Connector/VSHARF/5) Start userinfo request
+19:06:40.143 [DBG] (VehicleTracker.Connector/VSHARF/5) Bearer token found in header
+19:06:40.130 [DBG] (VehicleTracker.Connector/VSHARF/6) IsActive called from: "AuthorizeEndpoint"
+19:06:40.145 [DBG] (VehicleTracker.Connector/VSHARF/5) IsActive called from: "AccessTokenValidation"
+19:06:40.149 [DBG] (VehicleTracker.Connector/VSHARF/5) Calling into custom token validator: "IdentityServer4.Validation.DefaultCustomTokenValidator"
+19:06:40.154 [DBG] (VehicleTracker.Connector/VSHARF/5) Token validation success
+"{
+  \"ValidateLifetime\": true,
+  \"AccessTokenType\": \"Jwt\",
+  \"ExpectedScope\": \"openid\",
+  \"Claims\": {
+    \"nbf\": 1520863599,
+    \"exp\": 1520867199,
+    \"iss\": \"http://localhost:8092\",
+    \"aud\": [
+      \"http://localhost:8092/resources\",
+      \"VehicleTracker.Api\"
+    ],
+    \"client_id\": \"js\",
+    \"sub\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+    \"auth_time\": 1520856962,
+    \"idp\": \"local\",
+    \"scope\": [
+      \"openid\",
+      \"profile\",
+      \"VehicleTracker.Api\"
+    ],
+    \"amr\": \"pwd\"
+  }
+}"
+19:06:40.155 [DBG] (VehicleTracker.Connector/VSHARF/6) Consent found in consent store is same as current request, consent is not required
+19:06:40.171 [DBG] (VehicleTracker.Connector/VSHARF/6) Creating Implicit Flow response.
+19:06:40.169 [DBG] (VehicleTracker.Connector/VSHARF/5) IsActive called from: "UserInfoRequestValidation"
+19:06:40.177 [DBG] (VehicleTracker.Connector/VSHARF/5) Creating userinfo response
+19:06:40.174 [DBG] (VehicleTracker.Connector/VSHARF/6) Getting claims for access token for client: "js"
+19:06:40.178 [DBG] (VehicleTracker.Connector/VSHARF/5) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:40.179 [DBG] (VehicleTracker.Connector/VSHARF/6) Getting claims for access token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:06:40.180 [DBG] (VehicleTracker.Connector/VSHARF/5) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:40.184 [DBG] (VehicleTracker.Connector/VSHARF/5) Requested claim types: "sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at"
+19:06:40.183 [DBG] (VehicleTracker.Connector/VSHARF/6) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types [] via "ClaimsProviderAccessToken"
+19:06:40.189 [DBG] (VehicleTracker.Connector/VSHARF/6) Issued claims: []
+19:06:40.187 [DBG] (VehicleTracker.Connector/VSHARF/5) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:40.194 [DBG] (VehicleTracker.Connector/VSHARF/5) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types ["sub", "name", "family_name", "given_name", "middle_name", "nickname", "preferred_username", "profile", "picture", "website", "gender", "birthdate", "zoneinfo", "locale", "updated_at"] via "UserInfoEndpoint"
+19:06:40.193 [DBG] (VehicleTracker.Connector/VSHARF/6) Getting claims for identity token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE" and client: "js"
+19:06:40.204 [DBG] (VehicleTracker.Connector/VSHARF/5) Issued claims: []
+19:06:40.209 [INF] (VehicleTracker.Connector/VSHARF/5) Profile service returned to the following claim types: ""
+19:06:40.206 [DBG] (VehicleTracker.Connector/VSHARF/6) In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+19:06:40.210 [DBG] (VehicleTracker.Connector/VSHARF/5) End userinfo request
+19:06:40.214 [INF] (VehicleTracker.Connector/VSHARF/6) Authorize endpoint response
+"{
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ClientId\": \"js\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"State\": \"0db6ae85834b42d79f87578b7056cc21\",
+  \"Scope\": \"openid profile VehicleTracker.Api\"
+}"
+19:06:40.573 [DBG] (VehicleTracker.Connector/VSHARF/5) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:40.575 [DBG] (VehicleTracker.Connector/VSHARF/5) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:40.578 [DBG] (VehicleTracker.Connector/VSHARF/5) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:40.579 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:40.586 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:40.590 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:40.591 [DBG] (VehicleTracker.Connector/VSHARF/5) Start discovery request
+19:06:40.595 [DBG] (VehicleTracker.Connector/VSHARF/5) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:06:40.633 [DBG] (VehicleTracker.Connector/VSHARF/14) CORS request made for path: "/.well-known/openid-configuration/jwks" from origin: "http://localhost:8090"
+19:06:40.833 [DBG] (VehicleTracker.Connector/VSHARF/5) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:40.846 [DBG] (VehicleTracker.Connector/VSHARF/14) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:40.860 [DBG] (VehicleTracker.Connector/VSHARF/14) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:40.861 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/.well-known/openid-configuration/jwks" matched to endpoint type "Discovery"
+19:06:40.863 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint"
+19:06:40.869 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint" for "/.well-known/openid-configuration/jwks"
+19:06:40.857 [DBG] (VehicleTracker.Connector/VSHARF/5) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:40.880 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:06:40.886 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:06:40.878 [DBG] (VehicleTracker.Connector/VSHARF/14) Start key discovery request
+19:06:40.894 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:06:40.919 [DBG] (VehicleTracker.Connector/VSHARF/14) CORS request made for path: "/connect/userinfo" from origin: "http://localhost:8090"
+19:06:40.933 [DBG] (VehicleTracker.Connector/VSHARF/5) Start discovery request
+19:06:40.938 [DBG] (VehicleTracker.Connector/VSHARF/14) Client list checked and origin: "http://localhost:8090" is allowed
+19:06:40.959 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/connect/checksession" matched to endpoint type "Checksession"
+19:06:41.004 [DBG] (VehicleTracker.Connector/VSHARF/14) CorsPolicyService allowed origin: "http://localhost:8090"
+19:06:41.008 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Checksession", successfully created handler: "IdentityServer4.Endpoints.CheckSessionEndpoint"
+19:06:41.013 [DBG] (VehicleTracker.Connector/VSHARF/14) Request path "/connect/userinfo" matched to endpoint type "Userinfo"
+19:06:41.022 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession"
+19:06:41.040 [DBG] (VehicleTracker.Connector/VSHARF/6) Rendering check session result
+19:06:41.038 [DBG] (VehicleTracker.Connector/VSHARF/14) Endpoint enabled: "Userinfo", successfully created handler: "IdentityServer4.Endpoints.UserInfoEndpoint"
+19:06:41.082 [INF] (VehicleTracker.Connector/VSHARF/14) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.UserInfoEndpoint" for "/connect/userinfo"
+19:06:41.086 [DBG] (VehicleTracker.Connector/VSHARF/14) Start userinfo request
+19:06:41.087 [DBG] (VehicleTracker.Connector/VSHARF/14) Bearer token found in header
+19:06:41.089 [DBG] (VehicleTracker.Connector/VSHARF/14) IsActive called from: "AccessTokenValidation"
+19:06:41.090 [DBG] (VehicleTracker.Connector/VSHARF/14) Calling into custom token validator: "IdentityServer4.Validation.DefaultCustomTokenValidator"
+19:06:41.092 [DBG] (VehicleTracker.Connector/VSHARF/14) Token validation success
+"{
+  \"ValidateLifetime\": true,
+  \"AccessTokenType\": \"Jwt\",
+  \"ExpectedScope\": \"openid\",
+  \"Claims\": {
+    \"nbf\": 1520863600,
+    \"exp\": 1520867200,
+    \"iss\": \"http://localhost:8092\",
+    \"aud\": [
+      \"http://localhost:8092/resources\",
+      \"VehicleTracker.Api\"
+    ],
+    \"client_id\": \"js\",
+    \"sub\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+    \"auth_time\": 1520856962,
+    \"idp\": \"local\",
+    \"scope\": [
+      \"openid\",
+      \"profile\",
+      \"VehicleTracker.Api\"
+    ],
+    \"amr\": \"pwd\"
+  }
+}"
+19:06:41.119 [DBG] (VehicleTracker.Connector/VSHARF/14) IsActive called from: "UserInfoRequestValidation"
+19:06:41.120 [DBG] (VehicleTracker.Connector/VSHARF/14) Creating userinfo response
+19:06:41.122 [DBG] (VehicleTracker.Connector/VSHARF/14) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:41.135 [DBG] (VehicleTracker.Connector/VSHARF/14) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:41.155 [DBG] (VehicleTracker.Connector/VSHARF/14) Requested claim types: "sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at"
+19:06:41.165 [DBG] (VehicleTracker.Connector/VSHARF/14) Scopes in access token: "openid profile VehicleTracker.Api"
+19:06:41.167 [DBG] (VehicleTracker.Connector/VSHARF/14) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types ["sub", "name", "family_name", "given_name", "middle_name", "nickname", "preferred_username", "profile", "picture", "website", "gender", "birthdate", "zoneinfo", "locale", "updated_at"] via "UserInfoEndpoint"
+19:06:41.195 [DBG] (VehicleTracker.Connector/VSHARF/14) Issued claims: []
+19:06:41.203 [INF] (VehicleTracker.Connector/VSHARF/14) Profile service returned to the following claim types: ""
+19:06:41.217 [DBG] (VehicleTracker.Connector/VSHARF/14) End userinfo request
+19:07:29.047 [DBG] (VehicleTracker.Connector/VSHARF/22) Request path "/connect/endsession" matched to endpoint type "Endsession"
+19:07:29.072 [DBG] (VehicleTracker.Connector/VSHARF/22) Endpoint enabled: "Endsession", successfully created handler: "IdentityServer4.Endpoints.EndSessionEndpoint"
+19:07:29.085 [INF] (VehicleTracker.Connector/VSHARF/22) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.EndSessionEndpoint" for "/connect/endsession"
+19:07:29.091 [DBG] (VehicleTracker.Connector/VSHARF/22) Processing signout request for "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:07:29.099 [DBG] (VehicleTracker.Connector/VSHARF/22) Start end session request validation
+19:07:29.105 [DBG] (VehicleTracker.Connector/VSHARF/22) Start identity token validation
+19:07:29.112 [DBG] (VehicleTracker.Connector/VSHARF/22) Client found: "js" / "JavaScript Client"
+19:07:29.117 [DBG] (VehicleTracker.Connector/VSHARF/22) IsActive called from: "IdentityTokenValidation"
+19:07:29.117 [DBG] (VehicleTracker.Connector/VSHARF/22) Calling into custom token validator: "IdentityServer4.Validation.DefaultCustomTokenValidator"
+19:07:29.123 [DBG] (VehicleTracker.Connector/VSHARF/22) Token validation success
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"ValidateLifetime\": false,
+  \"Claims\": {
+    \"nbf\": 1520863600,
+    \"exp\": 1520863900,
+    \"iss\": \"http://localhost:8092\",
+    \"aud\": \"js\",
+    \"nonce\": \"bf96424843404203889aab4166258def\",
+    \"iat\": 1520863600,
+    \"at_hash\": \"31Sj_E1tCnpcWcLtlHBgPg\",
+    \"sid\": \"11c8c17d4e90bb6834b116fdb8ca2a08\",
+    \"sub\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+    \"auth_time\": 1520856962,
+    \"idp\": \"local\",
+    \"amr\": \"pwd\"
+  }
+}"
+19:07:29.149 [INF] (VehicleTracker.Connector/VSHARF/22) End session request validation success
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"PostLogOutUri\": \"http://localhost:8090\",
+  \"Raw\": {
+    \"id_token_hint\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjNmYzM5YTIyN2JiMWNhMjEyZjQxNGU4NTNiMzk5ZmI1IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1MjA4NjM2MDAsImV4cCI6MTUyMDg2MzkwMCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkyIiwiYXVkIjoianMiLCJub25jZSI6ImJmOTY0MjQ4NDM0MDQyMDM4ODlhYWI0MTY2MjU4ZGVmIiwiaWF0IjoxNTIwODYzNjAwLCJhdF9oYXNoIjoiMzFTal9FMXRDbnBjV2NMdGxIQmdQZyIsInNpZCI6IjExYzhjMTdkNGU5MGJiNjgzNGIxMTZmZGI4Y2EyYTA4Iiwic3ViIjoiNUJFODYzNTktMDczQy00MzRCLUFEMkQtQTM5MzIyMjJEQUJFIiwiYXV0aF90aW1lIjoxNTIwODU2OTYyLCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.I5HCKf32B2wRZloH4EdDX0ju07l2N_mzsrrDDvXFZ5bg7lkinWUA5VFxsj-jaL_OYgFmkV4PyvzszEvY1i7H0MAsizjXgzVkmUhifv56HTKtO-Nq0MkuB2QA0ttW6131W0SWyexiKLO6oEcJ1n8DChhP1xdE_FRwwhsnFC1XJiKn2xeX_VpEhkGot9nGG6rd3XDh23Yf9e8RfutaAuYYTMAkNwB_tFtk_EcCDRe3qkxpn2OSNBvWBPe8IKNQMpT5CHf69Yu7Nl_PY6Tsz2OojnSjrROSBcrZb8C5E-3Hu2ARgN5cRA0cVXuhy1fVEcZuLjK3zz2r9lm4Id7ozp2xRQ\",
+    \"post_logout_redirect_uri\": \"http://localhost:8090\"
+  }
+}"
+19:07:29.154 [DBG] (VehicleTracker.Connector/VSHARF/22) Success validating end session request from "js"
+19:07:29.368 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/connect/endsession/callback" matched to endpoint type "Endsession"
+19:07:29.474 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Endsession", successfully created handler: "IdentityServer4.Endpoints.EndSessionCallbackEndpoint"
+19:07:29.512 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.EndSessionCallbackEndpoint" for "/connect/endsession/callback"
+19:07:29.526 [DBG] (VehicleTracker.Connector/VSHARF/5) Processing signout callback request
+19:07:29.537 [DBG] (VehicleTracker.Connector/VSHARF/5) No client front-channel logout URLs
+19:07:29.546 [DBG] (VehicleTracker.Connector/VSHARF/5) No client back-channel logout URLs
+19:07:29.546 [INF] (VehicleTracker.Connector/VSHARF/5) Successful signout callback.
+19:07:29.548 [DBG] (VehicleTracker.Connector/VSHARF/5) No client front-channel iframe urls
+19:07:29.550 [DBG] (VehicleTracker.Connector/VSHARF/5) No client back-channel iframe urls
+19:07:32.211 [DBG] (VehicleTracker.Connector/VSHARF/8) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:07:32.215 [DBG] (VehicleTracker.Connector/VSHARF/8) Client list checked and origin: "http://localhost:8090" is allowed
+19:07:32.216 [DBG] (VehicleTracker.Connector/VSHARF/8) CorsPolicyService allowed origin: "http://localhost:8090"
+19:07:32.217 [DBG] (VehicleTracker.Connector/VSHARF/8) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:07:32.219 [DBG] (VehicleTracker.Connector/VSHARF/8) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:07:32.223 [INF] (VehicleTracker.Connector/VSHARF/8) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:07:32.225 [DBG] (VehicleTracker.Connector/VSHARF/8) Start discovery request
+19:07:32.234 [DBG] (VehicleTracker.Connector/VSHARF/21) Request path "/connect/authorize" matched to endpoint type "Authorize"
+19:07:32.236 [DBG] (VehicleTracker.Connector/VSHARF/21) Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeEndpoint"
+19:07:32.239 [INF] (VehicleTracker.Connector/VSHARF/21) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeEndpoint" for "/connect/authorize"
+19:07:32.242 [DBG] (VehicleTracker.Connector/VSHARF/21) Start authorize request
+19:07:32.243 [DBG] (VehicleTracker.Connector/VSHARF/21) No user present in authorize request
+19:07:32.250 [DBG] (VehicleTracker.Connector/VSHARF/21) Start authorize request protocol validation
+19:07:32.252 [DBG] (VehicleTracker.Connector/VSHARF/21) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:07:32.254 [INF] (VehicleTracker.Connector/VSHARF/21) ValidatedAuthorizeRequest
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"AllowedRedirectUris\": [
+    \"http://localhost:8090/callback\"
+  ],
+  \"SubjectId\": \"anonymous\",
+  \"ResponseType\": \"id_token token\",
+  \"ResponseMode\": \"fragment\",
+  \"GrantType\": \"implicit\",
+  \"RequestedScopes\": \"openid profile VehicleTracker.Api\",
+  \"State\": \"11607cd7a90f4d86ba73305762de714a\",
+  \"Nonce\": \"4b46780de9dd489fb4923084ef1a68e0\",
+  \"Raw\": {
+    \"client_id\": \"js\",
+    \"redirect_uri\": \"http://localhost:8090/callback\",
+    \"response_type\": \"id_token token\",
+    \"scope\": \"openid profile VehicleTracker.Api\",
+    \"state\": \"11607cd7a90f4d86ba73305762de714a\",
+    \"nonce\": \"4b46780de9dd489fb4923084ef1a68e0\"
+  }
+}"
+19:07:32.269 [INF] (VehicleTracker.Connector/VSHARF/21) Showing login: User is not authenticated
+19:07:32.282 [DBG] (VehicleTracker.Connector/VSHARF/22) Start authorize request protocol validation
+19:07:32.283 [DBG] (VehicleTracker.Connector/VSHARF/22) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:07:34.008 [DBG] (VehicleTracker.Connector/VSHARF/6) CORS request made for path: "/account/login" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+19:07:34.035 [DBG] (VehicleTracker.Connector/VSHARF/6) Start authorize request protocol validation
+19:07:34.038 [DBG] (VehicleTracker.Connector/VSHARF/6) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:07:37.932 [DBG] (VehicleTracker.Connector/VSHARF/22) CORS request made for path: "/account/login" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+19:07:37.949 [DBG] (VehicleTracker.Connector/VSHARF/22) Augmenting SignInContext
+19:07:37.953 [DBG] (VehicleTracker.Connector/VSHARF/22) Adding idp claim with value: "local"
+19:07:37.954 [DBG] (VehicleTracker.Connector/VSHARF/22) Adding amr claim with value: "pwd"
+19:07:37.963 [DBG] (VehicleTracker.Connector/VSHARF/8) Request path "/connect/authorize/callback" matched to endpoint type "Authorize"
+19:07:37.965 [DBG] (VehicleTracker.Connector/VSHARF/8) Endpoint enabled: "Authorize", successfully created handler: "IdentityServer4.Endpoints.AuthorizeCallbackEndpoint"
+19:07:37.966 [INF] (VehicleTracker.Connector/VSHARF/8) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.AuthorizeCallbackEndpoint" for "/connect/authorize/callback"
+19:07:37.969 [DBG] (VehicleTracker.Connector/VSHARF/8) Start authorize callback request
+19:07:37.970 [DBG] (VehicleTracker.Connector/VSHARF/8) User in authorize request: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:07:37.971 [DBG] (VehicleTracker.Connector/VSHARF/8) Start authorize request protocol validation
+19:07:37.972 [DBG] (VehicleTracker.Connector/VSHARF/8) Calling into custom validator: "IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator"
+19:07:37.974 [INF] (VehicleTracker.Connector/VSHARF/8) ValidatedAuthorizeRequest
+"{
+  \"ClientId\": \"js\",
+  \"ClientName\": \"JavaScript Client\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"AllowedRedirectUris\": [
+    \"http://localhost:8090/callback\"
+  ],
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ResponseType\": \"id_token token\",
+  \"ResponseMode\": \"fragment\",
+  \"GrantType\": \"implicit\",
+  \"RequestedScopes\": \"openid profile VehicleTracker.Api\",
+  \"State\": \"11607cd7a90f4d86ba73305762de714a\",
+  \"Nonce\": \"4b46780de9dd489fb4923084ef1a68e0\",
+  \"SessionId\": \"cb1a15f62184172a4c9b32131b03e850\",
+  \"Raw\": {
+    \"client_id\": \"js\",
+    \"redirect_uri\": \"http://localhost:8090/callback\",
+    \"response_type\": \"id_token token\",
+    \"scope\": \"openid profile VehicleTracker.Api\",
+    \"state\": \"11607cd7a90f4d86ba73305762de714a\",
+    \"nonce\": \"4b46780de9dd489fb4923084ef1a68e0\"
+  }
+}"
+19:07:37.984 [DBG] (VehicleTracker.Connector/VSHARF/8) IsActive called from: "AuthorizeEndpoint"
+19:07:37.989 [DBG] (VehicleTracker.Connector/VSHARF/8) Consent found in consent store is same as current request, consent is not required
+19:07:37.990 [DBG] (VehicleTracker.Connector/VSHARF/8) Creating Implicit Flow response.
+19:07:37.991 [DBG] (VehicleTracker.Connector/VSHARF/8) Getting claims for access token for client: "js"
+19:07:37.992 [DBG] (VehicleTracker.Connector/VSHARF/8) Getting claims for access token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE"
+19:07:37.994 [DBG] (VehicleTracker.Connector/VSHARF/8) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types [] via "ClaimsProviderAccessToken"
+19:07:37.996 [DBG] (VehicleTracker.Connector/VSHARF/8) Issued claims: []
+19:07:37.999 [DBG] (VehicleTracker.Connector/VSHARF/8) Getting claims for identity token for subject: "5BE86359-073C-434B-AD2D-A3932222DABE" and client: "js"
+19:07:38.001 [DBG] (VehicleTracker.Connector/VSHARF/8) In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+19:07:38.004 [INF] (VehicleTracker.Connector/VSHARF/8) Authorize endpoint response
+"{
+  \"SubjectId\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+  \"ClientId\": \"js\",
+  \"RedirectUri\": \"http://localhost:8090/callback\",
+  \"State\": \"11607cd7a90f4d86ba73305762de714a\",
+  \"Scope\": \"openid profile VehicleTracker.Api\"
+}"
+19:07:38.014 [DBG] (VehicleTracker.Connector/VSHARF/8) Augmenting SignInContext
+19:07:38.260 [DBG] (VehicleTracker.Connector/VSHARF/6) CORS request made for path: "/.well-known/openid-configuration" from origin: "http://localhost:8090"
+19:07:38.262 [DBG] (VehicleTracker.Connector/VSHARF/6) Client list checked and origin: "http://localhost:8090" is allowed
+19:07:38.268 [DBG] (VehicleTracker.Connector/VSHARF/6) CorsPolicyService allowed origin: "http://localhost:8090"
+19:07:38.271 [DBG] (VehicleTracker.Connector/VSHARF/6) Request path "/.well-known/openid-configuration" matched to endpoint type "Discovery"
+19:07:38.274 [DBG] (VehicleTracker.Connector/VSHARF/6) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryEndpoint"
+19:07:38.275 [INF] (VehicleTracker.Connector/VSHARF/6) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryEndpoint" for "/.well-known/openid-configuration"
+19:07:38.277 [DBG] (VehicleTracker.Connector/VSHARF/6) Start discovery request
+19:07:38.347 [DBG] (VehicleTracker.Connector/VSHARF/5) CORS request made for path: "/.well-known/openid-configuration/jwks" from origin: "http://localhost:8090"
+19:07:38.350 [DBG] (VehicleTracker.Connector/VSHARF/5) Client list checked and origin: "http://localhost:8090" is allowed
+19:07:38.357 [DBG] (VehicleTracker.Connector/VSHARF/5) CorsPolicyService allowed origin: "http://localhost:8090"
+19:07:38.358 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/.well-known/openid-configuration/jwks" matched to endpoint type "Discovery"
+19:07:38.361 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Discovery", successfully created handler: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint"
+19:07:38.362 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.DiscoveryKeyEndpoint" for "/.well-known/openid-configuration/jwks"
+19:07:38.375 [DBG] (VehicleTracker.Connector/VSHARF/5) Start key discovery request
+19:07:38.415 [DBG] (VehicleTracker.Connector/VSHARF/21) CORS request made for path: "/connect/userinfo" from origin: "http://localhost:8090"
+19:07:38.416 [DBG] (VehicleTracker.Connector/VSHARF/21) Client list checked and origin: "http://localhost:8090" is allowed
+19:07:38.418 [DBG] (VehicleTracker.Connector/VSHARF/21) CorsPolicyService allowed origin: "http://localhost:8090"
+19:07:38.425 [DBG] (VehicleTracker.Connector/VSHARF/20) CORS request made for path: "/connect/userinfo" from origin: "http://localhost:8090"
+19:07:38.426 [DBG] (VehicleTracker.Connector/VSHARF/20) Client list checked and origin: "http://localhost:8090" is allowed
+19:07:38.427 [DBG] (VehicleTracker.Connector/VSHARF/20) CorsPolicyService allowed origin: "http://localhost:8090"
+19:07:38.428 [DBG] (VehicleTracker.Connector/VSHARF/20) Request path "/connect/userinfo" matched to endpoint type "Userinfo"
+19:07:38.430 [DBG] (VehicleTracker.Connector/VSHARF/20) Endpoint enabled: "Userinfo", successfully created handler: "IdentityServer4.Endpoints.UserInfoEndpoint"
+19:07:38.431 [INF] (VehicleTracker.Connector/VSHARF/20) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.UserInfoEndpoint" for "/connect/userinfo"
+19:07:38.443 [DBG] (VehicleTracker.Connector/VSHARF/20) Start userinfo request
+19:07:38.444 [DBG] (VehicleTracker.Connector/VSHARF/20) Bearer token found in header
+19:07:38.447 [DBG] (VehicleTracker.Connector/VSHARF/20) IsActive called from: "AccessTokenValidation"
+19:07:38.448 [DBG] (VehicleTracker.Connector/VSHARF/20) Calling into custom token validator: "IdentityServer4.Validation.DefaultCustomTokenValidator"
+19:07:38.472 [DBG] (VehicleTracker.Connector/VSHARF/20) Token validation success
+"{
+  \"ValidateLifetime\": true,
+  \"AccessTokenType\": \"Jwt\",
+  \"ExpectedScope\": \"openid\",
+  \"Claims\": {
+    \"nbf\": 1520863657,
+    \"exp\": 1520867257,
+    \"iss\": \"http://localhost:8092\",
+    \"aud\": [
+      \"http://localhost:8092/resources\",
+      \"VehicleTracker.Api\"
+    ],
+    \"client_id\": \"js\",
+    \"sub\": \"5BE86359-073C-434B-AD2D-A3932222DABE\",
+    \"auth_time\": 1520863657,
+    \"idp\": \"local\",
+    \"scope\": [
+      \"openid\",
+      \"profile\",
+      \"VehicleTracker.Api\"
+    ],
+    \"amr\": \"pwd\"
+  }
+}"
+19:07:38.494 [DBG] (VehicleTracker.Connector/VSHARF/20) IsActive called from: "UserInfoRequestValidation"
+19:07:38.495 [DBG] (VehicleTracker.Connector/VSHARF/20) Creating userinfo response
+19:07:38.496 [DBG] (VehicleTracker.Connector/VSHARF/20) Scopes in access token: "openid profile VehicleTracker.Api"
+19:07:38.497 [DBG] (VehicleTracker.Connector/VSHARF/20) Scopes in access token: "openid profile VehicleTracker.Api"
+19:07:38.498 [DBG] (VehicleTracker.Connector/VSHARF/20) Requested claim types: "sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at"
+19:07:38.501 [DBG] (VehicleTracker.Connector/VSHARF/20) Scopes in access token: "openid profile VehicleTracker.Api"
+19:07:38.503 [DBG] (VehicleTracker.Connector/VSHARF/20) Get profile called for subject "5BE86359-073C-434B-AD2D-A3932222DABE" from client "JavaScript Client" with claim types ["sub", "name", "family_name", "given_name", "middle_name", "nickname", "preferred_username", "profile", "picture", "website", "gender", "birthdate", "zoneinfo", "locale", "updated_at"] via "UserInfoEndpoint"
+19:07:38.515 [DBG] (VehicleTracker.Connector/VSHARF/20) Issued claims: []
+19:07:38.519 [INF] (VehicleTracker.Connector/VSHARF/20) Profile service returned to the following claim types: ""
+19:07:38.521 [DBG] (VehicleTracker.Connector/VSHARF/20) End userinfo request
+19:07:38.529 [DBG] (VehicleTracker.Connector/VSHARF/5) Request path "/connect/checksession" matched to endpoint type "Checksession"
+19:07:38.531 [DBG] (VehicleTracker.Connector/VSHARF/5) Endpoint enabled: "Checksession", successfully created handler: "IdentityServer4.Endpoints.CheckSessionEndpoint"
+19:07:38.532 [INF] (VehicleTracker.Connector/VSHARF/5) Invoking IdentityServer endpoint: "IdentityServer4.Endpoints.CheckSessionEndpoint" for "/connect/checksession"
+19:07:38.534 [DBG] (VehicleTracker.Connector/VSHARF/5) Rendering check session result
+19:09:26.655 [INF] (VehicleTracker.Connector/VSHARF/1) You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+19:09:27.046 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for authentication
+19:09:27.251 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for sign-in
+19:09:27.315 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for sign-out
+19:09:27.317 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for challenge
+19:09:27.318 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for forbid
+19:09:47.912 [INF] (VehicleTracker.Connector/VSHARF/1) You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+19:09:49.510 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for authentication
+19:09:51.265 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for sign-in
+19:09:51.644 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for sign-out
+19:09:51.917 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for challenge
+19:09:52.138 [DBG] (VehicleTracker.Connector/VSHARF/1) Using "idsrv" as default scheme for forbid

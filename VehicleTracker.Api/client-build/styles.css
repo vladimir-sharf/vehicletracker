@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+.qZ5ipW8gdQOwlMVmVgnSH select {
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 25px;
+    padding-left: 5px;
+}._3hXSRevNUJO07Z3wQyaa1V {
+}._1Has5rse92gT2bzgkV86iB {
+}._31UwTDo4WKJK9gomhvpNri {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+}
+
+._2_-OzbkJFb83KbUZk-WuKy {
+    background: #eef;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div > div {
+    padding: 5px 15px;
+    line-height: 40px;
+    margin-left: 1px;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div > div:first-child {
+    flex-basis: 30%;
+    border-radius: 5px 0 0 5px;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div > div:nth-child(2) {
+    flex-basis: 25%;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div > div:nth-child(3) {
+    flex-basis: 10%;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div > div:nth-child(4) {
+    flex-basis: 13%;
+    min-width: 120px;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div > div:nth-child(5) {
+    flex-basis: 10%;
+}
+
+._31UwTDo4WKJK9gomhvpNri > div > div:nth-child(6) {
+    flex-basis: 12%;
+    border-radius: 0 5px 5px 0;
+}
+
+._31UwTDo4WKJK9gomhvpNri > .SxDFf0TCr3Dzh7SOV9Teb > div {
+    line-height: 25px;
+    font-weight: bold;
+    background: #b0aa90;
+    color:white;
+}
+
+._2bSm0qtGfaG2rZRR2tKnCt {
+    width: 100%;
+}
+
+._1GREn0kT5RpR940bvPKNig {
+    display: inline-block;
+    margin: auto 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: gray;
+}
+
+._2CdF4mBdpeWA-ECIvGZUI0 {
+    background: #0f4;
+}
+
+._3hA1nWbTiqIlfOGMQja6VM {
+    background: #f04;
+}
+
+._1GREn0kT5RpR940bvPKNig + div {
+    display: inline-block;
+    margin: auto 0 auto 10px;
+}._32QbzMliF4ebSVXsKhGM3r {
+    max-width: 1000px;
+    margin-left: 20px;    
+}
+
+._3TZd7Y_tS1TNkyV7k5kfR2 {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: space-between;
+}
+/*# sourceMappingURL=styles.css.map*/
