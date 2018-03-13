@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Autofac.Extensions.DependencyInjection;
 using Serilog;
 
 namespace VehicleTracker.TrackerService
@@ -13,7 +14,8 @@ namespace VehicleTracker.TrackerService
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseSerilog((hostingContext, loggerConfiguration) =>
+                .ConfigureServices(services => services.AddAutofac())
+                .UseSerilog((hostingContext, loggerConfiguration) => 
                     loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration))
                 .UseStartup<Startup>()
                 .Build();

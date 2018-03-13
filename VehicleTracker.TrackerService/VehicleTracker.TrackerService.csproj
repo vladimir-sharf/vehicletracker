@@ -2,17 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <DockerComposeProjectPath>..\VehicleTracker\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <AssemblyName>VehicleTracker.TrackerService</AssemblyName>
+    <RootNamespace>VehicleTracker.TrackerService</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Access\CachingVehicleConnector.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="NLog.config" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
-    <PackageReference Include="System.Reactive.Core" Version="3.1.1" />
-    <PackageReference Include="System.Reactive.Linq" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.2" />
     <PackageReference Include="Serilog.Enrichers.Thread" Version="3.0.0" />

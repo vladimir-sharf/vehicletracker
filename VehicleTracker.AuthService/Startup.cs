@@ -32,7 +32,10 @@ namespace VehicleTracker.AuthService
             Configuration.GetSection("JsClient").Bind(jsClientOptions);
             var domain = jsClientOptions.Domain;
 
-            services.AddIdentityServer()
+            services.AddIdentityServer(options =>
+            {
+                options.IssuerUri = "http://vehicletracker.authservice";
+            })
                 .AddInMemoryClients(new List<Client>() {
                     new Client
                     {

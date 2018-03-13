@@ -1,11 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Autofac;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using VehicleTracker.ServiceBus;
-using VehicleTracker.TrackerService.Configuration;
-using VehicleTracker.TrackerService.Services;
-using VehicleTracker.TrackerService.Storage;
+using Autofac.Core;
 
 namespace VehicleTracker.TrackerService
 {
@@ -22,16 +21,44 @@ namespace VehicleTracker.TrackerService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddOptions();
-            services.AddSingleton<IServiceBus, RabbitMqBus>();
-            services.AddSingleton<IVehicleRepository, VehicleRepositoryInMemory>();
-            services.AddSingleton<VehicleService>();
-            services.Configure<TrackingOptions>(Configuration);
+            services.AddMemoryCache();
             services.Configure<RabbitMqOptions>(Configuration.GetSection("RabbitMq"));
         }
 
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            builder.RegisterType<VehicleService>()
+                .AsSelf()
+                .SingleInstance();
+
+            builder.RegisterType<CachingVehicleService>()
+                .AsSelf()
+                .As<IVehicleService>()
+                .SingleInstance()
+                .WithParameter(new ResolvedParameter(
+                        (pi, ctx) => pi.ParameterType == typeof(IVehicleService),
+                        (pi, ctx) => ctx.Resolve<VehicleService>()
+                    ));
+
+            builder.RegisterType<VehicleConnectorFake>()
+                .As<IVehicleConnector>()
+                .SingleInstance();
+
+            builder.RegisterType<RabbitMqBus>()
+                .As<IServiceBus>()
+                .SingleInstance();
+
+            builder.RegisterType<VehicleFakeCache>()
+                .AsSelf()
+                .SingleInstance();
+
+            builder.Register(ctx => new VehicleFake(0.5d, 0.2d, 0, 5))
+                .AsSelf()
+                .InstancePerDependency();
+        }
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBus bus, VehicleService vehicleService)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBus serviceBus, IVehicleService vehicleService)
         {
             if (env.IsDevelopment())
             {
@@ -39,11 +66,8 @@ namespace VehicleTracker.TrackerService
             }
 
             app.UseMvc();
-            lifetime.ApplicationStarted.Register(() =>
-            {
-                vehicleService.StartJob();
-                bus.SubscribeEvents(vehicleService);
-            });
+
+            lifetime.ApplicationStarted.Register(() => serviceBus.SubscribeEvents(vehicleService));
         }
     }
 }

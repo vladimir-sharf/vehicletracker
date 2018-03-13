@@ -1,0 +1,458 @@
+00:04:16.623 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+00:04:16.708 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+00:04:16.727 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+00:04:23.412 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+00:04:23.593 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+00:04:23.606 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 19:04:18
+00:04:23.635 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 19:04:22
+00:04:23.637 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 19:04:21
+00:04:23.651 [INF] (VehicleTracker.Api/VSHARF/19) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 19:04:21
+00:04:23.651 [INF] (VehicleTracker.Api/VSHARF/19) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 19:04:22
+00:04:23.674 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 19:04:19
+00:04:23.675 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 19:04:21
+00:04:23.699 [INF] (VehicleTracker.Api/VSHARF/13) Connection 5b172696-bd7b-44ee-92b4-a9bf16dfe860 established to Vehicle hub from ::1
+00:04:28.791 [INF] (VehicleTracker.Api/VSHARF/14) Connection 5b172696-bd7b-44ee-92b4-a9bf16dfe860 disconnected
+00:04:31.339 [INF] (VehicleTracker.Api/VSHARF/13) Request vehicles CustomerId=All, Status=All
+00:04:31.523 [INF] (VehicleTracker.Api/VSHARF/14) Connection 4bebf967-1bf9-4062-acc9-2f2c8d5bfc45 established to Vehicle hub from ::1
+00:04:32.125 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+00:04:32.130 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 19:04:18
+00:04:32.157 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 19:04:28
+00:04:32.159 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 19:04:31
+00:04:32.172 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 19:04:21
+00:04:32.175 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 19:04:29
+00:04:32.186 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 19:04:28
+00:04:32.191 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 19:04:31
+00:04:33.867 [INF] (VehicleTracker.Api/VSHARF/14) Connection 4bebf967-1bf9-4062-acc9-2f2c8d5bfc45 disconnected
+00:04:33.868 [INF] (VehicleTracker.Api/VSHARF/13) Request vehicles CustomerId=All, Status=All
+00:04:34.123 [INF] (VehicleTracker.Api/VSHARF/14) Subscribed on 7 vehicles
+00:04:34.130 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 19:04:32
+00:04:34.159 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 19:04:28
+00:04:34.163 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 19:04:31
+00:04:34.288 [INF] (VehicleTracker.Api/VSHARF/19) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 19:04:32
+00:04:34.290 [INF] (VehicleTracker.Api/VSHARF/19) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 19:04:29
+00:04:34.298 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 19:04:28
+00:04:34.301 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 19:04:31
+00:04:42.022 [INF] (VehicleTracker.Api/VSHARF/19) Request vehicles CustomerId=All, Status=All
+00:04:42.136 [INF] (VehicleTracker.Api/VSHARF/27) Connection 0d0749e3-0d88-4256-8d82-f29573a80d63 established to Vehicle hub from ::1
+00:04:42.161 [INF] (VehicleTracker.Api/VSHARF/9) Connection ace00791-8297-4b3e-88b5-b5d0b4915c94 established to Vehicle hub from ::1
+00:04:42.211 [INF] (VehicleTracker.Api/VSHARF/13) Subscribed on 7 vehicles
+00:04:42.214 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 19:04:40
+00:04:42.239 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 19:04:39
+00:04:42.241 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 19:04:31
+00:04:42.258 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 19:04:40
+00:04:42.259 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 19:04:38
+00:04:42.277 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 19:04:40
+00:04:42.284 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 19:04:41
+00:04:42.296 [INF] (VehicleTracker.Api/VSHARF/13) Request vehicles CustomerId=All, Status=All
+00:04:42.356 [INF] (VehicleTracker.Api/VSHARF/14) Subscribed on 7 vehicles
+00:04:42.366 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 19:04:40
+00:04:42.389 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 19:04:39
+00:04:42.391 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 19:04:31
+00:04:42.416 [INF] (VehicleTracker.Api/VSHARF/28) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 19:04:40
+00:04:42.421 [INF] (VehicleTracker.Api/VSHARF/28) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 19:04:38
+00:04:42.448 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 19:04:40
+00:04:42.451 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 19:04:41
+00:08:18.128 [INF] (VehicleTracker.Api/VSHARF/9) Connection 0d0749e3-0d88-4256-8d82-f29573a80d63 disconnected
+00:08:18.129 [INF] (VehicleTracker.Api/VSHARF/26) Connection ace00791-8297-4b3e-88b5-b5d0b4915c94 disconnected
+15:28:05.928 [INF] (VehicleTracker.Api/VSHARF/10) RabbitMq message listener created
+15:28:06.141 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:28:06.167 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:33:48.365 [INF] (VehicleTracker.Api/VSHARF/10) RabbitMq message listener created
+15:33:48.444 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:33:48.448 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:35:40.993 [INF] (VehicleTracker.Api/VSHARF/11) RabbitMq message listener created
+15:35:41.104 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:35:41.117 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:36:52.569 [INF] (VehicleTracker.Api/VSHARF/10) RabbitMq message listener created
+15:36:52.902 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:36:52.922 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:41:48.513 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+15:41:48.814 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:41:48.832 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:42:26.366 [ERR] (VehicleTracker.Api/VSHARF/11) An unhandled exception has occurred while executing the request
+Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = CustomerService (ReflectionActivator), Services = [VehicleTracker.Api.Services.CustomerService], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = Shared, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.CustomerService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.CustomerService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+15:42:26.366 [ERR] (VehicleTracker.Api/VSHARF/9) An unhandled exception has occurred while executing the request
+Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = VehicleService (ReflectionActivator), Services = [VehicleTracker.Api.Services.VehicleService], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = Shared, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.VehicleService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter], VehicleTracker.Api.Services.CustomerService, VehicleTracker.ServiceBus.IServiceBus, VehicleTracker.Api.Storage.StatusCache.StatusCache, Microsoft.Extensions.Logging.ILogger`1[VehicleTracker.Api.Services.VehicleService])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.VehicleService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter], VehicleTracker.Api.Services.CustomerService, VehicleTracker.ServiceBus.IServiceBus, VehicleTracker.Api.Storage.StatusCache.StatusCache, Microsoft.Extensions.Logging.ILogger`1[VehicleTracker.Api.Services.VehicleService])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+15:42:26.728 [ERR] (VehicleTracker.Api/VSHARF/17) An unhandled exception has occurred while executing the request
+Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = VehicleService (ReflectionActivator), Services = [VehicleTracker.Api.Services.VehicleService], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = Shared, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.VehicleService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter], VehicleTracker.Api.Services.CustomerService, VehicleTracker.ServiceBus.IServiceBus, VehicleTracker.Api.Storage.StatusCache.StatusCache, Microsoft.Extensions.Logging.ILogger`1[VehicleTracker.Api.Services.VehicleService])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.VehicleService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter], VehicleTracker.Api.Services.CustomerService, VehicleTracker.ServiceBus.IServiceBus, VehicleTracker.Api.Storage.StatusCache.StatusCache, Microsoft.Extensions.Logging.ILogger`1[VehicleTracker.Api.Services.VehicleService])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+15:42:26.729 [ERR] (VehicleTracker.Api/VSHARF/10) An unhandled exception has occurred while executing the request
+Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = CustomerService (ReflectionActivator), Services = [VehicleTracker.Api.Services.CustomerService], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = Shared, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.CustomerService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.CustomerService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+15:42:27.142 [ERR] (VehicleTracker.Api/VSHARF/11) An unhandled exception has occurred while executing the request
+Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = VehicleService (ReflectionActivator), Services = [VehicleTracker.Api.Services.VehicleService], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = Shared, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.VehicleService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter], VehicleTracker.Api.Services.CustomerService, VehicleTracker.ServiceBus.IServiceBus, VehicleTracker.Api.Storage.StatusCache.StatusCache, Microsoft.Extensions.Logging.ILogger`1[VehicleTracker.Api.Services.VehicleService])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.VehicleService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.String,VehicleTracker.Api.Storage.Rest.Model.Vehicle,VehicleTracker.Api.Model.VehicleFilter], VehicleTracker.Api.Services.CustomerService, VehicleTracker.ServiceBus.IServiceBus, VehicleTracker.Api.Storage.StatusCache.StatusCache, Microsoft.Extensions.Logging.ILogger`1[VehicleTracker.Api.Services.VehicleService])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+15:42:27.352 [ERR] (VehicleTracker.Api/VSHARF/10) An unhandled exception has occurred while executing the request
+Autofac.Core.DependencyResolutionException: An error occurred during the activation of a particular registration. See the inner exception for details. Registration: Activator = CustomerService (ReflectionActivator), Services = [VehicleTracker.Api.Services.CustomerService], Lifetime = Autofac.Core.Lifetime.CurrentScopeLifetime, Sharing = Shared, Ownership = OwnedByLifetimeScope ---> None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.CustomerService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter])'. (See inner exception for details.) ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'VehicleTracker.Api.Services.CustomerService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter] repository' of constructor 'Void .ctor(VehicleTracker.Api.Storage.IRepository`3[System.Guid,VehicleTracker.Api.Storage.Rest.Model.Customer,VehicleTracker.Api.Model.CustomerFilter])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+15:42:27.436 [INF] (VehicleTracker.Api/VSHARF/17) Connection c8922570-d0a9-4673-88d4-e771743788d8 established to Vehicle hub from ::1
+15:44:03.105 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+15:44:03.327 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:44:03.336 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:44:07.570 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+15:44:07.764 [INF] (VehicleTracker.Api/VSHARF/9) Connection 4c3b9612-3e26-4019-abcb-29e7aabf2b80 established to Vehicle hub from ::1
+15:44:09.409 [INF] (VehicleTracker.Api/VSHARF/14) Subscribed on 7 vehicles
+15:44:09.416 [WRN] (VehicleTracker.Api/VSHARF/14) Status for vehicle VLUR4X20009048066 not in cache
+15:44:09.537 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 not in cache
+15:44:09.538 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 not in cache
+15:44:09.556 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387765 not in cache
+15:44:09.557 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387949 not in cache
+15:44:09.569 [WRN] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 not in cache
+15:44:09.570 [WRN] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 not in cache
+15:52:59.879 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+15:53:00.067 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:53:00.085 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+15:53:04.109 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+15:53:04.305 [INF] (VehicleTracker.Api/VSHARF/9) Connection 7199c795-a518-461c-b665-fed463bebf9f established to Vehicle hub from ::1
+15:53:05.007 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+15:53:05.019 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 not in cache
+15:53:05.038 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 not in cache
+15:53:05.039 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 not in cache
+15:53:05.054 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387765 not in cache
+15:53:05.055 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387949 not in cache
+15:53:05.063 [WRN] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005388011 not in cache
+15:53:05.066 [WRN] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005399401 not in cache
+15:53:16.521 [INF] (VehicleTracker.Api/VSHARF/9) Connection 7199c795-a518-461c-b665-fed463bebf9f disconnected
+15:53:16.763 [INF] (VehicleTracker.Api/VSHARF/13) Request vehicles CustomerId=All, Status=All
+15:53:16.908 [INF] (VehicleTracker.Api/VSHARF/17) Connection 28c3ea81-b954-4055-b86f-24f3ef4f780c established to Vehicle hub from ::1
+15:53:16.973 [INF] (VehicleTracker.Api/VSHARF/13) Subscribed on 7 vehicles
+15:53:16.973 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-13 10:53:14
+15:53:17.011 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-13 10:53:14
+15:53:17.013 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-13 10:53:15
+15:53:17.034 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-13 10:53:16
+15:53:17.041 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-13 10:53:15
+15:53:17.053 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-13 10:53:06
+15:53:17.057 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-13 10:53:05
+15:53:19.351 [INF] (VehicleTracker.Api/VSHARF/14) Connection 28c3ea81-b954-4055-b86f-24f3ef4f780c disconnected
+15:53:19.356 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+15:53:19.415 [INF] (VehicleTracker.Api/VSHARF/9) Connection 9ef427bc-3b19-4fa2-aa29-5ea50cf3adfe established to Vehicle hub from ::1
+15:53:19.656 [INF] (VehicleTracker.Api/VSHARF/13) Subscribed on 7 vehicles
+15:53:19.660 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-13 10:53:14
+15:53:19.694 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-13 10:53:14
+15:53:19.695 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-13 10:53:15
+15:53:19.710 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-13 10:53:16
+15:53:19.712 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-13 10:53:15
+15:53:19.728 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-13 10:53:17
+15:53:19.731 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-13 10:53:17
+15:53:20.266 [INF] (VehicleTracker.Api/VSHARF/14) Connection 9ef427bc-3b19-4fa2-aa29-5ea50cf3adfe disconnected
+15:53:29.676 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+15:53:29.808 [INF] (VehicleTracker.Api/VSHARF/26) Connection 00aaad78-2255-41a0-a101-a5a7aa252638 established to Vehicle hub from ::1
+15:53:29.819 [INF] (VehicleTracker.Api/VSHARF/26) Connection 84d46284-f0ee-4cef-89b2-b7547766f0b7 established to Vehicle hub from ::1
+15:53:29.831 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+15:53:29.835 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-13 10:53:27
+15:53:29.869 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-13 10:53:25
+15:53:29.870 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-13 10:53:24
+15:53:29.888 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-13 10:53:24
+15:53:29.895 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:29.919 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:29.921 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:29.939 [INF] (VehicleTracker.Api/VSHARF/17) Request vehicles CustomerId=All, Status=All
+15:53:30.060 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+15:53:30.065 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-13 10:53:27
+15:53:30.090 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-13 10:53:25
+15:53:30.100 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-13 10:53:24
+15:53:30.157 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-13 10:53:24
+15:53:30.163 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:30.261 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:30.263 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:32.826 [INF] (VehicleTracker.Api/VSHARF/17) Connection 84d46284-f0ee-4cef-89b2-b7547766f0b7 disconnected
+15:53:32.839 [INF] (VehicleTracker.Api/VSHARF/28) Request vehicles CustomerId=fa4ac787-5657-4479-a51f-074a7d9f67ac, Status=All
+15:53:32.904 [INF] (VehicleTracker.Api/VSHARF/13) Connection 562fea4d-a831-43f0-a14f-3f5c1f21c8bf established to Vehicle hub from ::1
+15:53:32.936 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 2 vehicles
+15:53:32.941 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:32.981 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:35.512 [INF] (VehicleTracker.Api/VSHARF/27) Connection 562fea4d-a831-43f0-a14f-3f5c1f21c8bf disconnected
+15:53:35.512 [INF] (VehicleTracker.Api/VSHARF/17) Request vehicles CustomerId=All, Status=All
+15:53:35.629 [INF] (VehicleTracker.Api/VSHARF/25) Connection eb6298ba-76ab-4f1e-9f2f-bfc1dae984b3 established to Vehicle hub from ::1
+15:53:35.694 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+15:53:35.706 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-13 10:53:27
+15:53:35.721 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-13 10:53:25
+15:53:35.722 [INF] (VehicleTracker.Api/VSHARF/14) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-13 10:53:24
+15:53:35.735 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-13 10:53:24
+15:53:35.737 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-13 10:53:34
+15:53:35.749 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-13 10:53:28
+15:53:35.751 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-13 10:53:34

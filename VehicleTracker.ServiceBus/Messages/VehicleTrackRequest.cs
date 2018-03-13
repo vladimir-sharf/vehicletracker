@@ -11,6 +11,6 @@ namespace VehicleTracker.ServiceBus.Messages
         }
 
         public string Id { get; }
-        public DateTime TimeUtc { get; }
+        public DateTime TimeUtc { get; set; }
     }
 }

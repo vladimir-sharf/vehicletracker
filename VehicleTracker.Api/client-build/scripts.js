@@ -32076,16 +32076,17 @@ var _clock2 = _interopRequireDefault(_clock);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var config = {
-  authority: "http://localhost:8092",
-  client_id: "js",
-  redirect_uri: "http://localhost:8090/callback",
+  authority: authParams.JsAuthority,
+  client_id: authParams.ClientId,
+  redirect_uri: authParams.RedirectUri,
   response_type: "id_token token",
-  scope: "openid profile VehicleTracker.Api",
-  post_logout_redirect_uri: "http://localhost:8090"
+  scope: 'openid profile ' + authParams.Scope,
+  post_logout_redirect_uri: authParams.PostLogoutRedirectUri,
+  userStore: new _oidcClient.WebStorageStateStore({ store: window.localStorage })
 };
 var mgr = new _oidcClient.UserManager(config);
 var http = new _http2.default(mgr);
-var api = new _api2.default(http, mgr);
+var api = new _api2.default(http);
 var clock = new _clock2.default();
 var rootStore = new _rootStore2.default(api, mgr, clock);
 
@@ -53790,6 +53791,8 @@ var _isomorphicFetch = __webpack_require__(541);
 
 var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 
+var _signalr = __webpack_require__(544);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
@@ -53832,78 +53835,91 @@ var Http = function () {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.next = 2;
+                _context.t0 = this.userManager;
+
+                if (!_context.t0) {
+                  _context.next = 5;
+                  break;
+                }
+
+                _context.next = 4;
                 return this.userManager.getUser();
 
-              case 2:
-                user = _context.sent;
+              case 4:
+                _context.t0 = _context.sent;
+
+              case 5:
+                user = _context.t0;
                 params = {
                   method: method,
                   credentials: 'same-origin',
                   headers: {
-                    'Content-Type': 'application/json; charset=UTF-8',
-                    'Authorization': 'Bearer ' + user.access_token
+                    'Content-Type': 'application/json; charset=UTF-8'
                   }
                 };
 
 
+                if (user) {
+                  params.headers['Authorization'] = 'Bearer ' + user.access_token;
+                }
+
                 if (body) params.body = JSON.stringify(body);
 
                 response = void 0;
-                _context.prev = 6;
-                _context.next = 9;
+                _context.prev = 10;
+                _context.next = 13;
                 return (0, _isomorphicFetch2.default)(url, params);
 
-              case 9:
+              case 13:
                 response = _context.sent;
-                _context.next = 17;
+                _context.next = 21;
                 break;
 
-              case 12:
-                _context.prev = 12;
-                _context.t0 = _context['catch'](6);
+              case 16:
+                _context.prev = 16;
+                _context.t1 = _context['catch'](10);
 
-                if (!(_context.t0.name === 'TypeMismatchError')) {
-                  _context.next = 16;
+                if (!(_context.t1.name === 'TypeMismatchError')) {
+                  _context.next = 20;
                   break;
                 }
 
                 throw { edgeBug: true };
 
-              case 16:
-                throw _context.t0;
+              case 20:
+                throw _context.t1;
 
-              case 17:
+              case 21:
                 if (!(response.status == 401)) {
-                  _context.next = 19;
+                  _context.next = 23;
                   break;
                 }
 
                 return _context.abrupt('return', this.userManager.signinRedirect());
 
-              case 19:
-                _context.next = 21;
+              case 23:
+                _context.next = 25;
                 return response.json();
 
-              case 21:
+              case 25:
                 json = _context.sent;
 
                 if (!response.ok) {
-                  _context.next = 24;
+                  _context.next = 28;
                   break;
                 }
 
                 return _context.abrupt('return', json);
 
-              case 24:
+              case 28:
                 throw { status: response.status, json: json };
 
-              case 25:
+              case 29:
               case 'end':
                 return _context.stop();
             }
           }
-        }, _callee, this, [[6, 12]]);
+        }, _callee, this, [[10, 16]]);
       }));
 
       function _request(_x, _x2, _x3) {
@@ -53911,6 +53927,40 @@ var Http = function () {
       }
 
       return _request;
+    }()
+  }, {
+    key: 'subscribeHub',
+    value: function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(url) {
+        var user;
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return this.userManager.getUser();
+
+              case 2:
+                user = _context2.sent;
+                return _context2.abrupt('return', new _signalr.HubConnection(url, {
+                  accessTokenFactory: function accessTokenFactory() {
+                    return user.access_token;
+                  }
+                }));
+
+              case 4:
+              case 'end':
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function subscribeHub(_x4) {
+        return _ref2.apply(this, arguments);
+      }
+
+      return subscribeHub;
     }()
   }]);
 
@@ -54408,22 +54458,18 @@ module.exports = self.fetch.bind(self);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _signalr = __webpack_require__(544);
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Api = function () {
-  function Api(http, userManager) {
+  function Api(http) {
     _classCallCheck(this, Api);
 
     this.http = http;
-    this.userManager = userManager;
   }
 
   _createClass(Api, [{
@@ -54472,38 +54518,9 @@ var Api = function () {
     }()
   }, {
     key: 'subscribeVehicles',
-    value: function () {
-      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-        var user;
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                _context2.next = 2;
-                return this.userManager.getUser();
-
-              case 2:
-                user = _context2.sent;
-                return _context2.abrupt('return', new _signalr.HubConnection('/vehicleHub', {
-                  accessTokenFactory: function accessTokenFactory() {
-                    return user.access_token;
-                  }
-                }));
-
-              case 4:
-              case 'end':
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this);
-      }));
-
-      function subscribeVehicles() {
-        return _ref2.apply(this, arguments);
-      }
-
-      return subscribeVehicles;
-    }()
+    value: function subscribeVehicles() {
+      return this.http.subscribeHub('/vehicleHub');
+    }
   }]);
 
   return Api;
@@ -57606,8 +57623,9 @@ var VehicleStore = (_class = function () {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                this.load();
                 if (this.connection) this.connection.stop();
+
+                this.load();
 
                 _context.next = 4;
                 return this.api.subscribeVehicles();

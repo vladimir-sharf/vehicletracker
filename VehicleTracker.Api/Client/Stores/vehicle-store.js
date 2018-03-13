@@ -30,9 +30,10 @@ export default class VehicleStore {
 
   @action
   async poll() {
-    this.load();
     if (this.connection)
       this.connection.stop();
+
+    this.load();
 
     this.connection = await this.api.subscribeVehicles();
     runInAction(() => {

@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-fetch';
+import { HubConnection } from '@aspnet/signalr';
 
 export default class Http {
   constructor(userManager) {
@@ -22,16 +23,19 @@ export default class Http {
   }
 
   async _request(url, method, body) {
-    const user = await this.userManager.getUser();
+    const user = this.userManager && await this.userManager.getUser();
 
     const params = {
       method: method,
       credentials: 'same-origin',
       headers: {
         'Content-Type': 'application/json; charset=UTF-8',
-        'Authorization': `Bearer ${user.access_token}`
       }
     };
+
+    if (user) {
+      params.headers['Authorization'] = `Bearer ${user.access_token}`;
+    }
 
     if (body)
       params.body = JSON.stringify(body);
@@ -54,5 +58,12 @@ export default class Http {
       return json;
 
     throw { status: response.status, json: json };
+  }
+
+  async subscribeHub(url) {
+    var user = await this.userManager.getUser();
+    return new HubConnection(url, {
+      accessTokenFactory: () => user.access_token
+    });
   }
 }

@@ -7,3 +7,1191 @@
 19:09:53.340 [INF] (VehicleTracker.Connector/VSHARF/8) RabbitMq message listener created
 19:09:53.431 [INF] (VehicleTracker.Connector/VSHARF/8) Subscribed on message channel vehiclestatus, PublishSubscribe
 19:09:53.449 [INF] (VehicleTracker.Connector/VSHARF/8) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:18:03.960 [INF] (VehicleTracker.Connector/VSHARF/9) RabbitMq message listener created
+19:18:04.073 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:18:04.082 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:18:14.896 [INF] (VehicleTracker.Connector/VSHARF/12) Request vehicles CustomerId=All, Status=All
+19:18:15.438 [INF] (VehicleTracker.Connector/VSHARF/15) Subscribed on 7 vehicles
+19:18:15.440 [INF] (VehicleTracker.Connector/VSHARF/15) Status for vehicle VLUR4X20009048066 not in cache
+19:18:15.510 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle VLUR4X20009093588 not in cache
+19:18:15.511 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle YS2R4X20005387055 not in cache
+19:18:15.517 [INF] (VehicleTracker.Connector/VSHARF/8) Status for vehicle YS2R4X20005387765 not in cache
+19:18:15.519 [INF] (VehicleTracker.Connector/VSHARF/8) Status for vehicle YS2R4X20005387949 not in cache
+19:18:15.523 [INF] (VehicleTracker.Connector/VSHARF/12) Status for vehicle YS2R4X20005388011 not in cache
+19:18:15.524 [INF] (VehicleTracker.Connector/VSHARF/12) Status for vehicle YS2R4X20005399401 not in cache
+19:18:23.769 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387949: Disconnected
+19:18:23.806 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009093588: Disconnected
+19:18:24.871 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:18:25.846 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005388011: Connected
+19:18:26.757 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005399401: Connected
+19:18:26.865 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:18:26.873 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387765: Disconnected
+19:18:33.303 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387949: Connected
+19:18:33.347 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005399401: Disconnected
+19:18:33.432 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387765: Connected
+19:18:34.390 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005388011: Connected
+19:18:35.409 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:18:35.448 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:18:36.415 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009093588: Disconnected
+19:18:43.321 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009093588: Connected
+19:18:43.440 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:18:45.349 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005388011: Disconnected
+19:18:46.319 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005399401: Disconnected
+19:18:47.276 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387949: Connected
+19:18:47.381 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:18:47.415 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387765: Connected
+19:18:53.424 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005388011: Connected
+19:18:53.477 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387765: Disconnected
+19:18:54.364 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005399401: Disconnected
+19:18:54.448 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009048066: Connected
+19:18:54.507 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:18:55.287 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387949: Connected
+19:18:57.396 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009093588: Disconnected
+19:19:03.349 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009048066: Connected
+19:19:04.306 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle VLUR4X20009093588: Disconnected
+19:19:04.392 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387765: Disconnected
+19:19:05.277 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387949: Connected
+19:19:05.314 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005399401: Disconnected
+19:19:05.412 [INF] (VehicleTracker.Connector/VSHARF/14) Cache update for vehicle YS2R4X20005387055: Connected
+19:26:52.196 [INF] (VehicleTracker.Connector/VSHARF/9) RabbitMq message listener created
+19:26:52.391 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:26:52.409 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:26:53.507 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:26:53
+19:26:53.510 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387949: Connected
+19:26:54.323 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:26:54
+19:26:54.323 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005399401: Connected
+19:26:55.553 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:26:55
+19:26:55.553 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009093588: Connected
+19:26:55.555 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005388011 was Disconnected at 2018-03-12 14:26:55
+19:26:55.556 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005388011: Disconnected
+19:26:55.561 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387765 was Disconnected at 2018-03-12 14:26:55
+19:26:55.562 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387765: Disconnected
+19:26:55.570 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387055 was Disconnected at 2018-03-12 14:26:55
+19:26:55.570 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:26:57.509 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:26:57
+19:26:57.509 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009048066: Connected
+19:27:00.974 [INF] (VehicleTracker.Connector/VSHARF/9) Request vehicles CustomerId=All, Status=All
+19:27:01.665 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on 7 vehicles
+19:27:01.669 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:26:57
+19:27:01.691 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:26:55
+19:27:01.691 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:26:55
+19:27:01.700 [INF] (VehicleTracker.Connector/VSHARF/17) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 14:26:55
+19:27:01.700 [INF] (VehicleTracker.Connector/VSHARF/17) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:26:53
+19:27:01.707 [INF] (VehicleTracker.Connector/VSHARF/14) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 14:26:55
+19:27:01.709 [INF] (VehicleTracker.Connector/VSHARF/14) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:26:54
+19:27:03.390 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:27:03
+19:27:03.393 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009048066: Connected
+19:27:04.320 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:27:04
+19:27:04.320 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005399401: Connected
+19:27:06.298 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:27:06
+19:27:06.299 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387949: Connected
+19:27:06.353 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:27:06
+19:27:06.353 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009093588: Connected
+19:27:06.401 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005388011 was Disconnected at 2018-03-12 14:27:06
+19:27:06.402 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005388011: Disconnected
+19:27:07.428 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387765 was Disconnected at 2018-03-12 14:27:07
+19:27:07.429 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387765: Disconnected
+19:27:07.478 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:27:07
+19:27:07.479 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387055: Connected
+19:27:14.285 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:27:14
+19:27:14.285 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387949: Connected
+19:27:14.371 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:27:14
+19:27:14.372 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009093588: Connected
+19:27:15.279 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:27:15
+19:27:15.279 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005399401: Connected
+19:27:15.428 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009048066 was Disconnected at 2018-03-12 14:27:15
+19:27:15.428 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:27:15.478 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:27:15
+19:27:15.478 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387055: Connected
+19:27:16.407 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005388011 was Disconnected at 2018-03-12 14:27:16
+19:27:16.407 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005388011: Disconnected
+19:27:16.445 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387765: Connected
+19:27:16.445 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:27:16
+19:27:23.292 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387949: Connected
+19:27:23.292 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:27:23
+19:27:23.404 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009048066 was Disconnected at 2018-03-12 14:27:23
+19:27:23.405 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:27:23.481 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387765: Connected
+19:27:23.481 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:27:23
+19:27:24.349 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:27:24
+19:27:24.349 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009093588: Connected
+19:27:24.385 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:27:24
+19:27:24.387 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005388011: Connected
+19:34:27.445 [INF] (VehicleTracker.Connector/VSHARF/9) RabbitMq message listener created
+19:34:27.590 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:34:27.603 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:34:29.179 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009048066 was Disconnected at 2018-03-12 14:34:29
+19:34:29.183 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:34:34.271 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:34:34
+19:34:34.271 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387949: Connected
+19:34:34.349 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:34:34
+19:34:34.349 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009093588: Connected
+19:34:34.436 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:34:34
+19:34:34.436 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387765: Connected
+19:34:34.719 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:34:34
+19:34:34.719 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005387055: Connected
+19:34:35.408 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009048066 was Disconnected at 2018-03-12 14:34:35
+19:34:35.408 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:34:36.309 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:34:36
+19:34:36.309 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005399401: Connected
+19:34:37.375 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:34:37
+19:34:37.375 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005388011: Connected
+19:34:40.085 [INF] (VehicleTracker.Connector/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:34:40.359 [INF] (VehicleTracker.Connector/VSHARF/9) Connection dea6123a-c3c7-4c26-adaf-6b33d17f5ab8 established to Vehicle hub from ::1
+19:34:40.904 [INF] (VehicleTracker.Connector/VSHARF/10) Subscribed on 7 vehicles
+19:34:40.906 [INF] (VehicleTracker.Connector/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:34:35
+19:34:40.939 [INF] (VehicleTracker.Connector/VSHARF/17) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:34:34
+19:34:40.939 [INF] (VehicleTracker.Connector/VSHARF/17) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:34:34
+19:34:40.946 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:34:34
+19:34:40.946 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:34:34
+19:34:40.952 [INF] (VehicleTracker.Connector/VSHARF/17) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:34:37
+19:34:40.952 [INF] (VehicleTracker.Connector/VSHARF/17) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:34:36
+19:34:43.311 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005399401 was Disconnected at 2018-03-12 14:34:43
+19:34:43.315 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005399401: Disconnected
+19:34:43.402 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:34:43
+19:34:43.402 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle YS2R4X20005388011: Connected
+19:34:43.450 [INF] (VehicleTracker.Connector/VSHARF/16) Cache update for vehicle VLUR4X20009048066: Connected
+19:34:43.450 [INF] (VehicleTracker.Connector/VSHARF/16) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:34:43
+19:35:01.927 [INF] (VehicleTracker.Connector/VSHARF/9) RabbitMq message listener created
+19:35:02.024 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:35:02.054 [INF] (VehicleTracker.Connector/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:35:03.532 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:35:03
+19:35:03.565 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:35:03.569 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:35:03
+19:35:03.569 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:35:04.483 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:35:04
+19:35:04.484 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:35:04.594 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:35:04
+19:35:04.595 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Connected
+19:35:05.489 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:35:05
+19:35:05.491 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:35:06.349 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:35:06
+19:35:06.350 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:35:06.530 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:35:06
+19:35:06.531 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:35:13.284 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:35:13
+19:35:13.289 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:35:13.343 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:35:13
+19:35:13.345 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:35:13.384 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:35:13
+19:35:13.385 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:35:16.420 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:35:16
+19:35:16.422 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:35:16.452 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:35:16
+19:35:16.453 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:35:17.334 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:35:17
+19:35:17.335 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:35:17.451 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Disconnected at 2018-03-12 14:35:17
+19:35:17.453 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:35:24.445 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:35:24
+19:35:24.447 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:35:24.515 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:35:24.518 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:35:24
+19:35:24.524 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:35:24
+19:35:24.526 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:35:25.354 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:35:25
+19:35:25.357 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:35:26.297 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:35:26
+19:35:26.299 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:35:26.329 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:35:26
+19:35:26.331 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:35:27.434 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Disconnected at 2018-03-12 14:35:27
+19:35:27.440 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:35:33.500 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:35:33
+19:35:33.501 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:35:33.545 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:35:33
+19:35:33.547 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:35:33.602 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:35:33.604 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:35:33
+19:35:34.749 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:35:34
+19:35:34.793 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Connected
+19:35:35.431 [INF] (VehicleTracker.Connector/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:35:35.728 [INF] (VehicleTracker.Connector/VSHARF/16) Connection 017dc543-0dd4-411e-a695-a1629bb250bd established to Vehicle hub from ::1
+19:35:35.822 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:35:35.824 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:35:35
+19:35:35.855 [INF] (VehicleTracker.Connector/VSHARF/10) Subscribed on 7 vehicles
+19:35:35.860 [INF] (VehicleTracker.Connector/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:35:24
+19:35:35.894 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:35:33
+19:35:35.897 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:35:34
+19:35:35.906 [INF] (VehicleTracker.Connector/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:35:35
+19:35:35.907 [INF] (VehicleTracker.Connector/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:35:26
+19:35:35.917 [INF] (VehicleTracker.Connector/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:35:33
+19:35:35.919 [INF] (VehicleTracker.Connector/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:35:33
+19:35:36.472 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:35:36
+19:35:36.473 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:35:36.635 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:35:36
+19:35:36.637 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:35:43.416 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Disconnected
+19:35:43.418 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Disconnected at 2018-03-12 14:35:43
+19:35:44.303 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:35:44.305 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:35:44
+19:35:44.525 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:35:44
+19:35:44.526 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Connected
+19:35:46.349 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Disconnected at 2018-03-12 14:35:46
+19:35:46.352 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Disconnected
+19:35:46.465 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:35:46
+19:35:46.467 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:35:46.508 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:35:46
+19:35:46.509 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:35:47.364 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:35:47
+19:35:47.367 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:35:52.153 [INF] (VehicleTracker.Connector/VSHARF/24) Request vehicles CustomerId=All, Status=All
+19:35:52.198 [INF] (VehicleTracker.Connector/VSHARF/18) Connection 017dc543-0dd4-411e-a695-a1629bb250bd disconnected
+19:35:52.249 [INF] (VehicleTracker.Connector/VSHARF/16) Connection 644467e2-c2bb-4029-8ee3-229533af8c46 established to Vehicle hub from ::1
+19:35:52.409 [INF] (VehicleTracker.Connector/VSHARF/13) Subscribed on 7 vehicles
+19:35:52.429 [INF] (VehicleTracker.Connector/VSHARF/13) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:35:46
+19:35:52.455 [INF] (VehicleTracker.Connector/VSHARF/13) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:35:47
+19:35:52.460 [INF] (VehicleTracker.Connector/VSHARF/13) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:35:44
+19:35:52.477 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:35:46
+19:35:52.481 [INF] (VehicleTracker.Connector/VSHARF/9) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 14:35:46
+19:35:52.500 [INF] (VehicleTracker.Connector/VSHARF/16) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 14:35:43
+19:35:52.502 [INF] (VehicleTracker.Connector/VSHARF/16) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:35:44
+19:35:53.359 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:35:53
+19:35:53.361 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:35:53.468 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:35:53
+19:35:53.468 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:35:54.338 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:35:54
+19:35:54.339 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:35:54.505 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:35:54
+19:35:54.509 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:35:55.586 [INF] (VehicleTracker.Connector/VSHARF/13) Connection 644467e2-c2bb-4029-8ee3-229533af8c46 disconnected
+19:35:56.396 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:35:56.401 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:35:56
+19:35:57.434 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Disconnected at 2018-03-12 14:35:57
+19:35:57.440 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Disconnected
+19:35:57.554 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Connected
+19:35:57.556 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:35:57
+19:36:04.428 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Disconnected
+19:36:04.429 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Disconnected at 2018-03-12 14:36:04
+19:36:06.349 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:36:06
+19:36:06.350 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:36:06.403 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:36:06
+19:36:06.404 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:36:07.275 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:36:07
+19:36:07.278 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:36:07.306 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:36:07
+19:36:07.307 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:36:07.366 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Disconnected at 2018-03-12 14:36:07
+19:36:07.367 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Disconnected
+19:36:07.446 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Disconnected at 2018-03-12 14:36:07
+19:36:07.447 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:36:13.336 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:36:13.343 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:36:13
+19:36:14.409 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:36:14.414 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:36:14
+19:36:14.426 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:36:14
+19:36:14.433 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:36:14.438 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:36:14
+19:36:14.438 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:36:15.436 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Disconnected at 2018-03-12 14:36:15
+19:36:15.441 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:36:16.275 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:36:16
+19:36:16.279 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:36:16.380 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:36:16
+19:36:16.383 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:36:24.341 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:36:24.343 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:36:24
+19:36:25.318 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Disconnected at 2018-03-12 14:36:25
+19:36:25.320 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Disconnected
+19:36:25.363 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Disconnected
+19:36:25.363 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Disconnected at 2018-03-12 14:36:25
+19:36:25.401 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:36:25.404 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:36:25
+19:36:26.396 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Disconnected at 2018-03-12 14:36:26
+19:36:26.397 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Disconnected
+19:36:27.313 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Disconnected at 2018-03-12 14:36:27
+19:36:27.314 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Disconnected
+19:36:27.336 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Disconnected at 2018-03-12 14:36:27
+19:36:27.340 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Disconnected
+19:36:35.290 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:36:35
+19:36:35.292 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:36:35.536 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009093588 was Connected at 2018-03-12 14:36:35
+19:36:35.538 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009093588: Connected
+19:36:36.501 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:36:36.503 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:36:36.505 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:36:36
+19:36:36.508 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:36:36
+19:36:36.524 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Disconnected
+19:36:36.525 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Disconnected at 2018-03-12 14:36:36
+19:36:36.564 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387055 was Connected at 2018-03-12 14:36:36
+19:36:36.566 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387055: Connected
+19:36:37.410 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Disconnected
+19:36:37.412 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Disconnected at 2018-03-12 14:36:37
+19:36:43.280 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387949: Connected
+19:36:43.282 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387949 was Connected at 2018-03-12 14:36:43
+19:36:43.346 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005388011: Connected
+19:36:43.350 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005388011 was Connected at 2018-03-12 14:36:43
+19:36:43.373 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: VLUR4X20009048066 was Connected at 2018-03-12 14:36:43
+19:36:43.374 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle VLUR4X20009048066: Connected
+19:36:46.301 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005399401 was Connected at 2018-03-12 14:36:46
+19:36:46.302 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005399401: Connected
+19:36:46.399 [INF] (VehicleTracker.Connector/VSHARF/15) Sending to clients: YS2R4X20005387765 was Connected at 2018-03-12 14:36:46
+19:36:46.400 [INF] (VehicleTracker.Connector/VSHARF/15) Cache update for vehicle YS2R4X20005387765: Connected
+19:38:36.576 [INF] (VehicleTracker.Api/VSHARF/11) RabbitMq message listener created
+19:38:37.120 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:38:37.130 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:39:05.754 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+19:39:06.041 [INF] (VehicleTracker.Api/VSHARF/9) Connection a0ba3b45-dcaa-479d-b2b0-463ab95666aa established to Vehicle hub from ::1
+19:39:06.043 [INF] (VehicleTracker.Api/VSHARF/17) Connection 088ee93a-a386-401a-ae5b-bcda16d73e59 established to Vehicle hub from ::1
+19:39:06.218 [INF] (VehicleTracker.Api/VSHARF/12) Subscribed on 7 vehicles
+19:39:06.223 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:39:04
+19:39:06.234 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:39:05
+19:39:06.235 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:38:56
+19:39:06.246 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:39:03
+19:39:06.247 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:39:05
+19:39:06.260 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:38:54
+19:39:06.261 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:38:57
+19:39:06.276 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+19:39:06.313 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+19:39:06.318 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:39:04
+19:39:06.331 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:39:05
+19:39:06.332 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:38:56
+19:39:06.345 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:39:03
+19:39:06.349 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:39:05
+19:39:06.360 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:38:54
+19:39:06.364 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:39:06
+19:39:50.462 [INF] (VehicleTracker.Api/VSHARF/31) Connection a0ba3b45-dcaa-479d-b2b0-463ab95666aa disconnected
+19:39:50.500 [INF] (VehicleTracker.Api/VSHARF/10) Connection 088ee93a-a386-401a-ae5b-bcda16d73e59 disconnected
+19:39:51.033 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:39:51.095 [INF] (VehicleTracker.Api/VSHARF/27) Connection bbf665dd-0305-425a-9a62-e464af7803d1 established to Vehicle hub from ::1
+19:39:51.474 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on 7 vehicles
+19:39:51.478 [INF] (VehicleTracker.Api/VSHARF/11) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:39:44
+19:39:51.489 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:39:43
+19:39:51.490 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:39:47
+19:39:51.498 [INF] (VehicleTracker.Api/VSHARF/11) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:39:45
+19:39:51.499 [INF] (VehicleTracker.Api/VSHARF/11) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:39:43
+19:39:51.506 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:39:47
+19:39:51.507 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:39:47
+19:41:36.797 [INF] (VehicleTracker.Api/VSHARF/27) Request vehicles CustomerId=All, Status=All
+19:41:36.858 [INF] (VehicleTracker.Api/VSHARF/29) Connection f504709a-e4fb-4775-85c5-bb2fa12790e1 established to Vehicle hub from ::1
+19:41:36.875 [INF] (VehicleTracker.Api/VSHARF/29) Connection 85a0aa4b-5436-4592-9edb-d77c97bc6e59 established to Vehicle hub from ::1
+19:41:36.888 [INF] (VehicleTracker.Api/VSHARF/17) Subscribed on 7 vehicles
+19:41:36.894 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:41:34
+19:41:36.906 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:41:33
+19:41:36.907 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:41:34
+19:41:36.914 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:41:35
+19:41:36.916 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 14:41:36
+19:41:36.924 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:41:35
+19:41:36.926 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:41:34
+19:41:36.934 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:41:36.977 [INF] (VehicleTracker.Api/VSHARF/29) Subscribed on 7 vehicles
+19:41:36.981 [INF] (VehicleTracker.Api/VSHARF/29) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:41:34
+19:41:36.995 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:41:33
+19:41:36.997 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:41:34
+19:41:37.006 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:41:35
+19:41:37.007 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 14:41:36
+19:41:37.013 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:41:35
+19:41:37.014 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:41:34
+19:42:26.996 [INF] (VehicleTracker.Api/VSHARF/40) Connection 85a0aa4b-5436-4592-9edb-d77c97bc6e59 disconnected
+19:42:26.996 [INF] (VehicleTracker.Api/VSHARF/36) Connection f504709a-e4fb-4775-85c5-bb2fa12790e1 disconnected
+19:42:27.128 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:42:27.194 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+19:42:27.202 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:42:25
+19:42:27.229 [INF] (VehicleTracker.Api/VSHARF/30) Connection f73b04a0-3305-4f93-8531-f564e778fab6 established to Vehicle hub from ::1
+19:42:27.241 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:42:13
+19:42:27.244 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:42:26
+19:42:27.260 [INF] (VehicleTracker.Api/VSHARF/30) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:42:23
+19:42:27.266 [INF] (VehicleTracker.Api/VSHARF/30) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 14:42:25
+19:42:27.280 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 14:42:24
+19:42:27.281 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:42:26
+19:42:28.614 [INF] (VehicleTracker.Api/VSHARF/30) Connection f73b04a0-3305-4f93-8531-f564e778fab6 disconnected
+19:42:45.013 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:42:45.074 [INF] (VehicleTracker.Api/VSHARF/41) Connection ce4f76ba-10e8-4997-b7fa-a15570400e3b established to Vehicle hub from ::1
+19:42:45.122 [INF] (VehicleTracker.Api/VSHARF/17) Connection 4c861723-5ae6-4da2-b1d1-cff9d03260b7 established to Vehicle hub from ::1
+19:42:45.181 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+19:42:45.185 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:42:36
+19:42:45.224 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 14:42:35
+19:42:45.228 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:42:33
+19:42:45.241 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 14:42:43
+19:42:45.244 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:42:36
+19:42:45.257 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:42:34
+19:42:45.258 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:42:35
+19:42:45.265 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:42:45.328 [INF] (VehicleTracker.Api/VSHARF/12) Subscribed on 7 vehicles
+19:42:45.329 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:42:36
+19:42:45.351 [INF] (VehicleTracker.Api/VSHARF/11) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 14:42:35
+19:42:45.354 [INF] (VehicleTracker.Api/VSHARF/11) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:42:33
+19:42:45.362 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 14:42:43
+19:42:45.363 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:42:45
+19:42:45.369 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:42:34
+19:42:45.371 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:42:35
+19:43:35.108 [INF] (VehicleTracker.Api/VSHARF/27) Connection ce4f76ba-10e8-4997-b7fa-a15570400e3b disconnected
+19:43:35.108 [INF] (VehicleTracker.Api/VSHARF/36) Connection 4c861723-5ae6-4da2-b1d1-cff9d03260b7 disconnected
+19:45:54.692 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:45:54.716 [INF] (VehicleTracker.Api/VSHARF/48) Connection abe5e2ea-c2fd-494e-92d5-e10cb538ba9a established to Vehicle hub from ::1
+19:45:54.745 [INF] (VehicleTracker.Api/VSHARF/36) Connection 3bb9e484-9077-4845-9357-6132b1e3f248 established to Vehicle hub from ::1
+19:45:54.871 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+19:45:54.875 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:45:43
+19:45:54.887 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:45:53
+19:45:54.889 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:45:53
+19:45:54.904 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:45:53
+19:45:54.905 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:45:45
+19:45:54.921 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:45:45
+19:45:54.928 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:45:53
+19:45:54.932 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+19:45:54.980 [INF] (VehicleTracker.Api/VSHARF/17) Subscribed on 7 vehicles
+19:45:54.988 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:45:43
+19:45:55.003 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:45:53
+19:45:55.005 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:45:53
+19:45:55.012 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:45:53
+19:45:55.014 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:45:45
+19:45:55.021 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:45:45
+19:45:55.024 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:45:53
+19:46:23.381 [INF] (VehicleTracker.Api/VSHARF/65) Connection abe5e2ea-c2fd-494e-92d5-e10cb538ba9a disconnected
+19:46:23.382 [INF] (VehicleTracker.Api/VSHARF/62) Connection 3bb9e484-9077-4845-9357-6132b1e3f248 disconnected
+19:49:43.006 [INF] (VehicleTracker.Api/VSHARF/10) Connection bbf665dd-0305-425a-9a62-e464af7803d1 disconnected
+19:49:45.691 [INF] (VehicleTracker.Api/VSHARF/36) Request vehicles CustomerId=All, Status=All
+19:49:45.833 [INF] (VehicleTracker.Api/VSHARF/71) Connection 6c153a9c-b1ca-4749-9175-f4d1e8984929 established to Vehicle hub from ::1
+19:49:45.896 [INF] (VehicleTracker.Api/VSHARF/36) Connection 9e7421e8-0ca1-43b6-bc52-ecfa2fac938c established to Vehicle hub from ::1
+19:49:46.916 [INF] (VehicleTracker.Api/VSHARF/27) Subscribed on 7 vehicles
+19:49:46.920 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:49:46
+19:49:46.932 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:49:44
+19:49:46.933 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:49:44
+19:49:46.942 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 14:49:36
+19:49:46.943 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 14:49:33
+19:49:46.952 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:49:43
+19:49:46.956 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 14:49:46
+19:49:46.982 [INF] (VehicleTracker.Api/VSHARF/27) Request vehicles CustomerId=All, Status=All
+19:49:47.011 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+19:49:47.018 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:49:46
+19:49:47.029 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:49:44
+19:49:47.030 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:49:44
+19:49:47.038 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 14:49:36
+19:49:47.040 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387949 in cache=Disconnected, updated=2018-03-12 14:49:33
+19:49:47.049 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:49:43
+19:49:47.051 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 14:49:46
+19:49:51.803 [INF] (VehicleTracker.Api/VSHARF/27) Request vehicles CustomerId=All, Status=All
+19:49:51.912 [INF] (VehicleTracker.Api/VSHARF/72) Connection 2e3a7e6a-b4db-4a86-8c46-7fdd84ab767d established to Vehicle hub from ::1
+19:49:51.920 [INF] (VehicleTracker.Api/VSHARF/73) Subscribed on 7 vehicles
+19:49:51.927 [INF] (VehicleTracker.Api/VSHARF/73) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:49:46
+19:49:51.952 [INF] (VehicleTracker.Api/VSHARF/71) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:49:44
+19:49:51.956 [INF] (VehicleTracker.Api/VSHARF/71) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:49:44
+19:49:51.971 [INF] (VehicleTracker.Api/VSHARF/73) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 14:49:47
+19:49:51.974 [INF] (VehicleTracker.Api/VSHARF/73) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:49:47
+19:49:51.980 [INF] (VehicleTracker.Api/VSHARF/71) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:49:43
+19:49:51.985 [INF] (VehicleTracker.Api/VSHARF/71) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 14:49:46
+19:50:18.454 [INF] (VehicleTracker.Api/VSHARF/66) Connection 2e3a7e6a-b4db-4a86-8c46-7fdd84ab767d disconnected
+19:52:43.345 [INF] (VehicleTracker.Api/VSHARF/81) Connection 9e7421e8-0ca1-43b6-bc52-ecfa2fac938c disconnected
+19:52:43.347 [INF] (VehicleTracker.Api/VSHARF/27) Request vehicles CustomerId=All, Status=All
+19:52:43.417 [INF] (VehicleTracker.Api/VSHARF/41) Connection ce38c1fc-f912-4ee1-8b9a-a8a82a06e29a established to Vehicle hub from ::1
+19:52:43.497 [INF] (VehicleTracker.Api/VSHARF/27) Subscribed on 7 vehicles
+19:52:43.507 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:52:33
+19:52:43.530 [INF] (VehicleTracker.Api/VSHARF/41) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:52:36
+19:52:43.531 [INF] (VehicleTracker.Api/VSHARF/41) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:52:43
+19:52:43.542 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:52:34
+19:52:43.550 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:52:33
+19:52:43.560 [INF] (VehicleTracker.Api/VSHARF/41) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:52:34
+19:52:43.561 [INF] (VehicleTracker.Api/VSHARF/41) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:52:33
+19:52:46.268 [INF] (VehicleTracker.Api/VSHARF/27) Connection ce38c1fc-f912-4ee1-8b9a-a8a82a06e29a disconnected
+19:52:46.284 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+19:52:46.373 [INF] (VehicleTracker.Api/VSHARF/41) Connection 072ffea5-3080-4b4a-90d3-02dc6b199c91 established to Vehicle hub from ::1
+19:52:46.428 [INF] (VehicleTracker.Api/VSHARF/66) Subscribed on 7 vehicles
+19:52:46.442 [INF] (VehicleTracker.Api/VSHARF/66) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:52:44
+19:52:46.460 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:52:36
+19:52:46.466 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:52:43
+19:52:46.475 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:52:34
+19:52:46.477 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:52:45
+19:52:46.508 [INF] (VehicleTracker.Api/VSHARF/78) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:52:34
+19:52:46.511 [INF] (VehicleTracker.Api/VSHARF/78) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:52:45
+19:52:49.903 [INF] (VehicleTracker.Api/VSHARF/71) Connection 072ffea5-3080-4b4a-90d3-02dc6b199c91 disconnected
+19:52:49.906 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+19:52:49.941 [INF] (VehicleTracker.Api/VSHARF/41) Connection 68a25a5d-9719-4f0a-9fd9-5548054ab1fa established to Vehicle hub from ::1
+19:52:50.020 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+19:52:50.041 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 14:52:44
+19:52:50.053 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 14:52:47
+19:52:50.054 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:52:43
+19:52:50.063 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:52:46
+19:52:50.064 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:52:45
+19:52:50.071 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:52:47
+19:52:50.072 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:52:45
+19:52:53.671 [INF] (VehicleTracker.Api/VSHARF/71) Connection 68a25a5d-9719-4f0a-9fd9-5548054ab1fa disconnected
+19:52:53.693 [INF] (VehicleTracker.Api/VSHARF/78) Request vehicles CustomerId=608926eb-26b0-4d10-9d8d-18770039cd74, Status=All
+19:52:53.760 [INF] (VehicleTracker.Api/VSHARF/66) Connection de85498e-86c5-4dc9-8e3d-a6bb0bad7b87 established to Vehicle hub from ::1
+19:52:53.873 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 2 vehicles
+19:52:53.875 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:52:45
+19:52:53.896 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 14:52:47
+19:52:55.423 [INF] (VehicleTracker.Api/VSHARF/10) Connection de85498e-86c5-4dc9-8e3d-a6bb0bad7b87 disconnected
+19:52:55.424 [INF] (VehicleTracker.Api/VSHARF/66) Request vehicles CustomerId=All, Status=All
+19:52:55.492 [INF] (VehicleTracker.Api/VSHARF/10) Connection 1d46c139-5986-40a3-bcd9-9d68750abc88 established to Vehicle hub from ::1
+19:52:55.520 [INF] (VehicleTracker.Api/VSHARF/66) Subscribed on 7 vehicles
+19:52:55.525 [INF] (VehicleTracker.Api/VSHARF/66) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:52:53
+19:52:55.544 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 14:52:47
+19:52:55.545 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 14:52:54
+19:52:55.554 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 14:52:55
+19:52:55.555 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:52:45
+19:52:55.561 [INF] (VehicleTracker.Api/VSHARF/66) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 14:52:55
+19:52:55.562 [INF] (VehicleTracker.Api/VSHARF/66) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:52:45
+19:58:22.305 [INF] (VehicleTracker.Api/VSHARF/11) RabbitMq message listener created
+19:58:22.422 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:58:22.460 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+19:59:20.745 [INF] (VehicleTracker.Api/VSHARF/3) Request vehicles CustomerId=All, Status=All
+19:59:20.978 [INF] (VehicleTracker.Api/VSHARF/17) Connection a4b7f28d-d7dd-4cd6-afb9-7aafbb130e80 established to Vehicle hub from ::1
+19:59:21.303 [INF] (VehicleTracker.Api/VSHARF/17) Subscribed on 7 vehicles
+19:59:21.305 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 14:58:22
+19:59:21.386 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 14:58:24
+19:59:21.387 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 14:58:27
+19:59:21.391 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 14:58:27
+19:59:21.392 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 14:58:23
+19:59:21.398 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 14:58:23
+19:59:21.399 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 14:58:26
+20:03:26.100 [INF] (VehicleTracker.Api/VSHARF/33) Connection a4b7f28d-d7dd-4cd6-afb9-7aafbb130e80 disconnected
+20:03:26.371 [INF] (VehicleTracker.Api/VSHARF/17) Request vehicles CustomerId=All, Status=All
+20:03:26.479 [INF] (VehicleTracker.Api/VSHARF/32) Subscribed on 7 vehicles
+20:03:26.484 [INF] (VehicleTracker.Api/VSHARF/32) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 15:03:14
+20:03:26.488 [INF] (VehicleTracker.Api/VSHARF/32) Connection f234a03f-e3f6-4441-90ec-071c8de749dd established to Vehicle hub from ::1
+20:03:26.528 [INF] (VehicleTracker.Api/VSHARF/22) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 15:03:25
+20:03:26.539 [INF] (VehicleTracker.Api/VSHARF/22) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 15:03:25
+20:03:26.548 [INF] (VehicleTracker.Api/VSHARF/34) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 15:03:23
+20:03:26.550 [INF] (VehicleTracker.Api/VSHARF/34) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 15:03:15
+20:03:26.555 [INF] (VehicleTracker.Api/VSHARF/3) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 15:03:23
+20:03:26.559 [INF] (VehicleTracker.Api/VSHARF/3) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 15:03:24
+20:03:30.170 [INF] (VehicleTracker.Api/VSHARF/32) Connection f234a03f-e3f6-4441-90ec-071c8de749dd disconnected
+20:03:30.459 [INF] (VehicleTracker.Api/VSHARF/11) Request vehicles CustomerId=All, Status=All
+20:03:30.537 [INF] (VehicleTracker.Api/VSHARF/3) Subscribed on 7 vehicles
+20:03:30.553 [INF] (VehicleTracker.Api/VSHARF/3) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 15:03:27
+20:03:30.583 [INF] (VehicleTracker.Api/VSHARF/11) Connection d4825871-3854-44e0-8f01-7369989d8375 established to Vehicle hub from ::1
+20:03:30.583 [INF] (VehicleTracker.Api/VSHARF/34) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 15:03:25
+20:03:30.599 [INF] (VehicleTracker.Api/VSHARF/34) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 15:03:25
+20:03:30.623 [INF] (VehicleTracker.Api/VSHARF/32) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 15:03:23
+20:03:30.624 [INF] (VehicleTracker.Api/VSHARF/32) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 15:03:27
+20:03:30.631 [INF] (VehicleTracker.Api/VSHARF/11) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 15:03:23
+20:03:30.634 [INF] (VehicleTracker.Api/VSHARF/11) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 15:03:24
+20:24:42.031 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+20:24:43.092 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+20:24:43.210 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+20:25:26.808 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+20:25:27.088 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+20:25:27.155 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+20:25:29.290 [ERR] (VehicleTracker.Api/VSHARF/15) An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1001: Identifier expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1002: ; expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,28): error CS0246: The type or namespace name 'Model' could not be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+20:25:29.290 [ERR] (VehicleTracker.Api/VSHARF/10) An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1001: Identifier expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1002: ; expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,28): error CS0246: The type or namespace name 'Model' could not be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+20:25:29.614 [ERR] (VehicleTracker.Api/VSHARF/9) An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1001: Identifier expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1002: ; expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,28): error CS0246: The type or namespace name 'Model' could not be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+20:25:29.865 [ERR] (VehicleTracker.Api/VSHARF/13) An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1001: Identifier expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,48): error CS1002: ; expected
+C:\Users\vsharf\Documents\Visual Studio 2017\Projects\VehicleTracker\VehicleTracker.Api\Views\Home\Index.cshtml(12,28): error CS0246: The type or namespace name 'Model' could not be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+20:33:42.012 [INF] (VehicleTracker.Api/VSHARF/10) RabbitMq message listener created
+20:33:42.260 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+20:33:42.271 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on message channel vehiclestatus, PublishSubscribe
+20:33:47.627 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+20:33:48.056 [INF] (VehicleTracker.Api/VSHARF/9) Connection f08b473c-4c75-4d63-a2af-94339c2fe218 established to Vehicle hub from ::1
+20:33:48.898 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+20:33:48.912 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 not in cache
+20:33:48.984 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 not in cache
+20:33:48.991 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 not in cache
+20:33:49.004 [WRN] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387765 not in cache
+20:33:49.004 [WRN] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387949 not in cache
+20:33:49.010 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 not in cache
+20:33:49.015 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 not in cache
+20:34:55.047 [INF] (VehicleTracker.Api/VSHARF/9) Connection f08b473c-4c75-4d63-a2af-94339c2fe218 disconnected
+20:34:55.350 [INF] (VehicleTracker.Api/VSHARF/13) Request vehicles CustomerId=All, Status=All
+20:34:55.490 [INF] (VehicleTracker.Api/VSHARF/10) Connection 2aeaf2cb-a3b0-40e1-9342-ac89bbf54e4b established to Vehicle hub from ::1
+20:34:55.845 [INF] (VehicleTracker.Api/VSHARF/13) Subscribed on 7 vehicles
+20:34:55.873 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 15:34:50
+20:34:55.897 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 15:34:51
+20:34:55.899 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 15:34:50
+20:34:55.911 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 15:34:53
+20:34:55.913 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 15:34:50
+20:34:55.931 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 15:34:52
+20:34:55.932 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 15:34:53
+20:37:10.957 [INF] (VehicleTracker.Api/VSHARF/22) Connection 2aeaf2cb-a3b0-40e1-9342-ac89bbf54e4b disconnected
+20:37:11.274 [INF] (VehicleTracker.Api/VSHARF/21) Request vehicles CustomerId=All, Status=All
+20:37:11.432 [INF] (VehicleTracker.Api/VSHARF/22) Connection 64de2a66-5bfc-4442-8c07-7726c7a8b8cf established to Vehicle hub from ::1
+20:37:11.443 [INF] (VehicleTracker.Api/VSHARF/29) Subscribed on 7 vehicles
+20:37:11.491 [INF] (VehicleTracker.Api/VSHARF/29) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 15:36:59
+20:37:11.519 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 15:37:02
+20:37:11.530 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 15:37:09
+20:37:11.543 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 15:36:59
+20:37:11.545 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 15:37:09
+20:37:11.612 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 15:37:01
+20:37:11.664 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 15:37:02
+20:37:28.696 [INF] (VehicleTracker.Api/VSHARF/29) Connection 64de2a66-5bfc-4442-8c07-7726c7a8b8cf disconnected
+20:37:28.697 [INF] (VehicleTracker.Api/VSHARF/17) Request vehicles CustomerId=All, Status=All
+20:37:28.773 [INF] (VehicleTracker.Api/VSHARF/29) Connection 50fcd311-4e11-4a61-9b0a-f053dc4c4890 established to Vehicle hub from ::1
+20:37:28.877 [INF] (VehicleTracker.Api/VSHARF/15) Subscribed on 7 vehicles
+20:37:28.893 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 15:37:19
+20:37:28.927 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 15:37:23
+20:37:28.933 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 15:37:20
+20:37:28.942 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 15:37:23
+20:37:28.945 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 15:37:21
+20:37:28.966 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 15:37:19
+20:37:28.968 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 15:37:22
+20:37:31.817 [INF] (VehicleTracker.Api/VSHARF/15) Connection 50fcd311-4e11-4a61-9b0a-f053dc4c4890 disconnected
+20:37:43.034 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+20:37:43.114 [INF] (VehicleTracker.Api/VSHARF/15) Connection fb05e864-a9ab-4b6b-9287-a2792f2e2a98 established to Vehicle hub from ::1
+20:37:43.223 [INF] (VehicleTracker.Api/VSHARF/17) Connection e838b0fd-a80c-42c5-bca7-4564f59d0fba established to Vehicle hub from ::1
+20:37:43.375 [INF] (VehicleTracker.Api/VSHARF/37) Subscribed on 7 vehicles
+20:37:43.380 [INF] (VehicleTracker.Api/VSHARF/37) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 15:37:40
+20:37:43.391 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 15:37:39
+20:37:43.392 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 15:37:40
+20:37:43.400 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 15:37:40
+20:37:43.401 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 15:37:42
+20:37:43.411 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 15:37:41
+20:37:43.413 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 15:37:29
+20:37:43.418 [INF] (VehicleTracker.Api/VSHARF/10) Request vehicles CustomerId=All, Status=All
+20:37:43.457 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+20:37:43.464 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 15:37:40
+20:37:43.474 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 15:37:39
+20:37:43.475 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 15:37:40
+20:37:43.483 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 15:37:40
+20:37:43.487 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 15:37:42
+20:37:43.494 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 15:37:41
+20:37:43.495 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 15:37:29
+22:00:11.442 [INF] (VehicleTracker.Api/VSHARF/8) RabbitMq message listener created
+22:00:11.571 [INF] (VehicleTracker.Api/VSHARF/8) Subscribed on message channel vehiclestatus, PublishSubscribe
+22:00:11.588 [INF] (VehicleTracker.Api/VSHARF/8) Subscribed on message channel vehiclestatus, PublishSubscribe
+22:00:37.975 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+22:00:38.133 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+22:00:38.150 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+22:01:01.817 [INF] (VehicleTracker.Api/VSHARF/8) Request vehicles CustomerId=All, Status=All
+22:01:02.072 [INF] (VehicleTracker.Api/VSHARF/17) Connection 1c40e852-7e12-4920-81d6-abc27f698811 established to Vehicle hub from ::1
+22:01:02.158 [INF] (VehicleTracker.Api/VSHARF/16) Connection 1c40e852-7e12-4920-81d6-abc27f698811 disconnected
+22:01:02.476 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+22:01:02.537 [INF] (VehicleTracker.Api/VSHARF/17) Subscribed on 7 vehicles
+22:01:02.658 [INF] (VehicleTracker.Api/VSHARF/16) Connection 5eb72ab4-7ac7-48d1-aeb1-1268136fd02d established to Vehicle hub from ::1
+22:01:02.753 [INF] (VehicleTracker.Api/VSHARF/8) Subscribed on 7 vehicles
+22:01:02.769 [WRN] (VehicleTracker.Api/VSHARF/8) Status for vehicle VLUR4X20009048066 not in cache
+22:01:02.769 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009048066 not in cache
+22:01:02.860 [WRN] (VehicleTracker.Api/VSHARF/8) Status for vehicle VLUR4X20009093588 not in cache
+22:01:02.869 [WRN] (VehicleTracker.Api/VSHARF/8) Status for vehicle YS2R4X20005387055 not in cache
+22:01:02.867 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 not in cache
+22:01:02.879 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 not in cache
+22:01:02.881 [WRN] (VehicleTracker.Api/VSHARF/8) Status for vehicle YS2R4X20005387765 not in cache
+22:01:02.893 [WRN] (VehicleTracker.Api/VSHARF/8) Status for vehicle YS2R4X20005387949 not in cache
+22:01:02.900 [WRN] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387765 not in cache
+22:01:02.915 [WRN] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387949 not in cache
+22:01:02.917 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005388011 not in cache
+22:01:02.922 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005399401 not in cache
+22:01:02.931 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 not in cache
+22:01:02.932 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 not in cache
+22:01:03.019 [INF] (VehicleTracker.Api/VSHARF/8) Connection 5eb72ab4-7ac7-48d1-aeb1-1268136fd02d disconnected
+22:01:03.019 [INF] (VehicleTracker.Api/VSHARF/17) Request vehicles CustomerId=All, Status=All
+22:01:03.042 [INF] (VehicleTracker.Api/VSHARF/9) Connection b7bde271-14c7-47da-92c7-9c0c7713f2e1 established to Vehicle hub from ::1
+22:01:03.068 [INF] (VehicleTracker.Api/VSHARF/17) Subscribed on 7 vehicles
+22:01:03.069 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009048066 not in cache
+22:01:03.082 [WRN] (VehicleTracker.Api/VSHARF/8) Status for vehicle VLUR4X20009093588 not in cache
+22:01:03.083 [WRN] (VehicleTracker.Api/VSHARF/8) Status for vehicle YS2R4X20005387055 not in cache
+22:01:03.088 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387765 not in cache
+22:01:03.089 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387949 not in cache
+22:01:03.100 [WRN] (VehicleTracker.Api/VSHARF/16) Status for vehicle YS2R4X20005388011 not in cache
+22:01:03.100 [WRN] (VehicleTracker.Api/VSHARF/16) Status for vehicle YS2R4X20005399401 not in cache
+22:01:58.537 [INF] (VehicleTracker.Api/VSHARF/12) Connection b7bde271-14c7-47da-92c7-9c0c7713f2e1 disconnected
+22:01:58.555 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=608926eb-26b0-4d10-9d8d-18770039cd74, Status=All
+22:01:58.583 [INF] (VehicleTracker.Api/VSHARF/15) Connection 13227133-91fb-4694-a673-ef8ed2680754 established to Vehicle hub from ::1
+22:01:58.603 [INF] (VehicleTracker.Api/VSHARF/28) Subscribed on 2 vehicles
+22:01:58.604 [INF] (VehicleTracker.Api/VSHARF/28) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:01:57
+22:01:58.611 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:00.062 [INF] (VehicleTracker.Api/VSHARF/9) Connection 13227133-91fb-4694-a673-ef8ed2680754 disconnected
+22:02:00.065 [INF] (VehicleTracker.Api/VSHARF/26) Request vehicles CustomerId=608926eb-26b0-4d10-9d8d-18770039cd74, Status=All
+22:02:00.094 [INF] (VehicleTracker.Api/VSHARF/25) Connection d1875a9c-8619-4af2-92cc-7b1085f94834 established to Vehicle hub from ::1
+22:02:00.119 [INF] (VehicleTracker.Api/VSHARF/16) Subscribed on 2 vehicles
+22:02:00.122 [INF] (VehicleTracker.Api/VSHARF/16) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:00.138 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:02.124 [INF] (VehicleTracker.Api/VSHARF/17) Connection d1875a9c-8619-4af2-92cc-7b1085f94834 disconnected
+22:02:02.126 [INF] (VehicleTracker.Api/VSHARF/25) Request vehicles CustomerId=608926eb-26b0-4d10-9d8d-18770039cd74, Status=All
+22:02:02.155 [INF] (VehicleTracker.Api/VSHARF/28) Connection bb401eb9-2934-4af9-b72d-4061faab38d0 established to Vehicle hub from ::1
+22:02:02.181 [INF] (VehicleTracker.Api/VSHARF/24) Subscribed on 2 vehicles
+22:02:02.182 [INF] (VehicleTracker.Api/VSHARF/24) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:02.189 [INF] (VehicleTracker.Api/VSHARF/25) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:04.570 [INF] (VehicleTracker.Api/VSHARF/28) Connection bb401eb9-2934-4af9-b72d-4061faab38d0 disconnected
+22:02:04.572 [INF] (VehicleTracker.Api/VSHARF/27) Request vehicles CustomerId=608926eb-26b0-4d10-9d8d-18770039cd74, Status=All
+22:02:04.614 [INF] (VehicleTracker.Api/VSHARF/24) Connection 2ca83628-224b-4ca1-bcd6-3a7b2c1bf50b established to Vehicle hub from ::1
+22:02:04.627 [INF] (VehicleTracker.Api/VSHARF/25) Subscribed on 2 vehicles
+22:02:04.628 [INF] (VehicleTracker.Api/VSHARF/25) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:04.637 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:07.001 [INF] (VehicleTracker.Api/VSHARF/12) Connection 2ca83628-224b-4ca1-bcd6-3a7b2c1bf50b disconnected
+22:02:07.002 [INF] (VehicleTracker.Api/VSHARF/24) Request vehicles CustomerId=All, Status=All
+22:02:07.040 [INF] (VehicleTracker.Api/VSHARF/24) Connection e2a99b7a-4d79-448c-9170-f68f87c8006d established to Vehicle hub from ::1
+22:02:07.073 [INF] (VehicleTracker.Api/VSHARF/25) Subscribed on 7 vehicles
+22:02:07.075 [INF] (VehicleTracker.Api/VSHARF/25) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 17:01:57
+22:02:07.081 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle VLUR4X20009093588 in cache=Disconnected, updated=2018-03-12 17:01:59
+22:02:07.085 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 17:02:01
+22:02:07.113 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 17:01:58
+22:02:07.117 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:07.123 [INF] (VehicleTracker.Api/VSHARF/24) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:07.127 [INF] (VehicleTracker.Api/VSHARF/24) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 17:01:58
+22:02:08.357 [INF] (VehicleTracker.Api/VSHARF/16) Connection e2a99b7a-4d79-448c-9170-f68f87c8006d disconnected
+22:02:08.371 [INF] (VehicleTracker.Api/VSHARF/12) Request vehicles CustomerId=All, Status=All
+22:02:08.405 [INF] (VehicleTracker.Api/VSHARF/27) Connection 0ae2bf65-b596-4a36-a7a4-8622db1b53d7 established to Vehicle hub from ::1
+22:02:08.450 [INF] (VehicleTracker.Api/VSHARF/28) Subscribed on 7 vehicles
+22:02:08.451 [INF] (VehicleTracker.Api/VSHARF/28) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 17:01:57
+22:02:08.462 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 17:02:07
+22:02:08.463 [INF] (VehicleTracker.Api/VSHARF/12) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 17:02:08
+22:02:08.472 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 17:01:58
+22:02:08.473 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:02:08
+22:02:08.478 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:08.482 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 17:02:08
+22:02:10.088 [INF] (VehicleTracker.Api/VSHARF/16) Connection 0ae2bf65-b596-4a36-a7a4-8622db1b53d7 disconnected
+22:02:10.091 [INF] (VehicleTracker.Api/VSHARF/12) Request vehicles CustomerId=All, Status=All
+22:02:10.122 [INF] (VehicleTracker.Api/VSHARF/17) Connection d9bc13bb-4bb8-4a53-b2ab-5e98a9b6d183 established to Vehicle hub from ::1
+22:02:10.130 [INF] (VehicleTracker.Api/VSHARF/16) Subscribed on 7 vehicles
+22:02:10.131 [INF] (VehicleTracker.Api/VSHARF/16) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 17:01:57
+22:02:10.143 [INF] (VehicleTracker.Api/VSHARF/24) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 17:02:07
+22:02:10.146 [INF] (VehicleTracker.Api/VSHARF/24) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 17:02:08
+22:02:10.153 [INF] (VehicleTracker.Api/VSHARF/28) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 17:01:58
+22:02:10.154 [INF] (VehicleTracker.Api/VSHARF/28) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:02:08
+22:02:10.158 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:01:57
+22:02:10.160 [INF] (VehicleTracker.Api/VSHARF/27) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 17:02:08
+22:02:11.942 [INF] (VehicleTracker.Api/VSHARF/17) Connection d9bc13bb-4bb8-4a53-b2ab-5e98a9b6d183 disconnected
+22:02:11.942 [INF] (VehicleTracker.Api/VSHARF/16) Request vehicles CustomerId=All, Status=All
+22:02:11.992 [INF] (VehicleTracker.Api/VSHARF/28) Connection ef40a173-8db8-429a-8fa0-d796cd711f53 established to Vehicle hub from ::1
+22:02:12.012 [INF] (VehicleTracker.Api/VSHARF/24) Subscribed on 7 vehicles
+22:02:12.015 [INF] (VehicleTracker.Api/VSHARF/24) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 17:02:11
+22:02:12.029 [INF] (VehicleTracker.Api/VSHARF/25) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 17:02:07
+22:02:12.031 [INF] (VehicleTracker.Api/VSHARF/25) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 17:02:08
+22:02:12.037 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 17:02:11
+22:02:12.039 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 17:02:08
+22:02:12.043 [INF] (VehicleTracker.Api/VSHARF/16) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 17:02:10
+22:02:12.045 [INF] (VehicleTracker.Api/VSHARF/16) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 17:02:08
+22:22:09.353 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+22:22:09.525 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+22:22:09.546 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+22:22:36.529 [INF] (VehicleTracker.Api/VSHARF/11) RabbitMq message listener created
+22:22:36.637 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+22:22:36.644 [INF] (VehicleTracker.Api/VSHARF/11) Subscribed on message channel vehiclestatus, PublishSubscribe
+23:57:28.075 [INF] (VehicleTracker.Api/VSHARF/9) RabbitMq message listener created
+23:57:28.233 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+23:57:28.286 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on message channel vehiclestatus, PublishSubscribe
+23:57:45.044 [INF] (VehicleTracker.Api/VSHARF/17) Request vehicles CustomerId=All, Status=All
+23:57:45.506 [INF] (VehicleTracker.Api/VSHARF/15) Request vehicles CustomerId=All, Status=All
+23:57:46.020 [INF] (VehicleTracker.Api/VSHARF/9) Connection 698d1d3b-db92-47ab-8567-f4bd8e3ecc20 established to Vehicle hub from ::1
+23:57:47.043 [INF] (VehicleTracker.Api/VSHARF/13) Subscribed on 7 vehicles
+23:57:47.043 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+23:57:47.055 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 not in cache
+23:57:47.051 [WRN] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009048066 not in cache
+23:57:47.182 [WRN] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009093588 not in cache
+23:57:47.193 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 not in cache
+23:57:47.196 [WRN] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387055 not in cache
+23:57:47.197 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 not in cache
+23:57:47.216 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387765 not in cache
+23:57:47.220 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387949 not in cache
+23:57:47.230 [WRN] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 not in cache
+23:57:47.233 [WRN] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 not in cache
+23:57:47.234 [WRN] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 not in cache
+23:57:47.235 [WRN] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 not in cache
+23:57:47.247 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 not in cache
+23:57:47.248 [WRN] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 not in cache
+23:57:47.263 [INF] (VehicleTracker.Api/VSHARF/13) Request vehicles CustomerId=All, Status=All
+23:57:47.351 [INF] (VehicleTracker.Api/VSHARF/10) Subscribed on 7 vehicles
+23:57:47.365 [WRN] (VehicleTracker.Api/VSHARF/10) Status for vehicle VLUR4X20009048066 not in cache
+23:57:47.432 [WRN] (VehicleTracker.Api/VSHARF/15) Status for vehicle VLUR4X20009093588 not in cache
+23:57:47.440 [WRN] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387055 not in cache
+23:57:47.450 [WRN] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 not in cache
+23:57:47.452 [WRN] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 not in cache
+23:57:47.465 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005388011 not in cache
+23:57:47.466 [WRN] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005399401 not in cache
+23:58:38.769 [INF] (VehicleTracker.Api/VSHARF/26) Request vehicles CustomerId=All, Status=All
+23:58:38.831 [INF] (VehicleTracker.Api/VSHARF/26) Connection 698d1d3b-db92-47ab-8567-f4bd8e3ecc20 disconnected
+23:58:38.855 [INF] (VehicleTracker.Api/VSHARF/25) Connection 9d28e977-49e3-4039-aef2-c8452ecec315 established to Vehicle hub from ::1
+23:58:39.039 [INF] (VehicleTracker.Api/VSHARF/15) Subscribed on 7 vehicles
+23:58:39.040 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 18:58:29
+23:58:39.094 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 18:58:30
+23:58:39.100 [INF] (VehicleTracker.Api/VSHARF/17) Connection 9d28e977-49e3-4039-aef2-c8452ecec315 disconnected
+23:58:39.133 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Disconnected, updated=2018-03-12 18:58:32
+23:58:39.300 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 18:58:32
+23:58:39.305 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 18:58:38
+23:58:39.327 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 18:58:38
+23:58:39.339 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 18:58:29
+23:58:46.802 [INF] (VehicleTracker.Api/VSHARF/9) Request vehicles CustomerId=All, Status=All
+23:58:47.226 [INF] (VehicleTracker.Api/VSHARF/9) Connection 1af667dd-e502-49c6-8f9d-726f199ff923 established to Vehicle hub from ::1
+23:58:47.315 [INF] (VehicleTracker.Api/VSHARF/29) Connection 2d29e7a5-91d0-4d5f-b816-c029721791f2 established to Vehicle hub from 127.0.0.1
+23:58:47.406 [INF] (VehicleTracker.Api/VSHARF/26) Subscribed on 7 vehicles
+23:58:47.410 [INF] (VehicleTracker.Api/VSHARF/26) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 18:58:40
+23:58:47.451 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 18:58:41
+23:58:47.453 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 18:58:40
+23:58:47.474 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 18:58:42
+23:58:47.475 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 18:58:38
+23:58:47.487 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 18:58:38
+23:58:47.488 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 18:58:42
+23:58:47.493 [INF] (VehicleTracker.Api/VSHARF/15) Request vehicles CustomerId=All, Status=All
+23:58:47.562 [INF] (VehicleTracker.Api/VSHARF/13) Subscribed on 7 vehicles
+23:58:47.565 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009048066 in cache=Connected, updated=2018-03-12 18:58:40
+23:58:47.587 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 18:58:41
+23:58:47.588 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 18:58:40
+23:58:47.598 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 18:58:42
+23:58:47.600 [INF] (VehicleTracker.Api/VSHARF/10) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 18:58:38
+23:58:47.613 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 18:58:38
+23:58:47.614 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005399401 in cache=Connected, updated=2018-03-12 18:58:42
+23:59:34.366 [INF] (VehicleTracker.Api/VSHARF/15) Connection 2d29e7a5-91d0-4d5f-b816-c029721791f2 disconnected
+23:59:34.374 [INF] (VehicleTracker.Api/VSHARF/26) Connection 1af667dd-e502-49c6-8f9d-726f199ff923 disconnected
+23:59:34.655 [INF] (VehicleTracker.Api/VSHARF/25) Request vehicles CustomerId=All, Status=All
+23:59:34.800 [INF] (VehicleTracker.Api/VSHARF/17) Connection d0b33cec-db1a-4252-be1c-5794492dba7f established to Vehicle hub from ::1
+23:59:34.864 [INF] (VehicleTracker.Api/VSHARF/13) Subscribed on 7 vehicles
+23:59:34.869 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 18:59:31
+23:59:34.884 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 18:59:30
+23:59:34.885 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 18:59:31
+23:59:34.895 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 18:59:28
+23:59:34.896 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 18:59:28
+23:59:34.913 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 18:59:31
+23:59:34.914 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 18:59:30
+23:59:41.785 [INF] (VehicleTracker.Api/VSHARF/25) Connection d0b33cec-db1a-4252-be1c-5794492dba7f disconnected
+23:59:42.100 [ERR] (VehicleTracker.Api/VSHARF/37) Failed disposing connection "9b93ac57-8712-4ce4-8560-d134db207161".
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<EnsureBufferContainsAsync>d__71.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+   at System.Net.WebSockets.ManagedWebSocket.<ReceiveAsyncPrivate>d__62`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<StartReceiving>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessSocketAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.Internal.Transports.WebSocketsTransport.<ProcessRequestAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<WaitOnTasks>d__63.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.DefaultConnectionContext.<DisposeAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Sockets.ConnectionManager.<DisposeAndRemoveAsync>d__15.MoveNext()
+23:59:41.799 [INF] (VehicleTracker.Api/VSHARF/13) Request vehicles CustomerId=All, Status=All
+23:59:42.294 [INF] (VehicleTracker.Api/VSHARF/9) Subscribed on 7 vehicles
+23:59:42.301 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 18:59:31
+23:59:42.325 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 18:59:40
+23:59:42.327 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 18:59:39
+23:59:42.341 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387765 in cache=Disconnected, updated=2018-03-12 18:59:38
+23:59:42.342 [INF] (VehicleTracker.Api/VSHARF/9) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 18:59:39
+23:59:42.355 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 in cache=Disconnected, updated=2018-03-12 18:59:39
+23:59:42.356 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 18:59:40
+23:59:57.054 [INF] (VehicleTracker.Api/VSHARF/25) Request vehicles CustomerId=All, Status=All
+23:59:57.317 [INF] (VehicleTracker.Api/VSHARF/29) Connection 20ec84de-68f7-4771-99cc-2eb9ba40f06a established to Vehicle hub from ::1
+23:59:57.379 [INF] (VehicleTracker.Api/VSHARF/37) Connection 67064b79-0da6-4ab7-b85b-b400e70ab6a8 established to Vehicle hub from ::1
+23:59:57.485 [INF] (VehicleTracker.Api/VSHARF/15) Subscribed on 7 vehicles
+23:59:57.486 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 18:59:49
+23:59:57.535 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 18:59:50
+23:59:57.583 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 18:59:52
+23:59:57.600 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 18:59:52
+23:59:57.603 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 18:59:51
+23:59:57.624 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 18:59:48
+23:59:57.626 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 18:59:51
+23:59:57.704 [INF] (VehicleTracker.Api/VSHARF/17) Request vehicles CustomerId=All, Status=All
+23:59:57.749 [INF] (VehicleTracker.Api/VSHARF/26) Subscribed on 7 vehicles
+23:59:57.757 [INF] (VehicleTracker.Api/VSHARF/26) Status for vehicle VLUR4X20009048066 in cache=Disconnected, updated=2018-03-12 18:59:49
+23:59:57.782 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle VLUR4X20009093588 in cache=Connected, updated=2018-03-12 18:59:50
+23:59:57.784 [INF] (VehicleTracker.Api/VSHARF/15) Status for vehicle YS2R4X20005387055 in cache=Connected, updated=2018-03-12 18:59:52
+23:59:57.798 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387765 in cache=Connected, updated=2018-03-12 18:59:52
+23:59:57.800 [INF] (VehicleTracker.Api/VSHARF/13) Status for vehicle YS2R4X20005387949 in cache=Connected, updated=2018-03-12 18:59:51
+23:59:57.807 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005388011 in cache=Connected, updated=2018-03-12 18:59:48
+23:59:57.808 [INF] (VehicleTracker.Api/VSHARF/17) Status for vehicle YS2R4X20005399401 in cache=Disconnected, updated=2018-03-12 18:59:51

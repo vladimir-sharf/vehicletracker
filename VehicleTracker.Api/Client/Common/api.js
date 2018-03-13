@@ -1,9 +1,6 @@
-﻿import { HubConnection } from '@aspnet/signalr';
-
-export default class Api {
-  constructor(http, userManager) {
+﻿export default class Api {
+  constructor(http) {
     this.http = http;
-    this.userManager = userManager;
   }
 
   loadCustomers() {
@@ -22,10 +19,7 @@ export default class Api {
     }
   }
 
-  async subscribeVehicles() {
-    var user = await this.userManager.getUser();
-    return new HubConnection('/vehicleHub', {
-      accessTokenFactory: () => user.access_token
-    });
+  subscribeVehicles() {
+    return this.http.subscribeHub('/vehicleHub');
   }
 }

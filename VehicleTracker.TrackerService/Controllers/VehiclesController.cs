@@ -1,31 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using VehicleTracker.TrackerService.Model;
-using VehicleTracker.TrackerService.Services;
+using VehicleTracker.ServiceBus.Messages;
 
 namespace VehicleTracker.TrackerService.Controllers
 {
     [Route("[controller]")]
     public class VehiclesController : Controller
     {
-        private readonly VehicleService _vehicleService;
+        private readonly IVehicleService _vehicleService;
 
-        public VehiclesController(VehicleService vehicleService)
+        public VehiclesController(IVehicleService vehicleService)
         {
             _vehicleService = vehicleService;
         }
 
-        [HttpGet("")]
-        public Task<IEnumerable<VehicleSubscription>> Get()
-            => _vehicleService.Get();
-
-        [HttpPut("{id}")]
-        public Task Put(string id)
-            => _vehicleService.Add(id);
-
-        [HttpDelete("{id}")]
-        public Task Delete(string id)
-            => _vehicleService.Remove(id);
+        [HttpGet("ping/{id}")]
+        public Task<VehicleStatusMessage> Ping(string id)
+            => _vehicleService.Ping(id);
     }
 }

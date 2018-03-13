@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  vehicletracker.connector:
-    image: vehicletracker.connector
+  vehicletracker.trackerservice:
+    image: vehicletracker.trackerservice
     build:
       context: .
-      dockerfile: ./VehicleTracker.Connector/Dockerfile
+      dockerfile: ./VehicleTracker.TrackerService/Dockerfile
     environment:
       "RabbitMq:HostName": "rabbit"
       "RabbitMq:UserName": "rabbitmq"
@@ -15,13 +15,29 @@ services:
      - "8088:80"
     depends_on:
      - "rabbit"
-  vehicletracker.trackerservice:
-    image: vehicletracker.trackerservice
+  vehicletracker.authservice:
+    image: vehicletracker.authservice
     build:
       context: .
-      dockerfile: ./VehicleTracker.TrackerService/Dockerfile
+      dockerfile: ./VehicleTracker.AuthService/Dockerfile
+    ports:
+     - "8092:80"
+    environment:
+      "JsClient:Domain": "http://localhost:8090"
+    labels:
+       NAME: "vehicletracker.authservice"
+  vehicletracker.trackermanager:
+    image: vehicletracker.trackermanager
+    build:
+      context: .
+      dockerfile: ./VehicleTracker.TrackerManager/Dockerfile
     ports:
      - "8089:80"
+    environment:
+      "RabbitMq:HostName": "rabbit"
+      "RabbitMq:UserName": "rabbitmq"
+      "RabbitMq:Password": "rabbitmq"
+      "RabbitMq:Port": "5672"
     depends_on:
      - "rabbit"
   vehicletracker.api:
@@ -34,17 +50,27 @@ services:
       "RabbitMq:UserName": "rabbitmq"
       "RabbitMq:Password": "rabbitmq"
       "RabbitMq:Port": "5672"
+      "Auth:Authority": "http://vehicletracker.authservice"
+      "Auth:JsAuthority": "http://localhost:8092"
+      "Auth:RedirectUri": "http://localhost:8090/callback"
+      "Auth:PostLogoutRedirectUri": "http://localhost:8090"
+      "VehicleService": "http://vehicletracker.storageservice/vehicles/"
+      "CustomerService": "http://vehicletracker.storageservice/customers/"
     ports:
      - "8090:80"
     depends_on:
      - "rabbit"
-  vehicletracker.vehicleservice:
-    image: vehicletracker.vehicleservice
+     - "vehicletracker.authservice"
+     - "vehicletracker.storageservice"
+  vehicletracker.storageservice:
+    image: vehicletracker.storageservice
     build:
       context: .
-      dockerfile: ./VehicleTracker.VehicleService/Dockerfile
+      dockerfile: ./VehicleTracker.StorageService/Dockerfile
     ports:
      - "8091:80"
+    environment:
+       "ConnectionStrings:DefaultConnection": "Server=mssql;Database=VehicleDb;User Id=sa;Password=Mssqlpassword1"
     depends_on:
      - "mssql"
   rabbit:

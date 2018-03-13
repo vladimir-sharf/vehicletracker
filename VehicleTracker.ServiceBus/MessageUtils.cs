@@ -8,19 +8,19 @@ namespace VehicleTracker.ServiceBus
     {
         public static IServiceBus SubscribeVehicleTrackSubscribe(this IServiceBus serviceBus, Func<VehicleTrackSubscribeRequest, Task> callback) 
         {
-            serviceBus.Subscribe<VehicleTrackSubscribeRequest>(QueueNames.SubscribeQueueName, callback, InteractionType.CompetingConsumers);
+            serviceBus.Subscribe(QueueNames.SubscribeQueueName, callback, InteractionType.CompetingConsumers);
             return serviceBus;            
         }
 
         public static IServiceBus SubscribeVehicleTrackRequest(this IServiceBus serviceBus, Func<VehicleTrackRequest, Task> callback) 
         {
-            serviceBus.Subscribe<VehicleTrackRequest>(QueueNames.TrackQueueName, callback, InteractionType.CompetingConsumers);
+            serviceBus.Subscribe(QueueNames.TrackQueueName, callback, InteractionType.CompetingConsumers);
             return serviceBus;            
         }
 
         public static IServiceBus SubscribeVehicleInfo(this IServiceBus serviceBus, Func<VehicleStatusMessage, Task> callback) 
         {
-            serviceBus.Subscribe<VehicleStatusMessage>(QueueNames.StatusQueueName, callback, InteractionType.PublishSubscribe);
+            serviceBus.Subscribe(QueueNames.StatusQueueName, callback, InteractionType.PublishSubscribe);
             return serviceBus;            
         }
 

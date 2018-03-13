@@ -26,14 +26,14 @@ namespace VehicleTracker.Api.Storage.StatusCache
             }
             else
             {
-                _logger.LogInformation($"Status for vehicle {id} not in cache");
+                _logger.LogWarning($"Status for vehicle {id} not in cache");
                 return Task.FromResult(new VehicleStatusMessage(id, VehicleStatus.Unknown));
             }
         }
 
         public Task<VehicleStatusMessage> Update(string id, VehicleStatusMessage vehicle)
         {
-            _logger.LogInformation($"Cache update for vehicle {id}: {vehicle.Status}");
+            _logger.LogTrace($"Cache update for vehicle {id}: {vehicle.Status}");
             var entry = _cache.Set(id, vehicle, DateTimeOffset.UtcNow.AddMinutes(2));
             return Task.FromResult(vehicle);
         }

@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using VehicleTracker.Api.Hubs;
+using VehicleTracker.Api.RealTime;
 using VehicleTracker.Api.Storage.StatusCache;
 using VehicleTracker.ServiceBus;
 using VehicleTracker.ServiceBus.Messages;
