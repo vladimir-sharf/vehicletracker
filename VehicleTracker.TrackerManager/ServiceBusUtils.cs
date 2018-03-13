@@ -7,7 +7,7 @@ namespace VehicleTracker.TrackerManager
 {
     public static class SeviceBusUtils
     {
-        public static IServiceBus SubscribeEvents(this IServiceBus serviceBus, VehicleService vehicleService)
-            => serviceBus.SubscribeVehicleTrackSubscribe(t => vehicleService.Add(t.Ids));
+        public static Task SubscribeEvents(this IServiceBusListenerFactory serviceBus, VehicleService vehicleService)
+            => serviceBus.Create().SubscribeVehicleTrackSubscribe(t => vehicleService.Add(t.Ids));
     }
 }

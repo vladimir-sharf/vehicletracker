@@ -22,6 +22,7 @@ namespace VehicleTracker.UnitTests
             var options = CreateOptions();
             var logger = CommonUtils.CreateLogger<RabbitMqBus>();
             var rabbitMqBus = new RabbitMqBus(options, logger);
+            var rabbitMqListener = new RabbitMqListener(options, logger);
 
             var message = new TestMessage
             {
@@ -31,7 +32,7 @@ namespace VehicleTracker.UnitTests
 
             var count = 0;
             TestMessage result = null;
-            await rabbitMqBus.Subscribe("test", (TestMessage m) =>
+            rabbitMqListener.Subscribe("test", (TestMessage m) =>
             {
                 result = m;
                 return Task.FromResult(count++);
@@ -56,6 +57,7 @@ namespace VehicleTracker.UnitTests
             var options = CreateOptions();
             var logger = CommonUtils.CreateLogger<RabbitMqBus>();
             var rabbitMqBus = new RabbitMqBus(options, logger);
+            var rabbitMqListener = new RabbitMqListener(options, logger);
 
             var message = new TestMessage
             {
@@ -65,7 +67,7 @@ namespace VehicleTracker.UnitTests
 
             var count = 0;
             TestMessage result = null;
-            await rabbitMqBus.Subscribe("test", (TestMessage m) =>
+            rabbitMqListener.Subscribe("test", (TestMessage m) =>
             {
                 result = m;
                 return Task.FromResult(count++);
@@ -73,7 +75,7 @@ namespace VehicleTracker.UnitTests
 
             var count2 = 0;
             TestMessage result2 = null;
-            await rabbitMqBus.Subscribe("test", (TestMessage m) =>
+            rabbitMqListener.Subscribe("test", (TestMessage m) =>
             {
                 result2 = m;
                 return Task.FromResult(count2++);

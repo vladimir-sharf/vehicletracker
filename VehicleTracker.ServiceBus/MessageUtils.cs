@@ -6,23 +6,14 @@ namespace VehicleTracker.ServiceBus
 {
     public static class MessageUtils 
     {
-        public static IServiceBus SubscribeVehicleTrackSubscribe(this IServiceBus serviceBus, Func<VehicleTrackSubscribeRequest, Task> callback) 
-        {
-            serviceBus.Subscribe(QueueNames.SubscribeQueueName, callback, InteractionType.CompetingConsumers);
-            return serviceBus;            
-        }
+        public static Task<IServiceBusListener> SubscribeVehicleTrackSubscribe(this Task<IServiceBusListener> serviceBus, Func<VehicleTrackSubscribeRequest, Task> callback) 
+            => serviceBus.Subscribe(QueueNames.SubscribeQueueName, callback, InteractionType.CompetingConsumers);
 
-        public static IServiceBus SubscribeVehicleTrackRequest(this IServiceBus serviceBus, Func<VehicleTrackRequest, Task> callback) 
-        {
-            serviceBus.Subscribe(QueueNames.TrackQueueName, callback, InteractionType.CompetingConsumers);
-            return serviceBus;            
-        }
+        public static Task<IServiceBusListener> SubscribeVehicleTrackRequest(this Task<IServiceBusListener> serviceBus, Func<VehicleTrackRequest, Task> callback) 
+            => serviceBus.Subscribe(QueueNames.TrackQueueName, callback, InteractionType.CompetingConsumers);
 
-        public static IServiceBus SubscribeVehicleInfo(this IServiceBus serviceBus, Func<VehicleStatusMessage, Task> callback) 
-        {
-            serviceBus.Subscribe(QueueNames.StatusQueueName, callback, InteractionType.PublishSubscribe);
-            return serviceBus;            
-        }
+        public static Task<IServiceBusListener> SubscribeVehicleInfo(this Task<IServiceBusListener> serviceBus, Func<VehicleStatusMessage, Task> callback) 
+            => serviceBus.Subscribe(QueueNames.StatusQueueName, callback, InteractionType.PublishSubscribe);
 
         public static Task SendVehicleTrackRequest(this IServiceBus serviceBus, VehicleTrackRequest req)
             => serviceBus.Publish(QueueNames.TrackQueueName, req, InteractionType.CompetingConsumers);

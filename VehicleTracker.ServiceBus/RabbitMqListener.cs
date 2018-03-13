@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
@@ -6,20 +7,39 @@ using System.Threading.Tasks;
 
 namespace VehicleTracker.ServiceBus
 {
-    public class RabbitMqListener : IDisposable
+    public class RabbitMqListener : IServiceBusListener, IDisposable
     {
-        private readonly IConnection _connection;
-        private readonly IModel _channel;
+        private IConnection _connection;
+        private IModel _channel;
         private readonly ILogger _logger;
 
-        public RabbitMqListener(IConnection connection, IModel channel, ILogger logger)
+        public RabbitMqListener(IOptions<RabbitMqOptions> options, ILogger logger)
         {
-            _connection = connection;
-            _channel = channel;
             _logger = logger;
+            CreateChannel(options);
         }
 
-        public void Listen(string address, Func<byte[], Task> receive, InteractionType queueType) 
+        private void CreateChannel(IOptions<RabbitMqOptions> options)
+        {
+            _connection = options.Value.CreateConnection();
+            try
+            {
+                _channel = _connection.CreateModel();
+            }
+            catch
+            {
+                _connection.Close();
+                throw;
+            }
+        }
+
+        public void Subscribe<T>(string address, Func<T, Task> callback, InteractionType interactionType)
+        {
+            Subscribe(address, message => callback(message.Deserialize<T>()), interactionType);
+            _logger.LogInformation($"Subscribed on message channel {address}, {interactionType}");
+        }
+
+        private void Subscribe(string address, Func<byte[], Task> receive, InteractionType queueType) 
         {
             switch (queueType) 
             {

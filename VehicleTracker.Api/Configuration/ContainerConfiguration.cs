@@ -54,9 +54,7 @@ namespace VehicleTracker.Api.Configuration
                 .As(typeof(IQueryStringFilterTransformer<>))
                 .SingleInstance();
 
-            builder.RegisterType<RabbitMqBus>()
-                .As<IServiceBus>()
-                .SingleInstance();
+            builder.RegisterRabbitMq();
 
             builder.RegisterType<StatusCache>()
                 .As<IStatusCache>()

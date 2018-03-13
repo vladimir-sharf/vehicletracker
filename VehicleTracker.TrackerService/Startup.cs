@@ -44,9 +44,7 @@ namespace VehicleTracker.TrackerService
                 .As<IVehicleConnector>()
                 .SingleInstance();
 
-            builder.RegisterType<RabbitMqBus>()
-                .As<IServiceBus>()
-                .SingleInstance();
+            builder.RegisterRabbitMq();
 
             builder.RegisterType<VehicleFakeCache>()
                 .AsSelf()
@@ -58,7 +56,7 @@ namespace VehicleTracker.TrackerService
         }
         
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBus serviceBus, IVehicleService vehicleService)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBusListenerFactory listener, IVehicleService vehicleService)
         {
             if (env.IsDevelopment())
             {
@@ -67,7 +65,7 @@ namespace VehicleTracker.TrackerService
 
             app.UseMvc();
 
-            lifetime.ApplicationStarted.Register(() => serviceBus.SubscribeEvents(vehicleService));
+            lifetime.ApplicationStarted.Register(() => listener.SubscribeEvents(vehicleService));
         }
     }
 }

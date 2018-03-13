@@ -6,7 +6,7 @@ namespace VehicleTracker.TrackerService
 {
     public static class ServiceBusConfiguration
     {
-        public static IServiceBus SubscribeEvents(this IServiceBus serviceBus, IVehicleService vehicleService)
-            => serviceBus.SubscribeVehicleTrackRequest(vehicleService.Ping);
+        public static Task SubscribeEvents(this IServiceBusListenerFactory listener, IVehicleService vehicleService)
+            => listener.Create().SubscribeVehicleTrackRequest(vehicleService.Ping);
     }
 }

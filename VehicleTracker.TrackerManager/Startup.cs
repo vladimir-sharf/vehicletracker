@@ -24,6 +24,7 @@ namespace VehicleTracker.TrackerManager
             services.AddMvc();
             services.AddOptions();
             services.AddSingleton<IServiceBus, RabbitMqBus>();
+            services.AddSingleton<IServiceBusListenerFactory, RabbitMqListenerFactory>();
             services.AddSingleton<IVehicleRepository, VehicleRepositoryInMemory>();
             services.AddSingleton<VehicleService>();
             services.Configure<TrackingOptions>(Configuration);
@@ -31,7 +32,7 @@ namespace VehicleTracker.TrackerManager
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBus bus, VehicleService vehicleService)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBusListenerFactory listener, VehicleService vehicleService)
         {
             if (env.IsDevelopment())
             {
@@ -42,7 +43,7 @@ namespace VehicleTracker.TrackerManager
             lifetime.ApplicationStarted.Register(() =>
             {
                 vehicleService.StartJob();
-                bus.SubscribeEvents(vehicleService);
+                listener.SubscribeEvents(vehicleService);
             });
         }
     }

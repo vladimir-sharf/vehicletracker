@@ -43,7 +43,7 @@ namespace VehicleTracker.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBus serviceBus, IStatusCache statusCache, VehicleSubscription vehicleSubscription)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBusListenerFactory listenerFactory, IStatusCache statusCache, VehicleSubscription vehicleSubscription)
         {
             if (env.IsDevelopment())
             {
@@ -60,7 +60,7 @@ namespace VehicleTracker.Api
 
             app.UseSignalR(routes => routes.MapHub<VehicleHub>("/vehicleHub"));
             app.UseMvc();
-            lifetime.ApplicationStarted.Register(() => serviceBus.SubscribeEvents(statusCache, vehicleSubscription));
+            lifetime.ApplicationStarted.Register(() => listenerFactory.SubscribeEvents(statusCache, vehicleSubscription));
         }
     }
 }

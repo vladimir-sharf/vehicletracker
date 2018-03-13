@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace VehicleTracker.ServiceBus
 {
-    public static class Utils
+    public static class ConvertionUtils
     {
         public static string Serialize(this object obj)
             => JsonConvert.SerializeObject(obj);

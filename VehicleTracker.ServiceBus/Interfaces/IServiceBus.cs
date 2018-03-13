@@ -3,9 +3,8 @@ using System.Threading.Tasks;
 
 namespace VehicleTracker.ServiceBus
 {
-    public interface IServiceBus : IDisposable
+    public interface IServiceBus
     {
         Task Publish<T>(string address, T message, InteractionType interactionType);
-        Task Subscribe<T>(string address, Func<T, Task> callback, InteractionType interactionType);
     }
 }
