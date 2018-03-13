@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Moq;
 using System;
 using System.Threading.Tasks;
@@ -35,6 +37,14 @@ namespace VehicleTracker.UnitTests
             return bus.Object;
         }
 
+        public static IMemoryCache CreateMemoryCache()
+        {
+            var options = new Mock<IOptions<MemoryCacheOptions>>();
+            options.Setup(x => x.Value)
+                .Returns(new MemoryCacheOptions());
 
+            var cache = new MemoryCache(options.Object);
+            return cache;
+        }
     }
 }
