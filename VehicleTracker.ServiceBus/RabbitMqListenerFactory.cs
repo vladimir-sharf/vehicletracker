@@ -45,13 +45,13 @@ namespace VehicleTracker.ServiceBus
             _logger.LogWarning($"Creation of RabbitMq message listener was cancelled");
             return null;
         }
-
         public void Dispose()
         {
             _cancellationTokenSource.Cancel();
-            if (_listener.IsValueCreated && _listener.Value != null) 
+            if (_listener.IsValueCreated && _listener.Value != null && _listener.Value.IsCompleted) 
             {
-                _listener.Value.Dispose();
+                var listener = _listener.Value.Result as IDisposable;
+                if (listener != null) listener.Dispose();
             }
         }
     }
