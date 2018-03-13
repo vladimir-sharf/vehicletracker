@@ -13,9 +13,9 @@ namespace VehicleTracker.Api.Controllers
     [Authorize]
     public class VehiclesController : Controller
     {
-        private readonly VehicleService _service;
+        private readonly IVehicleService _service;
 
-        public VehiclesController(VehicleService service)
+        public VehiclesController(IVehicleService service)
         {
             _service = service;
         }

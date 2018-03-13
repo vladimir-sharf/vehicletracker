@@ -43,7 +43,7 @@ namespace VehicleTracker.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBus serviceBus, StatusCache statusCache, VehicleSubscription vehicleSubscription)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApplicationLifetime lifetime, IServiceBus serviceBus, IStatusCache statusCache, VehicleSubscription vehicleSubscription)
         {
             if (env.IsDevelopment())
             {

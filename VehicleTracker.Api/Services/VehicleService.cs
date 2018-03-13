@@ -12,18 +12,18 @@ using VehicleData = VehicleTracker.Api.Storage.Rest.Model.Vehicle;
 
 namespace VehicleTracker.Api.Services
 {
-    public class VehicleService
+    public class VehicleService : IVehicleService
     {
         private readonly IRepository<string, VehicleData, VehicleFilter> _repository;
-        private readonly CustomerService _customerService; 
-        private readonly StatusCache _statusCache;
+        private readonly ICustomerService _customerService; 
+        private readonly IStatusCache _statusCache;
         private readonly IServiceBus _bus;
         private readonly ILogger _logger;
 
-        public VehicleService(IRepository<string, VehicleData, VehicleFilter> repository, 
-            CustomerService customerService, 
-            IServiceBus bus, 
-            StatusCache statusCache, 
+        public VehicleService(IRepository<string, VehicleData, VehicleFilter> repository,
+            ICustomerService customerService, 
+            IServiceBus bus,
+            IStatusCache statusCache, 
             ILogger<VehicleService> logger)
         {
             _repository = repository;
@@ -36,31 +36,24 @@ namespace VehicleTracker.Api.Services
         public async Task<IEnumerable<Vehicle>> Get(Guid? customerId, VehicleStatus? status)
         {
             _logger.LogInformation($"Request vehicles CustomerId={customerId?.ToString() ?? "All"}, Status={status?.ToString() ?? "All"}");
+
             var filter = new VehicleFilter
             {
                 CustomerId = customerId
             };
+            var storageData = await _repository.List(filter);
+            _logger.LogTrace($"Found {storageData.Count()} vehicles");
 
-            var fromStorage = await _repository.List(filter);
-            _logger.LogTrace($"Found {fromStorage.Count()} vehicles");
+            await _bus.SendSubscribeRequest(new VehicleTrackSubscribeRequest(storageData.Select(x => x.Id)));
+            _logger.LogInformation($"Subscribed on {storageData.Count()} vehicles");
 
-            await _bus.SendSubscribeRequest(new VehicleTrackSubscribeRequest(fromStorage.Select(x => x.Id)));
-            _logger.LogInformation($"Subscribed on {fromStorage.Count()} vehicles");
-
-            var statuses = new Dictionary<string, VehicleStatusMessage>();
-            var customers = new Dictionary<Guid, Customer>();
-            foreach (var vehicle in fromStorage)
-            {
-                var vehicleInfo = await _statusCache.Get(vehicle.Id);
-                statuses.Add(vehicle.Id, vehicleInfo);
-
-                if (!customers.ContainsKey(vehicle.CustomerId)) {
-                    customers[vehicle.CustomerId] = await _customerService.Get(vehicle.CustomerId);
-                }
-            }
+            var statuses = await _statusCache.ExtractStatuses(storageData);
             _logger.LogTrace($"Statuses extracted");
 
-            var result = fromStorage.Select(v => v.ToVehicle(statuses[v.Id], customers[v.CustomerId]));
+            var customers = await _customerService.ExtractCustomers(storageData);
+            _logger.LogTrace($"Customers extracted");
+
+            var result = storageData.Select(v => v.ToVehicle(statuses[v.Id], customers[v.CustomerId]));
             if (status != null)
                 result = result.Where(v => v.Status == status);
 

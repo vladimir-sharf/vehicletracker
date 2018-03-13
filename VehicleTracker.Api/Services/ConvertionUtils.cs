@@ -1,8 +1,8 @@
-﻿using System;
-using VehicleTracker.Api.Model;
+﻿using VehicleTracker.Api.Model;
 using VehicleTracker.ServiceBus.Messages;
 using VehicleData = VehicleTracker.Api.Storage.Rest.Model.Vehicle;
 using CustomerData = VehicleTracker.Api.Storage.Rest.Model.Customer;
+using System;
 
 namespace VehicleTracker.Api.Services
 {
@@ -15,8 +15,8 @@ namespace VehicleTracker.Api.Services
                 RegNr = vdata.RegNr,
                 CustomerId = vdata.CustomerId,
                 CustomerName = customer?.Name,
-                Status = info.Status,
-                TimeUtc = info.TimeUtc,
+                Status = info?.Status ?? VehicleStatus.Unknown,
+                TimeUtc = info?.TimeUtc ?? DateTime.UtcNow,
             };
 
         public static Customer ToCustomer(this CustomerData data)

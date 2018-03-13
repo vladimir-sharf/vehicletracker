@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using VehicleTracker.Api.Model;
-using VehicleTracker.Api.Storage.Rest.Model;
 using VehicleFilter = VehicleTracker.Api.Model.VehicleFilter;
 
 namespace VehicleTracker.Api.Storage.Rest

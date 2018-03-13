@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -11,12 +10,9 @@ namespace VehicleTracker.Api.Storage.Rest
 
         private readonly IQueryStringFilterTransformer<TFilter> _filterTransformer;
 
-        public RestRepository(string baseUri, IQueryStringFilterTransformer<TFilter> filterTransformer)
+        public RestRepository(HttpClient client, IQueryStringFilterTransformer<TFilter> filterTransformer)
         {
-            _client = new HttpClient
-            {
-                BaseAddress = new Uri(baseUri)
-            };
+            _client = client;
             _filterTransformer = filterTransformer;
         }
 

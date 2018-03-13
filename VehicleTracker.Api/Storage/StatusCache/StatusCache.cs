@@ -6,7 +6,7 @@ using VehicleTracker.ServiceBus.Messages;
 
 namespace VehicleTracker.Api.Storage.StatusCache
 {
-    public class StatusCache 
+    public class StatusCache : IStatusCache
     {
         private readonly IMemoryCache _cache;
         private readonly ILogger<StatusCache> _logger;

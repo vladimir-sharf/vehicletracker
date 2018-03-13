@@ -8,7 +8,7 @@ using CustomerData = VehicleTracker.Api.Storage.Rest.Model.Customer;
 
 namespace VehicleTracker.Api.Services
 {
-    public class CustomerService
+    public class CustomerService : ICustomerService
     {
         private readonly IRepository<Guid, CustomerData, CustomerFilter> _repository;
 

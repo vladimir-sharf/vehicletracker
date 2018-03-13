@@ -8,7 +8,7 @@ namespace VehicleTracker.Api
 {
     public static class ServiceBusUtils
     {
-        public static IServiceBus SubscribeEvents(this IServiceBus serviceBus, StatusCache statusCache, VehicleSubscription vehicleSubscription)
+        public static IServiceBus SubscribeEvents(this IServiceBus serviceBus, IStatusCache statusCache, VehicleSubscription vehicleSubscription)
             => serviceBus
                 .SubscribeVehicleInfo(t => statusCache.Update(t.Id, t))
                 .SubscribeVehicleInfo(vehicleSubscription.Send);
