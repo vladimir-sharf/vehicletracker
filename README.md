@@ -47,6 +47,8 @@ Technologies:
 * React, Mobx - front-end
 * SignalR - realtime server-client communication
 
+I haven't configured SSL yet, but obviously it is needed on production for public APIs and AuthService.
+
 ### VehicleTracker.TrackerService
 
 Responsible for contacting vehicles. All it can do is to get vehicle id (vin) and ping it. No information about vehicles, customers, subscriptions is stored.
@@ -65,7 +67,7 @@ TODO: implement unsubscription, persistent subscription storage for recovery fro
 
 Stores the information about vehicles and customers. 
 
-I didn't separate these two on the first stage in order not to make application structure too complex. But I was always keeping in mind that some day we may need separate services for vehicles and customers. That is the reason that I don't have foreign keys in DB and don't do any joins, for example.
+I didn't separate these two on the first stage in order not to make application structure too complex. But I was always keeping in mind that some day we may need to separate services for vehicles and customers. That is the reason why I don't have foreign keys in DB and don't do any joins, for example.
 
 EntityFramework was the easiest way to deal with data, though I would probably take something more lightweight for production if it required performance.
 
@@ -75,7 +77,7 @@ StorageService currently communicates through REST api. I didn't see any reason 
 
 Authentificates users and issues JWT tokens.
 
-Don't look too much on the code. Just took sample IdentityServer4 project and tweaked it a little bit.
+Don't look too much on the code. Just took a sample IdentityServer4 project and tweaked it a little bit.
 
 ### VehicleTracker.Api
 
@@ -84,7 +86,7 @@ Public api & hosting the client application.
 Contains 3 main parts (which should be separated, but I had no time for it):
 - Client-side SPA, which is hosted on MVC app
 - HTTP API protected with jwt token. The client app interacts only with this api
-- SignalR infrastructure
+- SignalR infrastructure also protected with jwt token
 
 When user requests vehicles through API, it sends subscribe request for these vehicles to TrackerManager. 
 Status messages from the bus produced by TrackerService are captured and broadcasted through SignalR hub to clients.
