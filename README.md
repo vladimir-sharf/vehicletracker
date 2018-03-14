@@ -4,8 +4,8 @@
 
 You need Docker deamon with linux containers support to run.
 
-git clone https://github.com/vladimir-sharf/vehicletracker.git
-cd VehicleTracker
+git clone https://github.com/vladimir-sharf/vehicletracker.git  
+cd VehicleTracker  
 docker-compose up
 
 ## Building and running from the source code
@@ -19,23 +19,21 @@ Check appsettings.json and set up correct connection properties.
 
 ### Building
 
-git clone https://github.com/vladimir-sharf/vehicletracker.git
-cd VehicleTracker/VehicleTracker.Api
-npm install
-./node_modules/.bin/webpack --config webpack.release.config.js -p
-cd ..
-dotnet build
+git clone https://github.com/vladimir-sharf/vehicletracker.git  
+cd VehicleTracker/VehicleTracker.Api  
+npm install  
+./node_modules/.bin/webpack --config webpack.release.config.js -p  
+cd ..  
+dotnet build  
 
 ### Running
 
-cd {ProjectDir}
-dotnet run
+cd {ProjectDir}  
+dotnet run  
 
-Or
-./build.cmd
+Or  
+./build.cmd  
 on Windows
-
-
 
 ## Description
 
