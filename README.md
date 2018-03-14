@@ -6,7 +6,9 @@ You need Docker deamon with linux containers support to run.
 
 git clone https://github.com/vladimir-sharf/vehicletracker.git  
 cd VehicleTracker  
-docker-compose up
+docker-compose up  
+
+open http://localhost:8090 in browser
 
 ## Building and running from the source code
 
