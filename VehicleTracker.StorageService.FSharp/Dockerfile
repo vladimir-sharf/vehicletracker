@@ -3,12 +3,12 @@ WORKDIR /app
 
 # Copy csproj and restore as distinct layers
 WORKDIR /app/VehicleTracker.StorageService
-COPY ./VehicleTracker.StorageService.FSharp/src/VehicleTracker.StorageService.FSharp/*.fsproj ./
+COPY ./VehicleTracker.StorageService.FSharp/*.fsproj ./
 RUN dotnet restore
 
 # Copy everything else and build
 WORKDIR /app/VehicleTracker.StorageService
-COPY ./VehicleTracker.StorageService.FSharp/src/VehicleTracker.StorageService.FSharp/ ./
+COPY ./VehicleTracker.StorageService.FSharp/ ./
 RUN dotnet publish -c Release -o out
 
 # Build runtime image

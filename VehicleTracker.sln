@@ -16,7 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleTracker.StorageServi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleTracker.UnitTests", "VehicleTracker.UnitTests\VehicleTracker.UnitTests.csproj", "{35C58613-D679-4E28-8C9E-8EE68EC69EDB}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "VehicleTracker.StorageService.FSharp", "VehicleTracker.StorageService.FSharp\src\VehicleTracker.StorageService.FSharp\VehicleTracker.StorageService.FSharp.fsproj", "{D8438049-6CB3-464A-AA64-6826D6E1BC60}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "VehicleTracker.StorageService.FSharp", "VehicleTracker.StorageService.FSharp\VehicleTracker.StorageService.FSharp.fsproj", "{302DC47B-8603-419F-87BF-3BA7FAC8DB51}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "VehicleTracker.Tests", "VehicleTracker.Tests\VehicleTracker.Tests.fsproj", "{0ACB3BAC-37B5-4F6B-BFAD-B884058F92B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,10 +54,14 @@ Global
 		{35C58613-D679-4E28-8C9E-8EE68EC69EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35C58613-D679-4E28-8C9E-8EE68EC69EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35C58613-D679-4E28-8C9E-8EE68EC69EDB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8438049-6CB3-464A-AA64-6826D6E1BC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8438049-6CB3-464A-AA64-6826D6E1BC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8438049-6CB3-464A-AA64-6826D6E1BC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8438049-6CB3-464A-AA64-6826D6E1BC60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302DC47B-8603-419F-87BF-3BA7FAC8DB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302DC47B-8603-419F-87BF-3BA7FAC8DB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302DC47B-8603-419F-87BF-3BA7FAC8DB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302DC47B-8603-419F-87BF-3BA7FAC8DB51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACB3BAC-37B5-4F6B-BFAD-B884058F92B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACB3BAC-37B5-4F6B-BFAD-B884058F92B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACB3BAC-37B5-4F6B-BFAD-B884058F92B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACB3BAC-37B5-4F6B-BFAD-B884058F92B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
