@@ -2,10 +2,7 @@ version: '3'
 
 services:
   vehicletracker.trackerservice:
-    image: vehicletracker.trackerservice
-    build:
-      context: .
-      dockerfile: ./VehicleTracker.TrackerService/Dockerfile
+    image: vladimirsharf/vehicletracker.trackerservice
     environment:
       "RabbitMq:HostName": "rabbit"
       "RabbitMq:UserName": "rabbitmq"
@@ -16,21 +13,13 @@ services:
     depends_on:
      - "rabbit"
   vehicletracker.authservice:
-    image: vehicletracker.authservice
-    build:
-      context: .
-      dockerfile: ./VehicleTracker.AuthService/Dockerfile
+    image: vladimirsharf/vehicletracker.authservice
     ports:
      - "8092:80"
     environment:
       "JsClient:Domain": "http://localhost:8090"
-    labels:
-       NAME: "vehicletracker.authservice"
   vehicletracker.trackermanager:
-    image: vehicletracker.trackermanager
-    build:
-      context: .
-      dockerfile: ./VehicleTracker.TrackerManager/Dockerfile
+    image: vladimirsharf/vehicletracker.trackermanager
     ports:
      - "8089:80"
     environment:
@@ -41,10 +30,7 @@ services:
     depends_on:
      - "rabbit"
   vehicletracker.api:
-    image: vehicletracker.api
-    build:
-      context: .
-      dockerfile: ./VehicleTracker.Api/Dockerfile
+    image: vladimirsharf/vehicletracker.api
     environment:
       "RabbitMq:HostName": "rabbit"
       "RabbitMq:UserName": "rabbitmq"
@@ -63,10 +49,7 @@ services:
      - "vehicletracker.authservice"
      - "vehicletracker.storageservice"
   vehicletracker.storageservice:
-    image: vehicletracker.storageservice
-    build:
-      context: .
-      dockerfile: ./VehicleTracker.StorageService/Dockerfile
+    image: vladimirsharf/vehicletracker.storageservice
     ports:
      - "8091:80"
     environment:
