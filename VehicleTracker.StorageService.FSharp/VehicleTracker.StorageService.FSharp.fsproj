@@ -39,6 +39,8 @@
     <Compile Include="DataAccess.Vehicles.fs" />
     <Compile Include="HttpHandlers.fs" />
     <Compile Include="RoutingHelpers.fs" />
+    <Compile Include="DbInitializer.DataHelper.fs" />
+    <Compile Include="DbInitializer.Data.fs" />
     <Compile Include="DbInitializer.fs" />
     <Compile Include="DbInitializerHelper.fs" />
     <Compile Include="Startup.fs" />

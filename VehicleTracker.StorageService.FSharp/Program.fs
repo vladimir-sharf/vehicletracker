@@ -7,6 +7,8 @@ open Microsoft.Extensions.DependencyInjection
 open Serilog
 open VehicleTracker.StorageService.FSharp.Startup
 open Microsoft.Extensions.Configuration
+open VehicleTracker.StorageService.FSharp.DbInitializer
+open VehicleTracker.StorageService.FSharp.DbInitializerData
 
 let readConfig() =
     let builder = new ConfigurationBuilder()
@@ -28,10 +30,12 @@ let configureWebHost config =
 
 let buildWebHost (builder : IWebHostBuilder) = builder.Build()
 
+let dataInitializer = wrap ensureDbExists >=> checkEmpty >=+> create >=+> saveChanges
+
 [<EntryPoint>]
 let main args =
     let config = readConfig()
     let host = buildWebHost (configureWebHost config)
-    DbInitializerHelper.seedDatabase host |> ignore
+    DbInitializerHelper.seedDatabase "Test data init" host dataInitializer |> ignore
     host.Run()
     0

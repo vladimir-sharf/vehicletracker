@@ -1,36 +1,48 @@
 namespace VehicleTracker.StorageService.FSharp
 
 open Microsoft.Extensions.Logging
-open System.Threading
 open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.DependencyInjection
 open System
 open VehicleTracker.StorageService.FSharp.Models
+open VehicleTracker.StorageService.FSharp.DbInitializer
+open System.Threading
 
 module DbInitializerHelper = 
-    let seedDatabaseTry (services : IServiceProvider) (logger : ILogger)= 
-        try 
-            logger.LogInformation("Trying to connect to the database...")
-            let context = services.GetRequiredService<VehiclesContext>()
-            Some (DbInitializer.init logger context)
-        with
-            | e -> logger.LogError("An error occurred while seeding the database: " + e.Message); None
+    let createContext (services : IServiceProvider) = services.GetRequiredService<VehiclesContext>()
 
-    let rec seedDatabaseLoop (services : IServiceProvider) =
-        let logger = services.GetRequiredService<ILogger<VehiclesContext>>()
-        match seedDatabaseTry services logger with
-        | Some (Success result) -> 
-            logger.LogInformation("Database has been seeded") |> ignore
-            Some result
-        | Some Skip -> 
-            None
-        | None -> 
+    let log (logger : ILogger<VehiclesContext>) level message a =
+        match level with
+        | LogLevel.Error -> logger.LogError(message) |> ignore
+        | LogLevel.Warning -> logger.LogWarning(message) |> ignore
+        | LogLevel.Information -> logger.LogInformation(message) |> ignore
+        | _ -> logger.LogDebug(message) |> ignore
+        a
+
+    let rec seedDatabaseLoop name (logger : ILogger<VehiclesContext>) initializer =
+        match initializer with
+        | Success result -> 
+            logger.LogWarning(sprintf "%s completed" name) |> ignore
+            Success result
+        | Skip m -> 
+            logger.LogInformation(sprintf "%s skipped, reason: %s" name m) |> ignore
+            Skip m
+        | Error e -> 
+            logger.LogError(e)
             logger.LogInformation("Waiting 10 sec...")
             Thread.Sleep(10000)
-            seedDatabaseLoop services
+            seedDatabaseLoop name logger initializer
 
-    let seedDatabase (host : IWebHost) =
+    let seedDatabase name (host : IWebHost) initializer =
         use scope = host.Services.CreateScope()
         let services = scope.ServiceProvider
-        seedDatabaseLoop services
+        let logger = services.GetRequiredService<ILogger<VehiclesContext>>()
+        services 
+            |> (
+                wrap (log logger LogLevel.Debug "Connecting to DB")
+                >=+> createContext 
+                >=+> log logger LogLevel.Debug "Connected"
+                >=> initializer
+            ) 
+            |> seedDatabaseLoop name logger
 

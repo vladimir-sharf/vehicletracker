@@ -1,40 +1,49 @@
 ﻿namespace VehicleTracker.Tests
 
 open Xunit
-open Microsoft.AspNetCore.TestHost
-open VehicleTracker.StorageService.FSharp.App
+open VehicleTracker.Tests.Utils
 open System.Net
-open Microsoft.Extensions.Configuration
+open VehicleTracker.StorageService.FSharp.DbInitializer
+open VehicleTracker.StorageService.FSharp.DbInitializerDataHelper
+open Newtonsoft.Json
+open VehicleTracker.StorageService.FSharp.Models
 
 module SampleTest =
-    let readConfig() = 
-        let builder = new ConfigurationBuilder() 
-        builder.AddJsonFile "appSettings.StorageService.json" |> ignore
-        builder.AddEnvironmentVariables() |> ignore
-        builder.AddInMemoryCollection(
-            [ "ConnectionStrings:DefaultConnection", "Server=localhost;Database=VehicleDb_Test;Integrated Security=True" ] 
-            |> Map.ofList) |> ignore
-        builder.Build()
+    let defaultInitializer dataInit = Some (wrap ensureDbExists >=> checkEmpty >=+> dataInit >=+> saveChanges)
 
-    let configureWebHost() = 
-        configureWebHost (readConfig())
-
-    let createServer() = new TestServer(configureWebHost())
-
-    let createClient (server : TestServer) = server.CreateClient()
+    let emptyInitializer = defaultInitializer id
 
     [<Fact>]
-    let Test1() = 
-        async {
-            use server = createServer()
-            use client = createClient server
-            let! result = Async.AwaitTask (client.GetAsync("/vehicles/"))
-            let! content = Async.AwaitTask (result.Content.ReadAsStringAsync())
-            printfn "%s" content
-            Assert.Equal(HttpStatusCode.OK, result.StatusCode)
-        }
+    let ``Connection test``() = 
+        withServer emptyInitializer
+            (fun client -> async {
+                let! result = Async.AwaitTask (client.GetAsync("/vehicles/"))
+                Assert.Equal(HttpStatusCode.OK, result.StatusCode)
+            })
+
+    let createVehicles : ContextTransformer = 
+        addCustomer "Name 1" "Address 1"
+            >|> addVehicle "1" "222222"
+            >|> addVehicle "2" "222222"
+            |> returnContext
+            >> addCustomer "Name 2" "Address 2"
+            >|> addVehicle "3" "333333"
+            >|> addVehicle "4" "444444"
+            |> returnContext
+        
+    [<Fact>]
+    let ``Get test``() = 
+        withServer (defaultInitializer createVehicles)
+            (fun client -> async {
+                let! result = Async.AwaitTask (client.GetAsync("/vehicles/"))
+                Assert.Equal(HttpStatusCode.OK, result.StatusCode)
+                let! content = Async.AwaitTask (result.Content.ReadAsStringAsync())
+                let result = JsonConvert.DeserializeObject<seq<Vehicle>>(content)
+                Assert.Equal(4, Seq.length result)
+            })
 
     [<EntryPoint>]
-    let main _ = 
-        Async.RunSynchronously (Test1()) |> ignore
+    let main _ =
+        Async.RunSynchronously (``Connection test``())
+        Async.RunSynchronously (``Get test``())
         0
