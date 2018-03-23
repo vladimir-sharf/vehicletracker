@@ -18,4 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\VehicleTracker.StorageService.FSharp\VehicleTracker.StorageService.FSharp.fsproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="appSettings.StorageService.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>

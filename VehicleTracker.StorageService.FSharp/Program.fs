@@ -17,9 +17,9 @@ let readConfig() =
 let configureLogging (hostingContext : WebHostBuilderContext) (loggerConfiguration : LoggerConfiguration) =
          loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration) |> ignore
 
-let configureWebHost() =     
+let configureWebHost config =     
     WebHostBuilder()
-        .UseConfiguration(readConfig())
+        .UseConfiguration(config)
         .UseKestrel()
         .UseIISIntegration()
         .Configure(Action<IApplicationBuilder> configureApp)
@@ -30,7 +30,8 @@ let buildWebHost (builder : IWebHostBuilder) = builder.Build()
 
 [<EntryPoint>]
 let main args =
-    let host = buildWebHost (configureWebHost())
+    let config = readConfig()
+    let host = buildWebHost (configureWebHost config)
     DbInitializerHelper.seedDatabase host |> ignore
     host.Run()
     0
