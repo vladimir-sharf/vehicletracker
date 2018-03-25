@@ -16,9 +16,12 @@ module Customers =
             select item
         }
 
-    let listCustomers filter = list customers None filter
+    let private customerFilter = 
+        wrap (fun x -> x.Id) filterById 
+
+    let listCustomers filter = list customers (Some customerFilter) filter
     let getCustomer id = get customers filterById id
     let addCustomer customer = add customers customer
     let updateCustomer item = update customers filterById updateCustomerFields item
     let deleteCustomer id = delete customers filterById id
-
+    let extractCustomerId (x : Customer) = x.Id

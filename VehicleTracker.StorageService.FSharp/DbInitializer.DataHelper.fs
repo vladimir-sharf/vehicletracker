@@ -23,10 +23,12 @@ let addVehicle vin regNr (context : VehiclesContext) (customer : Customer) =
 let private bind f g context =
     let c = f context 
     g context c |> ignore
-    c
+    context
 
 let (>|>) f g = bind f g
 
-let returnContext f context =
-    f context |> ignore
-    context
+let private plus f g context c = 
+    f context c |> ignore
+    g context c
+
+let (<+>) f g = plus f g

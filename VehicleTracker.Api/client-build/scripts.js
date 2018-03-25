@@ -1951,7 +1951,7 @@ function loadLocale(name) {
         try {
             oldLocale = globalLocale._abbr;
             var aliasedRequire = require;
-            __webpack_require__(550)("./" + name);
+            __webpack_require__(551)("./" + name);
             getSetGlobalLocale(oldLocale);
         } catch (e) {}
     }
@@ -4623,7 +4623,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(549)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(550)(module)))
 
 /***/ }),
 /* 2 */
@@ -4998,7 +4998,7 @@ if (true) {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(512)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(513)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -7228,7 +7228,7 @@ function __extends(d, b) {
  * 1) detect when they are being _used_ and report this (using reportObserved). This allows mobx to make the connection between running functions and the data they used
  * 2) they should notify mobx whenever they have _changed_. This way mobx can re-run any functions (derivations) that are using this atom.
  */
-var BaseAtom = (function () {
+var BaseAtom = /** @class */ (function () {
     /**
      * Create a new atom. For debugging purposes it is recommended to give it a name.
      * The onBecomeObserved and onBecomeUnobserved callbacks can be used for resource management.
@@ -7265,7 +7265,7 @@ var BaseAtom = (function () {
     };
     return BaseAtom;
 }());
-var Atom = (function (_super) {
+var Atom = /** @class */ (function (_super) {
     __extends(Atom, _super);
     /**
      * Create a new atom. For debugging purposes it is recommended to give it a name.
@@ -7431,7 +7431,7 @@ var safariPrototypeSetterInheritanceBug = (function () {
  */
 var OBSERVABLE_ARRAY_BUFFER_SIZE = 0;
 // Typescript workaround to make sure ObservableArray extends Array
-var StubArray = (function () {
+var StubArray = /** @class */ (function () {
     function StubArray() {
     }
     return StubArray;
@@ -7474,7 +7474,7 @@ if (Object.isFrozen(Array)) {
         });
     });
 }
-var ObservableArrayAdministration = (function () {
+var ObservableArrayAdministration = /** @class */ (function () {
     function ObservableArrayAdministration(name, enhancer, array, owned) {
         this.array = array;
         this.owned = owned;
@@ -7637,7 +7637,7 @@ var ObservableArrayAdministration = (function () {
     };
     return ObservableArrayAdministration;
 }());
-var ObservableArray = (function (_super) {
+var ObservableArray = /** @class */ (function (_super) {
     __extends(ObservableArray, _super);
     function ObservableArray(initialValues, enhancer, name, owned) {
         if (name === void 0) { name = "ObservableArray@" + getNextId(); }
@@ -7950,7 +7950,7 @@ function isObservableArray(thing) {
 }
 
 var UNCHANGED = {};
-var ObservableValue = (function (_super) {
+var ObservableValue = /** @class */ (function (_super) {
     __extends(ObservableValue, _super);
     function ObservableValue(value, enhancer, name, notifySpy) {
         if (name === void 0) { name = "ObservableValue@" + getNextId(); }
@@ -8191,18 +8191,18 @@ function allowStateChangesEnd(prev) {
  * This means that these properties despite being enumerable might not show up in Object.keys() (but they will show up in for...in loops).
  */
 function createClassPropertyDecorator(
-    /**
-     * This function is invoked once, when the property is added to a new instance.
-     * When this happens is not strictly determined due to differences in TS and Babel:
-     * Typescript: Usually when constructing the new instance
-     * Babel, sometimes Typescript: during the first get / set
-     * Both: when calling `runLazyInitializers(instance)`
-     */
-    onInitialize, get, set, enumerable, 
-    /**
-     * Can this decorator invoked with arguments? e.g. @decorator(args)
-     */
-    allowCustomArguments) {
+/**
+ * This function is invoked once, when the property is added to a new instance.
+ * When this happens is not strictly determined due to differences in TS and Babel:
+ * Typescript: Usually when constructing the new instance
+ * Babel, sometimes Typescript: during the first get / set
+ * Both: when calling `runLazyInitializers(instance)`
+ */
+onInitialize, get, set, enumerable, 
+/**
+ * Can this decorator invoked with arguments? e.g. @decorator(args)
+ */
+allowCustomArguments) {
     function classPropertyDecorator(target, key, descriptor, customArgs, argLen) {
         if (argLen === void 0) { argLen = 0; }
         invariant(allowCustomArguments || quacksLikeADecorator(arguments), "This function is a decorator, but it wasn't invoked like a decorator");
@@ -8364,10 +8364,11 @@ function defineBoundAction(target, propertyName, fn) {
     addHiddenProp(target, propertyName, res);
 }
 
-// Copied from https://github.com/jashkenas/underscore/blob/5c237a7c682fb68fd5378203f0bf22dce1624854/underscore.js#L1186-L1289
+var toString = Object.prototype.toString;
 function deepEqual(a, b) {
     return eq(a, b);
 }
+// Copied from https://github.com/jashkenas/underscore/blob/5c237a7c682fb68fd5378203f0bf22dce1624854/underscore.js#L1186-L1289
 // Internal recursive comparison function for `isEqual`.
 function eq(a, b, aStack, bStack) {
     // Identical objects are equal. `0 === -0`, but they aren't identical.
@@ -8386,7 +8387,6 @@ function eq(a, b, aStack, bStack) {
         return false;
     return deepEq(a, b, aStack, bStack);
 }
-var toString = Object.prototype.toString;
 // Internal recursive comparison function for `isEqual`.
 function deepEq(a, b, aStack, bStack) {
     // Unwrap any wrapped objects.
@@ -8677,7 +8677,7 @@ function reaction(expression, effect, arg3) {
  *
  * If at any point it's outside batch and it isn't observed: reset everything and go to 1.
  */
-var ComputedValue = (function () {
+var ComputedValue = /** @class */ (function () {
     /**
      * Create a new computed value based on a function expression.
      *
@@ -8859,7 +8859,7 @@ var ComputedValue = (function () {
 ComputedValue.prototype[primitiveSymbol()] = ComputedValue.prototype.valueOf;
 var isComputedValue = createInstanceofPredicate("ComputedValue", ComputedValue);
 
-var ObservableObjectAdministration = (function () {
+var ObservableObjectAdministration = /** @class */ (function () {
     function ObservableObjectAdministration(target, name) {
         this.target = target;
         this.name = name;
@@ -9359,7 +9359,7 @@ function transaction(action, thisArg) {
 }
 
 var ObservableMapMarker = {};
-var ObservableMap = (function () {
+var ObservableMap = /** @class */ (function () {
     function ObservableMap(initialData, enhancer, name) {
         if (enhancer === void 0) { enhancer = deepEnhancer; }
         if (name === void 0) { name = "ObservableMap@" + getNextId(); }
@@ -9808,7 +9808,7 @@ function toPrimitive(value) {
  * These values will persist if global state is reset
  */
 var persistentKeys = ["mobxGuid", "resetId", "spyListeners", "strictMode", "runId"];
-var MobXGlobals = (function () {
+var MobXGlobals = /** @class */ (function () {
     function MobXGlobals() {
         /**
          * MobXGlobals version.
@@ -9892,7 +9892,7 @@ var warnedAboutMultipleInstances = false;
                 warnedAboutMultipleInstances = true;
                 console.warn("[mobx] Warning: there are multiple mobx instances active. This might lead to unexpected results. See https://github.com/mobxjs/mobx/issues/1082 for details.");
             }
-        });
+        }, 1);
     }
 }
 function isolateGlobalState() {
@@ -10230,7 +10230,7 @@ var TraceMode;
     TraceMode[TraceMode["LOG"] = 1] = "LOG";
     TraceMode[TraceMode["BREAK"] = 2] = "BREAK";
 })(TraceMode || (TraceMode = {}));
-var CaughtException = (function () {
+var CaughtException = /** @class */ (function () {
     function CaughtException(cause) {
         this.cause = cause;
         // Empty
@@ -10459,7 +10459,7 @@ function getAtomFromArgs(args) {
     }
 }
 
-var Reaction = (function () {
+var Reaction = /** @class */ (function () {
     function Reaction(name, onInvalidate) {
         if (name === void 0) { name = "Reaction@" + getNextId(); }
         this.name = name;
@@ -10812,7 +10812,7 @@ function createTransformer(transformer, onCleanup) {
     // This construction is used to avoid leaking refs to the objectCache directly
     var resetId = globalState.resetId;
     // Local transformer class specifically for this transformer
-    var Transformer = (function (_super) {
+    var Transformer = /** @class */ (function (_super) {
         __extends(Transformer, _super);
         function Transformer(sourceIdentifier, sourceObject) {
             var _this = _super.call(this, function () { return transformer(sourceObject); }, undefined, comparer.default, "Transformer-" + transformer.name + "-" + sourceIdentifier, undefined) || this;
@@ -12888,31 +12888,31 @@ module.exports = checkPropTypes;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(512);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(515);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(154);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(517);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(519);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(520);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(522);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(523);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(524);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(525);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(155);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(109);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(531);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(533);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(534);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(535);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(536);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
 
 
@@ -13251,7 +13251,7 @@ Router.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(521);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -32049,27 +32049,27 @@ var _app = __webpack_require__(501);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _callback = __webpack_require__(539);
+var _callback = __webpack_require__(540);
 
 var _callback2 = _interopRequireDefault(_callback);
 
-var _http = __webpack_require__(540);
+var _http = __webpack_require__(541);
 
 var _http2 = _interopRequireDefault(_http);
 
-var _api = __webpack_require__(543);
+var _api = __webpack_require__(546);
 
 var _api2 = _interopRequireDefault(_api);
 
-var _rootStore = __webpack_require__(546);
+var _rootStore = __webpack_require__(547);
 
 var _rootStore2 = _interopRequireDefault(_rootStore);
 
 var _reactRouterDom = __webpack_require__(106);
 
-var _oidcClient = __webpack_require__(556);
+var _oidcClient = __webpack_require__(557);
 
-var _clock = __webpack_require__(557);
+var _clock = __webpack_require__(558);
 
 var _clock2 = _interopRequireDefault(_clock);
 
@@ -49419,15 +49419,15 @@ var _vehicleListFilter = __webpack_require__(502);
 
 var _vehicleListFilter2 = _interopRequireDefault(_vehicleListFilter);
 
-var _login = __webpack_require__(567);
+var _login = __webpack_require__(510);
 
 var _login2 = _interopRequireDefault(_login);
 
-var _logoutButton = __webpack_require__(510);
+var _logoutButton = __webpack_require__(511);
 
 var _logoutButton2 = _interopRequireDefault(_logoutButton);
 
-var _app = __webpack_require__(538);
+var _app = __webpack_require__(539);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -50094,6 +50094,41 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Login = function Login(_ref) {
+  var store = _ref.store;
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'button',
+      {
+        onClick: function onClick() {
+          return store.auth();
+        } },
+      'Log in'
+    )
+  );
+};
+
+exports.default = Login;
+
+/***/ }),
+/* 511 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
 var _reactRouterDom = __webpack_require__(106);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -50119,7 +50154,7 @@ var LogoutButton = (0, _reactRouterDom.withRouter)(function (_ref) {
 exports.default = LogoutButton;
 
 /***/ }),
-/* 511 */
+/* 512 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50129,7 +50164,7 @@ exports.default = LogoutButton;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(514);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(109);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -50186,7 +50221,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 512 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50735,7 +50770,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
-/* 513 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51048,7 +51083,7 @@ var createBrowserHistory = function createBrowserHistory() {
 exports.default = createBrowserHistory;
 
 /***/ }),
-/* 514 */
+/* 515 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51058,7 +51093,7 @@ exports.default = createBrowserHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(516);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(109);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -51114,7 +51149,7 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 515 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51444,18 +51479,18 @@ var createHashHistory = function createHashHistory() {
 exports.default = createHashHistory;
 
 /***/ }),
-/* 516 */
+/* 517 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(518);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 517 */
+/* 518 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51465,7 +51500,7 @@ exports.default = createHashHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(519);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(110);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -51522,7 +51557,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 518 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51698,7 +51733,7 @@ var createMemoryHistory = function createMemoryHistory() {
 exports.default = createMemoryHistory;
 
 /***/ }),
-/* 519 */
+/* 520 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51779,10 +51814,10 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 520 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(521)
+var isarray = __webpack_require__(522)
 
 /**
  * Expose `pathToRegexp`.
@@ -52211,7 +52246,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 521 */
+/* 522 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -52220,18 +52255,18 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 522 */
+/* 523 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(524);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 523 */
+/* 524 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52322,18 +52357,18 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 524 */
+/* 525 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(526);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 525 */
+/* 526 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52345,7 +52380,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(527);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -52441,15 +52476,15 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 526 */
+/* 527 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(528);
 /* unused harmony reexport createBrowserHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(529);
 /* unused harmony reexport createHashHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(530);
 /* unused harmony reexport createMemoryHistory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(77);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
@@ -52468,7 +52503,7 @@ Redirect.contextTypes = {
 
 
 /***/ }),
-/* 527 */
+/* 528 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52772,7 +52807,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createBrowserHistory);
 
 /***/ }),
-/* 528 */
+/* 529 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53093,7 +53128,7 @@ var createHashHistory = function createHashHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createHashHistory);
 
 /***/ }),
-/* 529 */
+/* 530 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53261,18 +53296,18 @@ var createMemoryHistory = function createMemoryHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createMemoryHistory);
 
 /***/ }),
-/* 530 */
+/* 531 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(531);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(532);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 531 */
+/* 532 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53455,18 +53490,18 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 532 */
+/* 533 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(533);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(534);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 533 */
+/* 534 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53560,7 +53595,7 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 534 */
+/* 535 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53571,18 +53606,18 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 535 */
+/* 536 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(537);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 536 */
+/* 537 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53590,7 +53625,7 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(537);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(156);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -53627,7 +53662,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 537 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -53705,14 +53740,14 @@ var withRouter = function withRouter(Component) {
 
 
 /***/ }),
-/* 538 */
+/* 539 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"root":"_32QbzMliF4ebSVXsKhGM3r","header":"_3TZd7Y_tS1TNkyV7k5kfR2"};
 
 /***/ }),
-/* 539 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53774,7 +53809,7 @@ var Callback = (0, _mobxReact.observer)(_class = function (_React$Component) {
 exports.default = Callback;
 
 /***/ }),
-/* 540 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53787,7 +53822,7 @@ exports.default = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _isomorphicFetch = __webpack_require__(541);
+var _isomorphicFetch = __webpack_require__(542);
 
 var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 
@@ -53970,19 +54005,19 @@ var Http = function () {
 exports.default = Http;
 
 /***/ }),
-/* 541 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // the whatwg-fetch polyfill installs the fetch() function
 // on the global object (window or self)
 //
 // Return that as the export for use in Webpack, Browserify etc.
-__webpack_require__(542);
+__webpack_require__(543);
 module.exports = self.fetch.bind(self);
 
 
 /***/ }),
-/* 542 */
+/* 543 */
 /***/ (function(module, exports) {
 
 (function(self) {
@@ -54447,86 +54482,6 @@ module.exports = self.fetch.bind(self);
   self.fetch.polyfill = true
 })(typeof self !== 'undefined' ? self : this);
 
-
-/***/ }),
-/* 543 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Api = function () {
-  function Api(http) {
-    _classCallCheck(this, Api);
-
-    this.http = http;
-  }
-
-  _createClass(Api, [{
-    key: 'loadCustomers',
-    value: function loadCustomers() {
-      return this.request('get', '/customers');
-    }
-  }, {
-    key: 'loadVehicles',
-    value: function loadVehicles(query) {
-      return this.request('get', '/vehicles?' + query);
-    }
-  }, {
-    key: 'request',
-    value: function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(method, url, body) {
-        return regeneratorRuntime.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.prev = 0;
-                _context.next = 3;
-                return this.http[method](url, body);
-
-              case 3:
-                return _context.abrupt('return', _context.sent);
-
-              case 6:
-                _context.prev = 6;
-                _context.t0 = _context['catch'](0);
-                throw _context.t0;
-
-              case 9:
-              case 'end':
-                return _context.stop();
-            }
-          }
-        }, _callee, this, [[0, 6]]);
-      }));
-
-      function request(_x, _x2, _x3) {
-        return _ref.apply(this, arguments);
-      }
-
-      return request;
-    }()
-  }, {
-    key: 'subscribeVehicles',
-    value: function subscribeVehicles() {
-      return this.http.subscribeHub('/vehicleHub');
-    }
-  }]);
-
-  return Api;
-}();
-
-exports.default = Api;
 
 /***/ }),
 /* 544 */
@@ -57305,23 +57260,103 @@ process.umask = function() { return 0; };
 
 
 Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Api = function () {
+  function Api(http) {
+    _classCallCheck(this, Api);
+
+    this.http = http;
+  }
+
+  _createClass(Api, [{
+    key: 'loadCustomers',
+    value: function loadCustomers() {
+      return this.request('get', '/customers');
+    }
+  }, {
+    key: 'loadVehicles',
+    value: function loadVehicles(query) {
+      return this.request('get', '/vehicles?' + query);
+    }
+  }, {
+    key: 'request',
+    value: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(method, url, body) {
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
+                _context.next = 3;
+                return this.http[method](url, body);
+
+              case 3:
+                return _context.abrupt('return', _context.sent);
+
+              case 6:
+                _context.prev = 6;
+                _context.t0 = _context['catch'](0);
+                throw _context.t0;
+
+              case 9:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[0, 6]]);
+      }));
+
+      function request(_x, _x2, _x3) {
+        return _ref.apply(this, arguments);
+      }
+
+      return request;
+    }()
+  }, {
+    key: 'subscribeVehicles',
+    value: function subscribeVehicles() {
+      return this.http.subscribeHub('/vehicleHub');
+    }
+  }]);
+
+  return Api;
+}();
+
+exports.default = Api;
+
+/***/ }),
+/* 547 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = undefined;
 
-var _customerStore = __webpack_require__(547);
+var _customerStore = __webpack_require__(548);
 
 var _customerStore2 = _interopRequireDefault(_customerStore);
 
-var _vehicleStore = __webpack_require__(548);
+var _vehicleStore = __webpack_require__(549);
 
 var _vehicleStore2 = _interopRequireDefault(_vehicleStore);
 
-var _filtersStore = __webpack_require__(551);
+var _filtersStore = __webpack_require__(552);
 
 var _filtersStore2 = _interopRequireDefault(_filtersStore);
 
-var _authStore = __webpack_require__(555);
+var _authStore = __webpack_require__(556);
 
 var _authStore2 = _interopRequireDefault(_authStore);
 
@@ -57341,7 +57376,7 @@ var RootStore = function RootStore(api, userManager, clock) {
 exports.default = RootStore;
 
 /***/ }),
-/* 547 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57507,7 +57542,7 @@ var Customer = (_class3 = function () {
 }), _applyDecoratedDescriptor(_class3.prototype, 'updateFromJson', [_mobx.action], Object.getOwnPropertyDescriptor(_class3.prototype, 'updateFromJson'), _class3.prototype)), _class3);
 
 /***/ }),
-/* 548 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57813,7 +57848,7 @@ var Vehicle = (_class3 = function () {
 }), _applyDecoratedDescriptor(_class3.prototype, 'secondsAgo', [_mobx.computed], Object.getOwnPropertyDescriptor(_class3.prototype, 'secondsAgo'), _class3.prototype), _applyDecoratedDescriptor(_class3.prototype, 'status', [_mobx.computed], Object.getOwnPropertyDescriptor(_class3.prototype, 'status'), _class3.prototype), _applyDecoratedDescriptor(_class3.prototype, 'statusName', [_mobx.computed], Object.getOwnPropertyDescriptor(_class3.prototype, 'statusName'), _class3.prototype), _applyDecoratedDescriptor(_class3.prototype, 'statusHistory', [_mobx.computed], Object.getOwnPropertyDescriptor(_class3.prototype, 'statusHistory'), _class3.prototype), _applyDecoratedDescriptor(_class3.prototype, 'updatedTime', [_mobx.computed], Object.getOwnPropertyDescriptor(_class3.prototype, 'updatedTime'), _class3.prototype), _applyDecoratedDescriptor(_class3.prototype, 'updateFromJson', [_mobx.action], Object.getOwnPropertyDescriptor(_class3.prototype, 'updateFromJson'), _class3.prototype), _applyDecoratedDescriptor(_class3.prototype, 'updateFromMessage', [_mobx.action], Object.getOwnPropertyDescriptor(_class3.prototype, 'updateFromMessage'), _class3.prototype)), _class3);
 
 /***/ }),
-/* 549 */
+/* 550 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -57841,7 +57876,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 550 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -58104,10 +58139,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 550;
+webpackContext.id = 551;
 
 /***/ }),
-/* 551 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58124,7 +58159,7 @@ var _desc, _value, _class, _descriptor, _descriptor2;
 
 var _mobx = __webpack_require__(52);
 
-var _queryString = __webpack_require__(552);
+var _queryString = __webpack_require__(553);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -58217,14 +58252,14 @@ var FiltersStore = (_class = function () {
 exports.default = FiltersStore;
 
 /***/ }),
-/* 552 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(553);
+var strictUriEncode = __webpack_require__(554);
 var objectAssign = __webpack_require__(74);
-var decodeComponent = __webpack_require__(554);
+var decodeComponent = __webpack_require__(555);
 
 function encoderForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
@@ -58445,7 +58480,7 @@ exports.parseUrl = function (str, opts) {
 
 
 /***/ }),
-/* 553 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58458,7 +58493,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 554 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58559,7 +58594,7 @@ module.exports = function (encodedURI) {
 
 
 /***/ }),
-/* 555 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58735,7 +58770,7 @@ var AuthStore = (_class = function () {
 exports.default = AuthStore;
 
 /***/ }),
-/* 556 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(t,e){if(true)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var n=e();for(var r in n)("object"==typeof exports?exports:t)[r]=n[r]}}(this,function(){return function(t){function e(r){if(n[r])return n[r].exports;var i=n[r]={exports:{},id:r,loaded:!1};return t[r].call(i.exports,i,i.exports,e),i.loaded=!0,i.exports}var n={};return e.m=t,e.c=n,e.p="",e(0)}([function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=e.Log=n(1),i=e.OidcClient=n(2),s=e.OidcClientSettings=n(3),o=e.WebStorageStateStore=n(4),a=e.InMemoryWebStorage=n(26),u=e.UserManager=n(27),h=e.AccessTokenEvents=n(36),c=e.MetadataService=n(7),f=e.CordovaPopupNavigator=n(43),l=e.CordovaIFrameNavigator=n(45),d=e.CheckSessionIFrame=n(41),g=e.TokenRevocationClient=n(42),p=e.SessionMonitor=n(40),y=e.Global=n(5);e.default={Log:r,OidcClient:i,OidcClientSettings:s,WebStorageStateStore:o,InMemoryWebStorage:a,UserManager:u,AccessTokenEvents:h,MetadataService:c,CordovaPopupNavigator:f,CordovaIFrameNavigator:l,CheckSessionIFrame:d,TokenRevocationClient:g,SessionMonitor:p,Global:y}},function(t,e){"use strict";function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),i={debug:function(){},info:function(){},warn:function(){},error:function(){}},s=0,o=1,a=2,u=3,h=4,c=void 0,f=void 0,l=function(){function t(){n(this,t)}return t.reset=function(){f=u,c=i},t.debug=function(){if(f>=h){for(var t=arguments.length,e=Array(t),n=0;n<t;n++)e[n]=arguments[n];c.debug.apply(c,Array.from(e))}},t.info=function(){if(f>=u){for(var t=arguments.length,e=Array(t),n=0;n<t;n++)e[n]=arguments[n];c.info.apply(c,Array.from(e))}},t.warn=function(){if(f>=a){for(var t=arguments.length,e=Array(t),n=0;n<t;n++)e[n]=arguments[n];c.warn.apply(c,Array.from(e))}},t.error=function(){if(f>=o){for(var t=arguments.length,e=Array(t),n=0;n<t;n++)e[n]=arguments[n];c.error.apply(c,Array.from(e))}},r(t,null,[{key:"NONE",get:function(){return s}},{key:"ERROR",get:function(){return o}},{key:"WARN",get:function(){return a}},{key:"INFO",get:function(){return u}},{key:"DEBUG",get:function(){return h}},{key:"level",get:function(){return f},set:function(t){if(!(s<=t&&t<=h))throw new Error("Invalid log level");f=t}},{key:"logger",get:function(){return c},set:function(t){if(!t.debug&&t.info&&(t.debug=t.info),!(t.debug&&t.info&&t.warn&&t.error))throw new Error("Invalid logger");c=t}}]),t}();e.default=l,l.reset(),t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),o=n(1),a=r(o),u=n(3),h=r(u),c=n(10),f=r(c),l=n(18),d=r(l),g=n(23),p=r(g),y=n(24),v=r(y),m=n(25),S=r(m),b=n(20),w=r(b),E=n(21),_=r(E),x=function(){function t(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};i(this,t),e instanceof h.default?this._settings=e:this._settings=new h.default(e)}return t.prototype.createSigninRequest=function(){var t=this,e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},n=e.response_type,r=e.scope,i=e.redirect_uri,s=e.data,o=e.state,u=e.prompt,h=e.display,c=e.max_age,f=e.ui_locales,l=e.id_token_hint,g=e.login_hint,p=e.acr_values,y=e.resource,v=e.request,m=e.request_uri,S=e.extraQueryParams,b=arguments[1];a.default.debug("OidcClient.createSigninRequest");var w=this._settings.client_id;n=n||this._settings.response_type,r=r||this._settings.scope,i=i||this._settings.redirect_uri,u=u||this._settings.prompt,h=h||this._settings.display,c=c||this._settings.max_age,f=f||this._settings.ui_locales,p=p||this._settings.acr_values,y=y||this._settings.resource,S=S||this._settings.extraQueryParams;var E=this._settings.authority;return this._metadataService.getAuthorizationEndpoint().then(function(e){a.default.debug("Received authorization endpoint",e);var _=new d.default({url:e,client_id:w,redirect_uri:i,response_type:n,scope:r,data:s||o,authority:E,prompt:u,display:h,max_age:c,ui_locales:f,id_token_hint:l,login_hint:g,acr_values:p,resource:y,request:v,request_uri:m,extraQueryParams:S}),x=_.state;return b=b||t._stateStore,b.set(x.id,x.toStorageString()).then(function(){return _})})},t.prototype.processSigninResponse=function(t,e){var n=this;a.default.debug("OidcClient.processSigninResponse");var r=new p.default(t);return r.state?(e=e||this._stateStore,e.remove(r.state).then(function(t){if(!t)throw a.default.error("No matching state found in storage"),new Error("No matching state found in storage");var e=w.default.fromStorageString(t);return a.default.debug("Received state from storage; validating response"),n._validator.validateSigninResponse(e,r)})):(a.default.error("No state in response"),Promise.reject(new Error("No state in response")))},t.prototype.createSignoutRequest=function(){var t=this,e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},n=e.id_token_hint,r=e.data,i=e.state,s=e.post_logout_redirect_uri,o=arguments[1];return a.default.debug("OidcClient.createSignoutRequest"),s=s||this._settings.post_logout_redirect_uri,this._metadataService.getEndSessionEndpoint().then(function(e){if(!e)throw a.default.error("No end session endpoint url returned"),new Error("no end session endpoint");a.default.debug("Received end session endpoint",e);var u=new v.default({url:e,id_token_hint:n,post_logout_redirect_uri:s,data:r||i}),h=u.state;return h&&(a.default.debug("Signout request has state to persist"),o=o||t._stateStore,o.set(h.id,h.toStorageString())),u})},t.prototype.processSignoutResponse=function(t,e){var n=this;a.default.debug("OidcClient.processSignoutResponse");var r=new S.default(t);if(!r.state)return a.default.debug("No state in response"),r.error?(a.default.warn("Response was error",r.error),Promise.reject(new f.default(r))):Promise.resolve(r);var i=r.state;return e=e||this._stateStore,e.remove(i).then(function(t){if(!t)throw a.default.error("No matching state found in storage"),new Error("No matching state found in storage");var e=_.default.fromStorageString(t);return a.default.debug("Received state from storage; validating response"),n._validator.validateSignoutResponse(e,r)})},t.prototype.clearStaleState=function(t){return a.default.debug("OidcClient.clearStaleState"),t=t||this._stateStore,_.default.clearStaleState(t,this.settings.staleStateAge)},s(t,[{key:"_stateStore",get:function(){return this.settings.stateStore}},{key:"_validator",get:function(){return this.settings.validator}},{key:"_metadataService",get:function(){return this.settings.metadataService}},{key:"settings",get:function(){return this._settings}},{key:"metadataService",get:function(){return this._metadataService}}]),t}();e.default=x,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},o=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),a=n(1),u=r(a),h=n(4),c=r(h),f=n(6),l=r(f),d=n(7),g=r(d),p=".well-known/openid-configuration",y="id_token",v="openid",m=300,S=300,b=function(){function t(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},n=e.authority,r=e.metadataUrl,o=e.metadata,a=e.signingKeys,u=e.client_id,h=e.client_secret,f=e.response_type,d=void 0===f?y:f,p=e.scope,b=void 0===p?v:p,w=e.redirect_uri,E=e.post_logout_redirect_uri,_=e.prompt,x=e.display,A=e.max_age,F=e.ui_locales,P=e.acr_values,O=e.resource,C=e.filterProtocolClaims,T=void 0===C||C,D=e.loadUserInfo,R=void 0===D||D,j=e.staleStateAge,H=void 0===j?m:j,I=e.clockSkew,k=void 0===I?S:I,B=e.stateStore,N=void 0===B?new c.default:B,V=e.ResponseValidatorCtor,M=void 0===V?l.default:V,K=e.MetadataServiceCtor,L=void 0===K?g.default:K,U=e.extraQueryParams,q=void 0===U?{}:U;i(this,t),this._authority=n,this._metadataUrl=r,this._metadata=o,this._signingKeys=a,this._client_id=u,this._client_secret=h,this._response_type=d,this._scope=b,this._redirect_uri=w,this._post_logout_redirect_uri=E,this._prompt=_,this._display=x,this._max_age=A,this._ui_locales=F,this._acr_values=P,this._resource=O,this._filterProtocolClaims=!!T,this._loadUserInfo=!!R,this._staleStateAge=H,this._clockSkew=k,this._stateStore=N,this._validator=new M(this),this._metadataService=new L(this),this._extraQueryParams="object"===("undefined"==typeof q?"undefined":s(q))?q:{}}return o(t,[{key:"client_id",get:function(){return this._client_id},set:function(t){if(this._client_id)throw u.default.error("client_id has already been assigned."),new Error("client_id has already been assigned.");this._client_id=t}},{key:"client_secret",get:function(){return this._client_secret}},{key:"response_type",get:function(){return this._response_type}},{key:"scope",get:function(){return this._scope}},{key:"redirect_uri",get:function(){return this._redirect_uri}},{key:"post_logout_redirect_uri",get:function(){return this._post_logout_redirect_uri}},{key:"prompt",get:function(){return this._prompt}},{key:"display",get:function(){return this._display}},{key:"max_age",get:function(){return this._max_age}},{key:"ui_locales",get:function(){return this._ui_locales}},{key:"acr_values",get:function(){return this._acr_values}},{key:"resource",get:function(){return this._resource}},{key:"authority",get:function(){return this._authority},set:function(t){if(this._authority)throw u.default.error("authority has already been assigned."),new Error("authority has already been assigned.");this._authority=t}},{key:"metadataUrl",get:function(){return this._metadataUrl||(this._metadataUrl=this.authority,this._metadataUrl&&this._metadataUrl.indexOf(p)<0&&("/"!==this._metadataUrl[this._metadataUrl.length-1]&&(this._metadataUrl+="/"),this._metadataUrl+=p)),this._metadataUrl}},{key:"metadata",get:function(){return this._metadata},set:function(t){this._metadata=t}},{key:"signingKeys",get:function(){return this._signingKeys},set:function(t){this._signingKeys=t}},{key:"filterProtocolClaims",get:function(){return this._filterProtocolClaims}},{key:"loadUserInfo",get:function(){return this._loadUserInfo}},{key:"staleStateAge",get:function(){return this._staleStateAge}},{key:"clockSkew",get:function(){return this._clockSkew}},{key:"stateStore",get:function(){return this._stateStore}},{key:"validator",get:function(){return this._validator}},{key:"metadataService",get:function(){return this._metadataService}},{key:"extraQueryParams",get:function(){return this._extraQueryParams},set:function(t){"object"===("undefined"==typeof t?"undefined":s(t))?this._extraQueryParams=t:this._extraQueryParams={}}}]),t}();e.default=b,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=r(s),a=n(5),u=r(a),h=function(){function t(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},n=e.prefix,r=void 0===n?"oidc.":n,s=e.store,o=void 0===s?u.default.localStorage:s;i(this,t),this._store=o,this._prefix=r}return t.prototype.set=function(t,e){return o.default.debug("WebStorageStateStore.set",t),t=this._prefix+t,this._store.setItem(t,e),Promise.resolve()},t.prototype.get=function(t){o.default.debug("WebStorageStateStore.get",t),t=this._prefix+t;var e=this._store.getItem(t);return Promise.resolve(e)},t.prototype.remove=function(t){o.default.debug("WebStorageStateStore.remove",t),t=this._prefix+t;var e=this._store.getItem(t);return this._store.removeItem(t),Promise.resolve(e)},t.prototype.getAllKeys=function(){o.default.debug("WebStorageStateStore.getAllKeys");for(var t=[],e=0;e<this._store.length;e++){var n=this._store.key(e);0===n.indexOf(this._prefix)&&t.push(n.substr(this._prefix.length))}return Promise.resolve(t)},t}();e.default=h,t.exports=e.default},function(t,e){"use strict";function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),i={setInterval:function(t){function e(e,n){return t.apply(this,arguments)}return e.toString=function(){return t.toString()},e}(function(t,e){return setInterval(t,e)}),clearInterval:function(t){function e(e){return t.apply(this,arguments)}return e.toString=function(){return t.toString()},e}(function(t){return clearInterval(t)})},s=!1,o=null,a=function(){function t(){n(this,t)}return t._testing=function(){s=!0},t.setXMLHttpRequest=function(t){o=t},r(t,null,[{key:"location",get:function(){if(!s)return location}},{key:"localStorage",get:function(){if(!s)return localStorage}},{key:"sessionStorage",get:function(){if(!s)return sessionStorage}},{key:"XMLHttpRequest",get:function(){if(!s)return o||XMLHttpRequest}},{key:"timer",get:function(){if(!s)return i}}]),t}();e.default=a,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=r(s),a=n(7),u=r(a),h=n(9),c=r(h),f=n(10),l=r(f),d=n(11),g=r(d),p=["nonce","at_hash","iat","nbf","exp","aud","iss","c_hash"],y=function(){function t(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:u.default,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:c.default,s=arguments.length>3&&void 0!==arguments[3]?arguments[3]:g.default;if(i(this,t),!e)throw o.default.error("No settings passed to ResponseValidator"),new Error("settings");this._settings=e,this._metadataService=new n(this._settings),this._userInfoService=new r(this._settings),this._joseUtil=s}return t.prototype.validateSigninResponse=function(t,e){var n=this;return o.default.debug("ResponseValidator.validateSigninResponse"),this._processSigninParams(t,e).then(function(e){return o.default.debug("state processed"),n._validateTokens(t,e).then(function(t){return o.default.debug("tokens validated"),n._processClaims(t).then(function(t){return o.default.debug("claims processed"),t})})})},t.prototype.validateSignoutResponse=function(t,e){return o.default.debug("ResponseValidator.validateSignoutResponse"),t.id!==e.state?(o.default.error("State does not match"),Promise.reject(new Error("State does not match"))):(o.default.debug("state validated"),e.state=t.data,e.error?(o.default.warn("Response was error",e.error),Promise.reject(new l.default(e))):Promise.resolve(e))},t.prototype._processSigninParams=function(t,e){if(o.default.debug("ResponseValidator._processSigninParams"),t.id!==e.state)return o.default.error("State does not match"),Promise.reject(new Error("State does not match"));if(!t.client_id)return o.default.error("No client_id on state"),Promise.reject(new Error("No client_id on state"));if(!t.authority)return o.default.error("No authority on state"),Promise.reject(new Error("No authority on state"));if(this._settings.authority){if(this._settings.authority&&this._settings.authority!==t.authority)return o.default.error("authority mismatch on settings vs. signin state"),Promise.reject(new Error("authority mismatch on settings vs. signin state"))}else this._settings.authority=t.authority;if(this._settings.client_id){if(this._settings.client_id&&this._settings.client_id!==t.client_id)return o.default.error("client_id mismatch on settings vs. signin state"),Promise.reject(new Error("client_id mismatch on settings vs. signin state"))}else this._settings.client_id=t.client_id;return o.default.debug("state validated"),e.state=t.data,e.error?(o.default.warn("Response was error",e.error),Promise.reject(new l.default(e))):t.nonce&&!e.id_token?(o.default.error("Expecting id_token in response"),Promise.reject(new Error("No id_token in response"))):!t.nonce&&e.id_token?(o.default.error("Not expecting id_token in response"),Promise.reject(new Error("Unexpected id_token in response"))):Promise.resolve(e)},t.prototype._processClaims=function(t){var e=this;if(o.default.debug("ResponseValidator._processClaims"),t.isOpenIdConnect){if(o.default.debug("response is OIDC, processing claims"),t.profile=this._filterProtocolClaims(t.profile),this._settings.loadUserInfo&&t.access_token)return o.default.debug("loading user info"),this._userInfoService.getClaims(t.access_token).then(function(n){return o.default.debug("user info claims received from user info endpoint"),n.sub!==t.profile.sub?(o.default.error("sub from user info endpoint does not match sub in access_token"),Promise.reject(new Error("sub from user info endpoint does not match sub in access_token"))):(t.profile=e._mergeClaims(t.profile,n),o.default.debug("user info claims received, updated profile:",t.profile),t)});o.default.debug("not loading user info")}else o.default.debug("response is not OIDC, not processing claims");return Promise.resolve(t)},t.prototype._mergeClaims=function(t,e){var n=Object.assign({},t);for(var r in e){var i=e[r];Array.isArray(i)||(i=[i]);var s=!0,o=!1,a=void 0;try{for(var u,h=i[Symbol.iterator]();!(s=(u=h.next()).done);s=!0){var c=u.value;n[r]?Array.isArray(n[r])?n[r].indexOf(c)<0&&n[r].push(c):n[r]!==c&&(n[r]=[n[r],c]):n[r]=c}}catch(t){o=!0,a=t}finally{try{!s&&h.return&&h.return()}finally{if(o)throw a}}}return n},t.prototype._filterProtocolClaims=function(t){o.default.debug("ResponseValidator._filterProtocolClaims, incoming claims:",t);var e=Object.assign({},t);return this._settings._filterProtocolClaims?(p.forEach(function(t){delete e[t]}),o.default.debug("protocol claims filtered",e)):o.default.debug("protocol claims not filtered"),e},t.prototype._validateTokens=function(t,e){return o.default.debug("ResponseValidator._validateTokens"),e.id_token?e.access_token?(o.default.debug("Validating id_token and access_token"),this._validateIdTokenAndAccessToken(t,e)):(o.default.debug("Validating id_token"),this._validateIdToken(t,e)):(o.default.debug("No id_token to validate"),Promise.resolve(e))},t.prototype._validateIdTokenAndAccessToken=function(t,e){var n=this;return o.default.debug("ResponseValidator._validateIdTokenAndAccessToken"),this._validateIdToken(t,e).then(function(t){return n._validateAccessToken(t)})},t.prototype._validateIdToken=function(t,e){var n=this;if(o.default.debug("ResponseValidator._validateIdToken"),!t.nonce)return o.default.error("No nonce on state"),Promise.reject(new Error("No nonce on state"));var r=this._joseUtil.parseJwt(e.id_token);if(!r||!r.header||!r.payload)return o.default.error("Failed to parse id_token",r),Promise.reject(new Error("Failed to parse id_token"));if(t.nonce!==r.payload.nonce)return o.default.error("Invalid nonce in id_token"),Promise.reject(new Error("Invalid nonce in id_token"));var i=r.header.kid;return this._metadataService.getIssuer().then(function(s){return o.default.debug("Received issuer"),n._metadataService.getSigningKeys().then(function(a){if(!a)return o.default.error("No signing keys from metadata"),Promise.reject(new Error("No signing keys from metadata"));o.default.debug("Received signing keys");var u=void 0;if(i)u=a.filter(function(t){return t.kid===i})[0];else{if(a=n._filterByAlg(a,r.header.alg),a.length>1)return o.default.error("No kid found in id_token and more than one key found in metadata"),Promise.reject(new Error("No kid found in id_token and more than one key found in metadata"));u=a[0]}if(!u)return o.default.error("No key matching kid or alg found in signing keys"),Promise.reject(new Error("No key matching kid or alg found in signing keys"));var h=t.client_id,c=n._settings.clockSkew;return o.default.debug("Validaing JWT; using clock skew (in seconds) of: ",c),n._joseUtil.validateJwt(e.id_token,u,s,h,c).then(function(){return o.default.debug("JWT validation successful"),r.payload.sub?(e.profile=r.payload,e):(o.default.error("No sub present in id_token"),Promise.reject(new Error("No sub present in id_token")))})})})},t.prototype._filterByAlg=function(t,e){o.default.debug("ResponseValidator._filterByAlg",e);var n=null;if(e.startsWith("RS"))n="RSA";else if(e.startsWith("PS"))n="PS";else{if(!e.startsWith("ES"))return o.default.debug("alg not supported: ",e),[];n="EC"}return o.default.debug("Looking for keys that match kty: ",n),t=t.filter(function(t){return t.kty===n}),o.default.debug("Number of keys that match kty: ",n,t.length),t},t.prototype._validateAccessToken=function(t){if(o.default.debug("ResponseValidator._validateAccessToken"),!t.profile)return o.default.error("No profile loaded from id_token"),Promise.reject(new Error("No profile loaded from id_token"));if(!t.profile.at_hash)return o.default.error("No at_hash in id_token"),Promise.reject(new Error("No at_hash in id_token"));if(!t.id_token)return o.default.error("No id_token"),Promise.reject(new Error("No id_token"));var e=this._joseUtil.parseJwt(t.id_token);if(!e||!e.header)return o.default.error("Failed to parse id_token",e),Promise.reject(new Error("Failed to parse id_token"));var n=e.header.alg;if(!n||5!==n.length)return o.default.error("Unsupported alg:",n),Promise.reject(new Error("Unsupported alg: "+n));var r=n.substr(2,3);if(!r)return o.default.error("Unsupported alg:",n,r),Promise.reject(new Error("Unsupported alg: "+n));if(r=parseInt(r),256!==r&&384!==r&&512!==r)return o.default.error("Unsupported alg:",n,r),Promise.reject(new Error("Unsupported alg: "+n));var i="sha"+r,s=this._joseUtil.hashString(t.access_token,i);if(!s)return o.default.error("access_token hash failed:",i),Promise.reject(new Error("Failed to validate at_hash"));var a=s.substr(0,s.length/2),u=this._joseUtil.hexToBase64Url(a);return u!==t.profile.at_hash?(o.default.error("Failed to validate at_hash",u,t.profile.at_hash),Promise.reject(new Error("Failed to validate at_hash"))):Promise.resolve(t)},t}();e.default=y,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),o=n(1),a=r(o),u=n(8),h=r(u),c=".well-known/openid-configuration",f=function(){function t(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:h.default;if(i(this,t),!e)throw a.default.error("No settings passed to MetadataService"),new Error("settings");this._settings=e,this._jsonService=new n}return t.prototype.getMetadata=function(){var t=this;return a.default.debug("MetadataService.getMetadata"),this._settings.metadata?(a.default.debug("Returning metadata from settings"),Promise.resolve(this._settings.metadata)):this.metadataUrl?(a.default.debug("getting metadata from",this.metadataUrl),this._jsonService.getJson(this.metadataUrl).then(function(e){return a.default.debug("json received"),t._settings.metadata=e,e})):(a.default.error("No authority or metadataUrl configured on settings"),Promise.reject(new Error("No authority or metadataUrl configured on settings")))},t.prototype.getIssuer=function(){return a.default.debug("MetadataService.getIssuer"),this._getMetadataProperty("issuer")},t.prototype.getAuthorizationEndpoint=function(){return a.default.debug("MetadataService.getAuthorizationEndpoint"),this._getMetadataProperty("authorization_endpoint")},t.prototype.getUserInfoEndpoint=function(){return a.default.debug("MetadataService.getUserInfoEndpoint"),this._getMetadataProperty("userinfo_endpoint")},t.prototype.getTokenEndpoint=function(){return a.default.debug("MetadataService.getTokenEndpoint"),this._getMetadataProperty("token_endpoint",!0)},t.prototype.getCheckSessionIframe=function(){return a.default.debug("MetadataService.getCheckSessionIframe"),this._getMetadataProperty("check_session_iframe",!0)},t.prototype.getEndSessionEndpoint=function(){return a.default.debug("MetadataService.getEndSessionEndpoint"),this._getMetadataProperty("end_session_endpoint",!0)},t.prototype.getRevocationEndpoint=function(){return a.default.debug("MetadataService.getRevocationEndpoint"),this._getMetadataProperty("revocation_endpoint",!0)},t.prototype._getMetadataProperty=function(t){var e=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return a.default.debug("MetadataService._getMetadataProperty",t),this.getMetadata().then(function(n){if(a.default.debug("metadata recieved"),void 0===n[t]){if(e===!0)return void a.default.warn("Metadata does not contain optional property "+t);throw a.default.error("Metadata does not contain property "+t),new Error("Metadata does not contain property "+t)}return n[t]})},t.prototype.getSigningKeys=function(){var t=this;return a.default.debug("MetadataService.getSigningKeys"),this._settings.signingKeys?(a.default.debug("Returning signingKeys from settings"),Promise.resolve(this._settings.signingKeys)):this._getMetadataProperty("jwks_uri").then(function(e){return a.default.debug("jwks_uri received",e),t._jsonService.getJson(e).then(function(e){if(a.default.debug("key set received",e),!e.keys)throw a.default.error("Missing keys on keyset"),new Error("Missing keys on keyset");return t._settings.signingKeys=e.keys,t._settings.signingKeys})})},s(t,[{key:"metadataUrl",get:function(){return this._metadataUrl||(this._settings.metadataUrl?this._metadataUrl=this._settings.metadataUrl:(this._metadataUrl=this._settings.authority,this._metadataUrl&&this._metadataUrl.indexOf(c)<0&&("/"!==this._metadataUrl[this._metadataUrl.length-1]&&(this._metadataUrl+="/"),this._metadataUrl+=c))),this._metadataUrl}}]),t}();e.default=f,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=r(s),a=n(5),u=r(a),h=function(){function t(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:u.default.XMLHttpRequest;i(this,t),this._XMLHttpRequest=e}return t.prototype.getJson=function(t,e){var n=this;if(o.default.debug("JsonService.getJson",t),!t)throw o.default.error("No url passed"),new Error("url");return new Promise(function(r,i){var s=new n._XMLHttpRequest;s.open("GET",t),s.onload=function(){if(o.default.debug("HTTP response received, status",s.status),200===s.status)try{r(JSON.parse(s.responseText))}catch(t){o.default.error("Error parsing JSON response",t.message),i(t)}else i(Error(s.statusText+" ("+s.status+")"))},s.onerror=function(){o.default.error("network error"),i(Error("Network Error"))},e&&(o.default.debug("token passed, setting Authorization header"),s.setRequestHeader("Authorization","Bearer "+e)),s.send()})},t}();e.default=h,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(8),o=r(s),a=n(7),u=r(a),h=n(1),c=r(h),f=function(){function t(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:o.default,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:u.default;if(i(this,t),!e)throw c.default.error("No settings passed to UserInfoService"),new Error("settings");this._settings=e,this._jsonService=new n,this._metadataService=new r(this._settings)}return t.prototype.getClaims=function(t){var e=this;return c.default.debug("UserInfoService.getClaims"),t?this._metadataService.getUserInfoEndpoint().then(function(n){return c.default.debug("received userinfo url",n),e._jsonService.getJson(n,t).then(function(t){return c.default.debug("claims received",t),t})}):(c.default.error("No token passed"),Promise.reject(new Error("A token is required")))},t}();e.default=f,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function s(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!=typeof e&&"function"!=typeof e?t:e}function o(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+typeof e);t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(Object.setPrototypeOf?Object.setPrototypeOf(t,e):t.__proto__=e)}Object.defineProperty(e,"__esModule",{value:!0});var a=n(1),u=r(a),h=function(t){function e(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=n.error,o=n.error_description,a=n.error_uri,h=n.state;if(i(this,e),!r)throw u.default.error("No error passed to ErrorResponse"),new Error("error");var c=s(this,t.call(this,o||r));return c.name="ErrorResponse",c.error=r,c.error_description=o,c.error_uri=a,c.state=h,c}return o(e,t),e}(Error);e.default=h,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(12),o=n(1),a=r(o),u=["RS256","RS384","RS512","PS256","PS384","PS512","ES256","ES384","ES512"],h=function(){function t(){i(this,t)}return t.parseJwt=function(t){a.default.debug("JoseUtil.parseJwt");try{var e=s.jws.JWS.parse(t);return{header:e.headerObj,payload:e.payloadObj}}catch(t){a.default.error(t)}},t.validateJwt=function(e,n,r,i,o,u){a.default.debug("JoseUtil.validateJwt");try{if("RSA"===n.kty)if(n.e&&n.n)n=s.KEYUTIL.getKey(n);else{if(!n.x5c||!n.x5c.length)return a.default.error("RSA key missing key material",n),Promise.reject(new Error("RSA key missing key material"));n=s.KEYUTIL.getKey(s.X509.getPublicKeyFromCertPEM(n.x5c[0]))}else{if("EC"!==n.kty)return a.default.error("Unsupported key type",n&&n.kty),Promise.reject(new Error("Unsupported key type: "+n&&n.kty));if(!(n.crv&&n.x&&n.y))return a.default.error("EC key missing key material",n),Promise.reject(new Error("EC key missing key material"));n=s.KEYUTIL.getKey(n)}return t._validateJwt(e,n,r,i,o,u)}catch(t){return a.default.error(t&&t.message||t),Promise.reject("JWT validation failed")}},t._validateJwt=function(e,n,r,i,o,h){a.default.debug("JoseUtil._validateJwt"),o||(o=0),h||(h=parseInt(Date.now()/1e3));var c=t.parseJwt(e).payload;if(!c.iss)return a.default.error("issuer was not provided"),Promise.reject(new Error("issuer was not provided"));if(c.iss!==r)return a.default.error("Invalid issuer in token",c.iss),Promise.reject(new Error("Invalid issuer in token: "+c.iss));if(!c.aud)return a.default.error("aud was not provided"),Promise.reject(new Error("aud was not provided"));var f=c.aud===i||Array.isArray(c.aud)&&c.aud.indexOf(i)>=0;
@@ -58815,7 +58850,7 @@ function n(){for(var t="xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx",e="0123456789abcdef",n
 t.access_token){var e=t.expires_in;if(o.default.debug("access token present, remaining duration:",e),e>0){var n=e-this._accessTokenExpiringNotificationTime;n<=0&&(n=1),o.default.debug("registering expiring timer in:",n),this._accessTokenExpiring.init(n)}var r=e+1;o.default.debug("registering expired timer in:",r),this._accessTokenExpired.init(r)}},t.prototype.unload=function(){o.default.debug("AccessTokenEvents.unload"),this._cancelTimers()},t.prototype._cancelTimers=function(){o.default.debug("canceling existing access token timers"),this._accessTokenExpiring.cancel(),this._accessTokenExpired.cancel()},t.prototype.addAccessTokenExpiring=function(t){this._accessTokenExpiring.addHandler(t)},t.prototype.removeAccessTokenExpiring=function(t){this._accessTokenExpiring.removeHandler(t)},t.prototype.addAccessTokenExpired=function(t){this._accessTokenExpired.addHandler(t)},t.prototype.removeAccessTokenExpired=function(t){this._accessTokenExpired.removeHandler(t)},t}();e.default=c,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function s(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!=typeof e&&"function"!=typeof e?t:e}function o(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+typeof e);t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(Object.setPrototypeOf?Object.setPrototypeOf(t,e):t.__proto__=e)}Object.defineProperty(e,"__esModule",{value:!0});var a=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),u=n(1),h=r(u),c=n(5),f=r(c),l=n(38),d=r(l),g=5,p=function(t){function e(n){var r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:f.default.timer;i(this,e);var o=s(this,t.call(this,n));return o._timer=r,o._nowFunc=function(){return Date.now()/1e3},o}return o(e,t),e.prototype.init=function(t){this.cancel(),t<=0&&(t=1),t=parseInt(t),h.default.debug("Timer.init timer "+this._name+" for duration:",t),this._expiration=this.now+t;var e=g;t<e&&(e=t),this._timerHandle=this._timer.setInterval(this._callback.bind(this),1e3*e)},e.prototype.cancel=function(){this._timerHandle&&(h.default.debug("Timer.cancel: ",this._name),this._timer.clearInterval(this._timerHandle),this._timerHandle=null)},e.prototype._callback=function(){var e=this._expiration-this.now;h.default.debug("Timer._callback; "+this._name+" timer expires in:",e),this._expiration<=this.now&&(this.cancel(),t.prototype.raise.call(this))},a(e,[{key:"now",get:function(){return parseInt(this._nowFunc())}}]),e}(d.default);e.default=p,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=r(s),a=function(){function t(e){i(this,t),this._name=e,this._callbacks=[]}return t.prototype.addHandler=function(t){this._callbacks.push(t)},t.prototype.removeHandler=function(t){var e=this._callbacks.findIndex(function(e){return e===t});e>=0&&this._callbacks.splice(e,1)},t.prototype.raise=function(){o.default.debug("Raising event: "+this._name);var t=!0,e=!1,n=void 0;try{for(var r,i=this._callbacks[Symbol.iterator]();!(t=(r=i.next()).done);t=!0){var s=r.value;s.apply(void 0,arguments)}}catch(t){e=!0,n=t}finally{try{!t&&i.return&&i.return()}finally{if(e)throw n}}},t}();e.default=a,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=r(s),a=function(){function t(e){i(this,t),this._userManager=e}return t.prototype.start=function(){this._callback||(this._callback=this._tokenExpiring.bind(this),this._userManager.events.addAccessTokenExpiring(this._callback),this._userManager.getUser().then(function(t){}).catch(function(t){o.default.error("Error from getUser:",t.message)}))},t.prototype.stop=function(){this._callback&&(this._userManager.events.removeAccessTokenExpiring(this._callback),delete this._callback)},t.prototype._tokenExpiring=function(){var t=this;o.default.debug("SilentRenewService automatically renewing access token"),this._userManager.signinSilent().then(function(t){o.default.debug("Silent token renewal successful")},function(e){o.default.error("Error from signinSilent:",e.message),t._userManager.events._raiseSilentRenewError(e)})},t}();e.default=a,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),o=n(1),a=r(o),u=n(41),h=r(u),c=function(){function t(e){var n=this,r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:h.default;if(i(this,t),!e)throw a.default.error("No user manager passed to SessionMonitor"),new Error("userManager");this._userManager=e,this._CheckSessionIFrameCtor=r,this._userManager.events.addUserLoaded(this._start.bind(this)),this._userManager.events.addUserUnloaded(this._stop.bind(this)),this._userManager.getUser().then(function(t){t&&n._start(t)}).catch(function(t){a.default.error("SessionMonitor ctor; error from getUser:",t.message)})}return t.prototype._start=function(t){var e=this,n=t.session_state;n&&(this._sub=t.profile.sub,this._sid=t.profile.sid,a.default.debug("SessionMonitor._start; session_state:",n,", sub:",this._sub),this._checkSessionIFrame?this._checkSessionIFrame.start(n):this._metadataService.getCheckSessionIframe().then(function(t){if(t){a.default.debug("Initializing check session iframe");var r=e._client_id,i=e._checkSessionInterval;e._checkSessionIFrame=new e._CheckSessionIFrameCtor(e._callback.bind(e),r,t,i),e._checkSessionIFrame.load().then(function(){e._checkSessionIFrame.start(n)})}else a.default.warn("No check session iframe found in the metadata")}).catch(function(t){a.default.error("Error from getCheckSessionIframe:",t.message)}))},t.prototype._stop=function(){a.default.debug("SessionMonitor._stop"),this._sub=null,this._sid=null,this._checkSessionIFrame&&this._checkSessionIFrame.stop()},t.prototype._callback=function(){var t=this;a.default.debug("SessionMonitor._callback"),this._userManager.querySessionStatus().then(function(e){var n=!0;e?e.sub===t._sub?(n=!1,t._checkSessionIFrame.start(e.session_state),e.sid===t._sid?a.default.debug("Same sub still logged in at OP, restarting check session iframe; session_state:",e.session_state):(a.default.debug("Same sub still logged in at OP, session state has changed, restarting check session iframe; session_state:",e.session_state),t._userManager.events._raiseUserSessionChanged())):a.default.debug("Different subject signed into OP:",e.sub):a.default.debug("Subject no longer signed into OP"),n&&(a.default.debug("SessionMonitor._callback; raising signed out event"),t._userManager.events._raiseUserSignedOut())}).catch(function(e){a.default.debug("Error calling queryCurrentSigninSession; raising signed out event",e.message),t._userManager.events._raiseUserSignedOut()})},s(t,[{key:"_settings",get:function(){return this._userManager.settings}},{key:"_metadataService",get:function(){return this._userManager.metadataService}},{key:"_client_id",get:function(){return this._settings.client_id}},{key:"_checkSessionInterval",get:function(){return this._settings.checkSessionInterval}}]),t}();e.default=c,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=r(s),a=2e3,u=function(){function t(e,n,r,s){i(this,t),this._callback=e,this._client_id=n,this._url=r,this._interval=s||a;var o=r.indexOf("/",r.indexOf("//")+2);this._frame_origin=r.substr(0,o),this._frame=window.document.createElement("iframe"),this._frame.style.visibility="hidden",this._frame.style.position="absolute",this._frame.style.display="none",this._frame.style.width=0,this._frame.style.height=0,this._frame.src=r}return t.prototype.load=function(){var t=this;return new Promise(function(e){t._frame.onload=function(){e()},window.document.body.appendChild(t._frame),t._boundMessageEvent=t._message.bind(t),window.addEventListener("message",t._boundMessageEvent,!1)})},t.prototype._message=function(t){t.origin===this._frame_origin&&t.source===this._frame.contentWindow&&("error"===t.data?(o.default.error("error message from check session op iframe"),this.stop()):"changed"===t.data?(o.default.debug("changed message from check session op iframe"),this.stop(),this._callback()):o.default.debug(t.data+" message from check session op iframe"))},t.prototype.start=function(t){var e=this;this._session_state!==t&&(o.default.debug("CheckSessionIFrame.start"),this.stop(),this._session_state=t,this._timer=window.setInterval(function(){e._frame.contentWindow.postMessage(e._client_id+" "+e._session_state,e._frame_origin)},this._interval))},t.prototype.stop=function(){o.default.debug("CheckSessionIFrame.stop"),this._session_state=null,this._timer&&(window.clearInterval(this._timer),this._timer=null)},t}();e.default=u,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=r(s),a=n(7),u=r(a),h=n(5),c=r(h),f="access_token",l=function(){function t(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:c.default.XMLHttpRequest,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:u.default;if(i(this,t),!e)throw o.default.error("No settings provided"),new Error("No settings provided.");this._settings=e,this._XMLHttpRequestCtor=n,this._metadataService=new r(this._settings)}return t.prototype.revoke=function(t,e){var n=this;if(o.default.debug("TokenRevocationClient.revoke"),!t)throw o.default.error("No accessToken provided"),new Error("No accessToken provided.");return this._metadataService.getRevocationEndpoint().then(function(r){if(r){var i=n._settings.client_id,s=n._settings.client_secret;return n._revoke(r,i,s,t)}if(e)throw o.default.error("Revocation not supported"),new Error("Revocation not supported")})},t.prototype._revoke=function(t,e,n,r){var i=this;return o.default.debug("Calling revocation endpoint"),new Promise(function(s,a){var u=new i._XMLHttpRequestCtor;u.open("POST",t),u.onload=function(){o.default.debug("HTTP response received, status",u.status),200===u.status?s():a(Error(u.statusText+" ("+u.status+")"))};var h="client_id="+encodeURIComponent(e);n&&(h+="&client_secret="+encodeURIComponent(n)),h+="&token_type_hint="+encodeURIComponent(f),h+="&token="+encodeURIComponent(r),u.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),u.send(h)})},t}();e.default=l,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=(r(s),n(44)),a=r(o),u=function(){function t(){i(this,t)}return t.prototype.prepare=function(t){var e=new a.default(t);return Promise.resolve(e)},t}();e.default=u,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),o=n(1),a=r(o),u="location=no,toolbar=no,zoom=no",h="_blank",c=function(){function t(e){var n=this;i(this,t),a.default.debug("CordovaPopupWindow.ctor"),this._promise=new Promise(function(t,e){n._resolve=t,n._reject=e}),this.features=e.popupWindowFeatures||u,this.target=e.popupWindowTarget||h,this.redirect_uri=e.startUrl,a.default.debug("redirect_uri: "+this.redirect_uri)}return t.prototype._isInAppBrowserInstalled=function(t){return["cordova-plugin-inappbrowser","cordova-plugin-inappbrowser.inappbrowser","org.apache.cordova.inappbrowser"].some(function(e){return t.hasOwnProperty(e)})},t.prototype.navigate=function(t){if(a.default.debug("CordovaPopupWindow.navigate"),t&&t.url){if(!window.cordova)return this._error("cordova is undefined");var e=window.cordova.require("cordova/plugin_list").metadata;if(this._isInAppBrowserInstalled(e)===!1)return this._error("InAppBrowser plugin not found");this._popup=cordova.InAppBrowser.open(t.url,this.target,this.features),this._popup?(a.default.debug("popup successfully created"),this._exitCallbackEvent=this._exitCallback.bind(this),this._loadStartCallbackEvent=this._loadStartCallback.bind(this),this._popup.addEventListener("exit",this._exitCallbackEvent,!1),this._popup.addEventListener("loadstart",this._loadStartCallbackEvent,!1)):this._error("Error opening popup window")}else this._error("No url provided");return this.promise},t.prototype._loadStartCallback=function(t){0===t.url.indexOf(this.redirect_uri)&&this._success({url:t.url})},t.prototype._exitCallback=function(t){this._error(t)},t.prototype._success=function(t){this._cleanup(),a.default.debug("Successful response from cordova popup window"),this._resolve(t)},t.prototype._error=function(t){this._cleanup(),a.default.error(t),this._reject(new Error(t))},t.prototype.close=function(){this._cleanup()},t.prototype._cleanup=function(){a.default.debug("CordovaPopupWindow._cleanup"),this._popup&&(this._popup.removeEventListener("exit",this._exitCallbackEvent,!1),this._popup.removeEventListener("loadstart",this._loadStartCallbackEvent,!1),this._popup.close()),this._popup=null},s(t,[{key:"promise",get:function(){return this._promise}}]),t}();e.default=c,t.exports=e.default},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function i(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var s=n(1),o=(r(s),n(44)),a=r(o),u=function(){function t(){i(this,t)}return t.prototype.prepare=function(t){t.popupWindowFeatures="hidden=yes";var e=new a.default(t);return Promise.resolve(e)},t}();e.default=u,t.exports=e.default}])});
 
 /***/ }),
-/* 557 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58884,50 +58919,6 @@ var Clock = function () {
 }();
 
 exports.default = Clock;
-
-/***/ }),
-/* 558 */,
-/* 559 */,
-/* 560 */,
-/* 561 */,
-/* 562 */,
-/* 563 */,
-/* 564 */,
-/* 565 */,
-/* 566 */,
-/* 567 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Login = function Login(_ref) {
-  var store = _ref.store;
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      'button',
-      {
-        onClick: function onClick() {
-          return store.auth();
-        } },
-      'Log in'
-    )
-  );
-};
-
-exports.default = Login;
 
 /***/ })
 /******/ ]);

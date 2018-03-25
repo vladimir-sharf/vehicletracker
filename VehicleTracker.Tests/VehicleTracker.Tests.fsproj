@@ -9,10 +9,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Utils.fs" />
-    <Compile Include="SampleTest.fs" />
+    <Compile Include="DataHelper.fs" />
+    <Compile Include="CrudTestUtils.fs" />
+    <Compile Include="VehicleServiceTest.fs" />
+    <Compile Include="CustomerServiceTest.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.2" />
+    <PackageReference Include="Shouldly" Version="3.0.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>

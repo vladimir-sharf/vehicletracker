@@ -3,7 +3,7 @@ module VehicleTracker.StorageService.FSharp.DbInitializer
 open VehicleTracker.StorageService.FSharp.Models
 open System.Linq
 
-type Result<'a> = Success of 'a | Skip of string | Error of string
+type Result<'a> = Success of 'a | Skip of string | Error of string | Fatal of string
 
 let saveChanges (context : VehiclesContext) = context.SaveChanges()
 
@@ -26,6 +26,7 @@ let private bind f g context =
         | Success c -> g c
         | Error e -> Error e
         | Skip m -> Skip m
+        | Fatal m -> Fatal m
     with
         | e -> Error e.Message
 
@@ -38,3 +39,12 @@ let wrap f a =
         | e -> Error e.Message
 
 let (>=+>) f g = bind f (wrap g)
+
+let critical f a = 
+    try
+        Success (f a)
+    with
+        | e -> Fatal e.Message
+
+let (>=!>) f g = bind f (critical g)
+

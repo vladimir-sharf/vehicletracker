@@ -30,7 +30,7 @@ let configureWebHost config =
 
 let buildWebHost (builder : IWebHostBuilder) = builder.Build()
 
-let dataInitializer = wrap ensureDbExists >=> checkEmpty >=+> create >=+> saveChanges
+let dataInitializer = wrap ensureDbExists >=> checkEmpty >=!> create >=+> saveChanges
 
 [<EntryPoint>]
 let main args =

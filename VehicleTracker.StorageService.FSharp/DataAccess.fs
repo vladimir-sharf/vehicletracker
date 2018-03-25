@@ -5,6 +5,7 @@ open VehicleTracker.StorageService.FSharp.Models
 open System.Linq
 open Giraffe.Common
 open System.Collections.Generic
+open System
 
 module Common = 
     let wrap extr f filter q = 
@@ -20,7 +21,13 @@ module Common =
             return result :> IEnumerable<'a>
         }
 
-    let private firstAsync (queryable : IQueryable<'a>) = queryable.FirstAsync()
+    let private firstAsync (queryable : IQueryable<'a>) = 
+        task {
+            try 
+                let! result = queryable.FirstAsync()
+                return Some result
+            with :? InvalidOperationException -> return None
+        }
 
     let get sourceF filterF id = sourceF >> filterF id >> firstAsync
     
@@ -29,22 +36,37 @@ module Common =
         | Some F -> sourceF >> F filter >> toListAsync
         | None -> sourceF >> toListAsync
 
+    type AddResult = Success of int | Duplicate
+
     let add<'a when 'a : not struct> (sourceF : VehiclesContext -> DbSet<'a>) (item: 'a) (context : VehiclesContext) =
         let source = sourceF context
         source.Add(item) |> ignore
-        context.SaveChangesAsync()        
+        task {
+            try
+                let! result = context.SaveChangesAsync()
+                return Success result
+            with :? DbUpdateException -> return Duplicate
+        }
 
     let update (sourceF : VehiclesContext -> DbSet<'Item>) filterF updF item id context = 
         task {
             let! upd = get sourceF filterF id context
-            updF upd item
-            return! context.SaveChangesAsync()
+            match upd with
+            | Some upd ->
+                updF upd item
+                let! result = context.SaveChangesAsync()
+                return Some result
+            | None -> return None
         }
         
     let delete (sourceF : VehiclesContext -> DbSet<'Item>) filterF id context = 
         task {
             let source = sourceF context
             let! item = get sourceF filterF id context
-            source.Remove(item) |> ignore
-            return! context.SaveChangesAsync()
+            match item with
+            | Some item ->
+                source.Remove(item) |> ignore
+                let! result = context.SaveChangesAsync()
+                return Some result
+            | None -> return None
         }

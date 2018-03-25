@@ -27,6 +27,9 @@ module DbInitializerHelper =
         | Skip m -> 
             logger.LogInformation(sprintf "%s skipped, reason: %s" name m) |> ignore
             Skip m
+        | Fatal e ->
+            logger.LogInformation(sprintf "%s failed, reason: %s" name e) |> ignore
+            Fatal e
         | Error e -> 
             logger.LogError(e)
             logger.LogInformation("Waiting 10 sec...")
@@ -39,9 +42,8 @@ module DbInitializerHelper =
         let logger = services.GetRequiredService<ILogger<VehiclesContext>>()
         services 
             |> (
-                wrap (log logger LogLevel.Debug "Connecting to DB")
-                >=+> createContext 
-                >=+> log logger LogLevel.Debug "Connected"
+                wrap createContext 
+                >=+> log logger LogLevel.Debug "DB context created"
                 >=> initializer
             ) 
             |> seedDatabaseLoop name logger

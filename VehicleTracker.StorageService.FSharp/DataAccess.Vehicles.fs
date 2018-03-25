@@ -33,3 +33,5 @@ module Vehicles =
     let addVehicle vehicle =  add vehicles vehicle
     let updateVehicle item id = update vehicles filterById updateVehicleFields item id
     let deleteVehicle id = delete vehicles filterById id
+    let extractVehicleId (x : Vehicle) = x.Id
+    

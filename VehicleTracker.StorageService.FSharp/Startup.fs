@@ -24,7 +24,7 @@ let webApp =
             (choose [
                 GET >=> routefs (handleGet getVehicle)
                 DELETE >=> routefs (handleDelete deleteVehicle)
-                PUT >=> routefs (handlePut updateVehicle)
+                PUT >=> routefs (handlePut updateVehicle extractVehicleId)
                 GET >=> route "/" >=> handleList listVehicles
                 POST >=> route "/" >=> handlePost addVehicle
             ])
@@ -32,7 +32,7 @@ let webApp =
             (choose [
                 GET >=> routefo (handleGet getCustomer)
                 DELETE >=> routefo (handleDelete deleteCustomer)
-                PUT >=> routefo (handlePut updateCustomer)
+                PUT >=> routefo (handlePut updateCustomer extractCustomerId)
                 GET >=> route "/" >=> handleList listCustomers
                 POST >=> route "/" >=> handlePost addCustomer
             ])                
