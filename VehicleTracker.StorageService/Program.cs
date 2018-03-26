@@ -44,12 +44,15 @@ namespace VehicleTracker.StorageService
             }
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHostBuilder ConfigureWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(services => services.AddAutofac())
                 .UseSerilog((hostingContext, loggerConfiguration) =>
                     loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration))
-                .UseStartup<Startup>()
+                .UseStartup<Startup>();
+
+        public static IWebHost BuildWebHost(string[] args) =>
+                ConfigureWebHost(args)
                 .Build();
     }
 }

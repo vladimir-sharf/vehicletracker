@@ -16,7 +16,7 @@ namespace VehicleTracker.StorageService.Controllers
         }
 
         [HttpGet]
-        public Task<IEnumerable<Vehicle>> Get(Guid? customerId)
-            => List(new VehicleFilter(customerId));
+        public Task<IEnumerable<Vehicle>> Get(Guid? customerId, string id)
+            => List(new VehicleFilter(customerId, id));
     }
 }

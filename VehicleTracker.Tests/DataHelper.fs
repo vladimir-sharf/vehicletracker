@@ -2,6 +2,7 @@ module VehicleTracker.Tests.DataHelper
 
 open VehicleTracker.StorageService.FSharp.Models
 open System
+open VehicleTracker.StorageService.FSharp.DbInitializer
 
 type Vehicle = {
     Id: VIN
@@ -45,3 +46,12 @@ let rec createCustomers customers context =
         let mc = VehicleTracker.StorageService.FSharp.DbInitializerDataHelper.addCustomer c.Name c.Address context
         mc.Id <- c.Id
         createCustomers rest context
+
+
+let ensureDbDeleted (context : VehiclesContext) = context.Database.EnsureDeleted()
+let initializer dataInit = wrap ensureDbExists >=> checkEmpty >=!> dataInit >=+> saveChanges
+let emptyDb ctx = initializer id ctx
+
+let dropDb context = wrap ensureDbDeleted context
+let saveDb = (fun context -> Skip "Database should be saved")
+let defaultDeinitializer = dropDb

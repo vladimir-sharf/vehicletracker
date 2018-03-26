@@ -7,5 +7,11 @@ namespace VehicleTracker.StorageService.Model
 {
     public class CustomerFilter
     {
+        public CustomerFilter(Guid? id) 
+        {
+            Id = id;
+        }
+        
+        public Guid? Id { get; set;}
     }
 }

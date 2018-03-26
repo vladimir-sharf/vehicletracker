@@ -1,7 +1,8 @@
 ﻿module VehicleTracker.Tests.CustomerServiceTest
 
 open Xunit
-open VehicleTracker.Tests.Utils
+open VehicleTracker.Tests.UtilsTesting
+open VehicleTracker.Tests.UtilsStorageCSharp
 open VehicleTracker.Tests.DataHelper
 open System.Net
 open System
@@ -44,11 +45,6 @@ let nonExUrl = getUrlId <| Guid.NewGuid()
 (* ------------------------------------------------
     Tests
 --------------------------------------------------- *)
-// [<Fact>]
-let ``Customer service connection test``() = 
-    setupTest "CustomersConnectionTest" emptyDb defaultDeinitializer
-    <| getTest "/customers/" (Status HttpStatusCode.OK)
-
 let customerListParams : obj array seq = 
     Seq.ofList [ 
         [| { 
@@ -68,22 +64,12 @@ let customerListParams : obj array seq =
         } |]            
     ]
 
-// [<Theory; MemberData("customerListParams")>]
-let ``List customers test``({ TestName = testName; Url = url; Expected = expected }) =
-    setupTest (sprintf "CustomerListTest_%s" testName) (initializer (createCustomers customers)) defaultDeinitializer
-    <| listTest customerListTransform url expected
-
 let customerGetParams : obj array seq = 
     Seq.ofList [ 
         [| { TestName = "1"; Url = getUrl 0; Expected = expectedCustomer customers.[0] } |];
         [| { TestName = "NonEx"; Url = nonExUrl; Expected = notFound } |];
         [| { TestName = "NotGuid"; Url = "/customers/1"; Expected = notFound } |];
     ]
-
-// [<Theory; MemberData("customerGetParams")>]
-let ``Get customer test`` ({ TestName = testName; Url = url; Expected = expected } : GetTestParams<Customer>) =
-    setupTest (sprintf "CustomerGetTest_%s" testName) (initializer (createCustomers customers)) defaultDeinitializer
-    <| getTest url expected
 
 [<Fact>]
 let ``Customer readonly tests``() =

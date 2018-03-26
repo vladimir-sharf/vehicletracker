@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using VehicleTracker.StorageService.Context;
+using VehicleTracker.StorageService.ErrorHandling;
 using VehicleTracker.StorageService.Model;
 
 namespace VehicleTracker.StorageService.Storage
@@ -18,8 +19,16 @@ namespace VehicleTracker.StorageService.Storage
 
         public async Task<Customer> Create(Customer customer)
         {
-            _context.Customers.Add(customer);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Customers.Add(customer);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException e)
+            {
+                if (e.IsDuplicateError())
+                    throw new ConflictException();
+            }
             return customer;
         }
 
@@ -32,15 +41,20 @@ namespace VehicleTracker.StorageService.Storage
 
         public async Task<IEnumerable<Customer>> List(CustomerFilter filter)
         {
-            var result = await _context.Customers.ToListAsync();
+            var result = await _context.Customers
+                .Filter(filter)
+                .ToListAsync();
             return result;
         }
 
         public async Task<Customer> Get(Guid id)
-            => await _context.Customers.FirstOrDefaultAsync(x => x.Id == id) ?? throw new KeyNotFoundException();
+            => await _context.Customers.FirstOrDefaultAsync(x => x.Id == id) ?? throw new ObjectNotFoundException();
 
         public async Task<Customer> Update(Guid id, Customer customer)
         {
+            if (id != customer.Id)
+                throw new BadRequestException("Ids in url and in payload are different");
+
             var existing = await Get(id);
             existing.Name = customer.Name;
             existing.Address = customer.Address;

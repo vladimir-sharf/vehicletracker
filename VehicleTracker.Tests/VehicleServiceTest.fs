@@ -1,7 +1,8 @@
 ﻿module VehicleTracker.Tests.VehicleServiceTest
 
 open Xunit
-open VehicleTracker.Tests.Utils
+open VehicleTracker.Tests.UtilsTesting
+open VehicleTracker.Tests.UtilsStorageCSharp
 open VehicleTracker.Tests.DataHelper
 open System.Net
 open System
@@ -39,11 +40,6 @@ let notFound : Expected<Vehicle> = String { Content = "Not Found"; Status = Http
 (* ------------------------------------------------
     Tests
 --------------------------------------------------- *)
-// [<Fact>]
-let ``Vehicle service connection test``() = 
-    setupTest "VehiclesConnectionTest" emptyDb defaultDeinitializer
-    <| getTest "/vehicles/" (Status HttpStatusCode.OK)
-
 let vehicleListParams : obj array seq = 
     Seq.ofList [ 
         [| { 
@@ -73,22 +69,12 @@ let vehicleListParams : obj array seq =
         } |]            
     ]
 
-// [<Theory; MemberData("vehicleListParams")>]
-let ``List vehicles test``({ TestName = testName; Url = url; Expected = expected }) =
-    setupTest (sprintf "VehicleListTest_%s" testName) (initializer (createVehicles vehicles)) defaultDeinitializer
-    <| listTest vehicleListTransform url expected
-
 let vehicleGetParams : obj array seq = 
     Seq.ofList [ 
         [| { TestName = "1"; Url = "/vehicles/1"; Expected = expectedVehicle "1" } |];
         [| { TestName = "4"; Url = "/vehicles/4"; Expected = expectedVehicle "4" } |];
         [| { TestName = "NonEx"; Url = "/vehicles/NonEx"; Expected = notFound } |];
     ]
-
-// [<Theory; MemberData("vehicleGetParams")>]
-let ``Get vehicle test`` ({ TestName = testName; Url = url; Expected = expected } : GetTestParams<Vehicle>) =
-    setupTest (sprintf "VehicleGetTest_%s" testName) (initializer (createVehicles vehicles)) defaultDeinitializer
-    <| getTest url expected
 
 [<Fact>]
 let ``Vehicle readonly tests``() =

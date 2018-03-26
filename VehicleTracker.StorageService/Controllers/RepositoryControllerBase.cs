@@ -21,15 +21,8 @@ namespace VehicleTracker.StorageService.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> Get(TKey id)
         {
-            try
-            {
-                var result = await _repository.Get(id);
-                return Ok(result);
-            }
-            catch (KeyNotFoundException)
-            {
-                return NotFound();
-            }
+            var result = await _repository.Get(id);
+            return Ok(result);
         }
 
         [HttpPost]
@@ -39,29 +32,15 @@ namespace VehicleTracker.StorageService.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(TKey id, [FromBody]T item)
         {
-            try
-            {
-                await _repository.Update(id, item);
-                return Ok();
-            }
-            catch (KeyNotFoundException)
-            {
-                return NotFound();
-            }
+            await _repository.Update(id, item);
+            return Ok();
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(TKey id)
         {
-            try
-            {
-                await _repository.Delete(id);
-                return Ok();
-            }
-            catch (KeyNotFoundException)
-            {
-                return NotFound();
-            }
+            await _repository.Delete(id);
+            return Ok();
         }
     }
 }

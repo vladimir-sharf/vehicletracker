@@ -8,6 +8,7 @@ using VehicleTracker.StorageService.Context;
 using Microsoft.EntityFrameworkCore;
 using Autofac;
 using VehicleTracker.StorageService.Model;
+using VehicleTracker.StorageService.ErrorHandling;
 
 namespace VehicleTracker.StorageService
 {
@@ -46,6 +47,10 @@ namespace VehicleTracker.StorageService
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionMiddleware();
             }
             app.UseMvc();
         }

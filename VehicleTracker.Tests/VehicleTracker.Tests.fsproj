@@ -8,9 +8,12 @@
     <EnableDefaultContentItems>false</EnableDefaultContentItems>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Utils.fs" />
+    <Compile Include="Utils.Services.fs" />
+    <Compile Include="Utils.StorageFSharp.fs" />
+    <Compile Include="Utils.StorageCSharp.fs" />
     <Compile Include="DataHelper.fs" />
     <Compile Include="CrudTestUtils.fs" />
+    <Compile Include="Utils.Testing.fs" />
     <Compile Include="VehicleServiceTest.fs" />
     <Compile Include="CustomerServiceTest.fs" />
     <Compile Include="Program.fs" />
@@ -23,8 +26,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VehicleTracker.StorageService.FSharp\VehicleTracker.StorageService.FSharp.fsproj" />
+    <ProjectReference Include="..\VehicleTracker.StorageService\VehicleTracker.StorageService.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="appSettings.StorageService.FSharp.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="appSettings.StorageService.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
